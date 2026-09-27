@@ -14,7 +14,7 @@
             </div>
             <div class="url-info">
               <div class="url-name">
-                <Badge v-if="site.isNew" class="url-new" title="新">New</Badge>
+                <Badge v-if="isNewSite(site)" class="url-new" title="新">New</Badge>
                 <strong>{{ site.name }}</strong>
               </div>
               <p class="url-desc">{{ site.description }}</p>
@@ -38,6 +38,7 @@
 <script setup>
 import { computed } from 'vue'
 import { resolveIcon, handleIconError } from '@/utils/siteIcon'
+import { isNewSite } from '@/utils/site'
 import arrowRightIcon from '@/assets/icons/arrow-right.svg'
 import Badge from './Badge.vue'
 

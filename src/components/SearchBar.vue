@@ -116,7 +116,7 @@ const clear = () => {
   color: var(--text);
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 767px) {
   /* 移动端吸附在内容区顶部（顶栏已在滚动容器之外） */
   .content-search-section {
     position: sticky;

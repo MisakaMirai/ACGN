@@ -1,7 +1,7 @@
 <template>
   <PageContent>
     <BackBar to="/" label="返回首页" />
-    <div v-if="!site" class="alert alert-danger">未找到该网站</div>
+    <EmptyState v-if="!site">未找到该网站</EmptyState>
     <div v-else>
       <!-- 头部信息区：淡粉底大圆角 hero 块 -->
       <div class="site-detail-hero">
@@ -55,15 +55,16 @@
 </template>
 
 <script setup>
-import { ref, computed, watch } from 'vue'
+import { computed } from 'vue'
 import { useRoute } from 'vue-router'
 import { useSitesStore } from '@/stores/sites'
-import { resolveIcon, handleIconError } from '@/composables/useSiteIcon'
-import { usePageTitle } from '@/composables/usePageTitle'
+import { resolveIcon, handleIconError } from '@/utils/siteIcon'
+import { shuffle } from '@/utils/shuffle'
 import SiteCard from '@/components/SiteCard.vue'
 import SectionTitle from '@/components/SectionTitle.vue'
 import SiteRow from '@/components/SiteRow.vue'
 import BackBar from '@/components/BackBar.vue'
+import EmptyState from '@/components/EmptyState.vue'
 import PageContent from '@/components/PageContent.vue'
 import Badge from '@/components/Badge.vue'
 import Button from '@/components/Button.vue'
@@ -73,8 +74,14 @@ import tagIcon from '@/assets/icons/tag.svg'
 const route = useRoute()
 const store = useSitesStore()
 
-const site = ref(null)
-const categoryName = ref('')
+// 路由 query.id 直接驱动查找结果（computed 自动响应，无需 watch+ref）
+const routeResult = computed(() => {
+  const id = route.query.id
+  if (!id) return null
+  return store.findSiteById(id)
+})
+const site = computed(() => routeResult.value?.site ?? null)
+const categoryName = computed(() => routeResult.value?.categoryName ?? '')
 
 const faviconUrl = computed(() => resolveIcon(site.value?.icon))
 const onImgError = handleIconError
@@ -89,9 +96,7 @@ const siteUrl = computed(() => {
   }
 })
 
-usePageTitle(computed(() => site.value?.name))
-
-// 同分类相关站点：随机抽取最多 6 个（不固定），数量固定
+// 同分类相关站点：随机抽取最多 6 个
 const relatedSites = computed(() => {
   if (!site.value || !categoryName.value) return []
   const seen = new Set([site.value.id])
@@ -102,41 +107,16 @@ const relatedSites = computed(() => {
       pool.push(s)
     }
   }
-  // Fisher–Yates 洗牌后取前 6 个
-  for (let i = pool.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1))
-    ;[pool[i], pool[j]] = [pool[j], pool[i]]
-  }
-  return pool.slice(0, 6)
+  return shuffle(pool).slice(0, 6)
 })
-
-watch(
-  () => route.query.id,
-  (id) => {
-    // 重置为空，无效 id 时显示"未找到该网站"而非残留上一个站点的数据
-    site.value = null
-    categoryName.value = ''
-    if (id) {
-      const result = store.findSiteById(id)
-      if (result) {
-        site.value = result.site
-        categoryName.value = result.categoryName
-      }
-    }
-  },
-  { immediate: true }
-)
 </script>
 
 <style scoped>
-/* 头部 hero 块与简介卡片共用的圆角 */
-.site-detail-hero {
-  border-radius: 16px;
-}
-/* 头部信息区：淡粉底 */
+/* 头部信息区：淡粉底大圆角 hero 块 */
 .site-detail-hero {
   background: var(--primary-soft);
   padding: 20px;
+  border-radius: 16px;
 }
 /* 站点简介：白色卡片 */
 .site-detail-body {
@@ -214,22 +194,8 @@ watch(
   margin-top: 20px;
 }
 
-/* 未找到提示（原 main.css primitives） */
-.alert {
-  position: relative;
-  padding: 0.75rem 1.25rem;
-  margin-bottom: 1rem;
-  border: 1px solid transparent;
-  border-radius: 6px;
-}
-.alert-danger {
-  color: var(--danger-text);
-  background-color: var(--danger-bg);
-  border-color: var(--danger-border);
-}
-
 /* 详情页移动端适配 */
-@media (max-width: 767.98px) {
+@media (max-width: 767px) {
   .site-detail-avatar {
     width: 56px;
     height: 56px;

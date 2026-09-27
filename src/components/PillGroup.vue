@@ -18,6 +18,7 @@ import Button from './Button.vue'
 
 // 一行胶囊导航，当前项高亮。原先 LegalNav（路由驱动）与
 // CategorySection 的子分类切换（本地状态驱动）各自实现了一份，现共用。
+// LegalNav 已随内容页改为「返回协议汇总」按钮而移除。
 // items: [{ value, label, to? }]，无 to 时退化为普通按钮
 defineProps({
   items: { type: Array, required: true },

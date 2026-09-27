@@ -15,31 +15,21 @@
 </template>
 
 <script setup>
-import { ref, computed, watch } from 'vue'
+import { computed } from 'vue'
 import { useRoute } from 'vue-router'
 import { useAnnouncementsStore } from '@/stores/announcements'
-import { usePageTitle } from '@/composables/usePageTitle'
 import EmptyState from '@/components/EmptyState.vue'
 import BackBar from '@/components/BackBar.vue'
 import PageContent from '@/components/PageContent.vue'
 
 const route = useRoute()
 const store = useAnnouncementsStore()
-const announcement = ref(null)
 
-usePageTitle(computed(() => announcement.value?.title))
-
-watch(
-  () => route.params.id,
-  (id) => {
-    // 重置为空，无效 id 时显示"公告未找到"而非残留上一条公告的数据
-    announcement.value = null
-    if (id) {
-      announcement.value = store.findById(id)
-    }
-  },
-  { immediate: true }
-)
+const announcement = computed(() => {
+  const id = route.params.id
+  if (!id) return null
+  return store.findById(id) || null
+})
 </script>
 
 <style scoped>
@@ -70,7 +60,7 @@ watch(
   white-space: pre-line;
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 767px) {
   .ann-detail {
     padding: 16px;
   }

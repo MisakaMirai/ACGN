@@ -1,6 +1,6 @@
 # 贡献指南
 
-欢迎参与 MyACGN 项目的贡献！我们欢迎各种形式的贡献，包括但不限于：提交问题、修复 Bug、新增功能、改进文档、添加新站点等。
+欢迎参与 ACGN 项目的贡献！我们欢迎各种形式的贡献，包括但不限于：提交问题、修复 Bug、新增功能、改进文档、添加新站点等。
 
 ## 如何贡献
 
@@ -92,10 +92,9 @@ ACGN/
 │   │   ├── PageContent.vue     # 内容区内边距外壳
 │   │   ├── ContentPage.vue     # 数据驱动的静态内容页
 │   │   ├── ScrollTopButton.vue
-│   │   ├── BackBar.vue
+│   │   ├── BackBar.vue         # 返回条
 │   │   ├── EmptyState.vue
 │   │   ├── InlineNodes.vue
-│   │   ├── LegalNav.vue
 │   │   ├── SearchBar.vue
 │   │   ├── SiteCard.vue
 │   │   ├── SiteRow.vue
@@ -103,13 +102,12 @@ ACGN/
 │   │   ├── CategorySection.vue
 │   │   ├── AnnouncementItem.vue
 │   │   └── FriendLinks.vue
-│   ├── composables/       # Vue 组合式函数
-│   │   ├── legalLinks.js       # 法律页面链接（LegalNav 与页脚共用）
-│   │   ├── useMainScroll.js    # 内容区滚动容器注册与滚动定位
-│   │   ├── usePageTitle.js
-│   │   └── useSiteIcon.js
-│   ├── utils/             # 无状态纯函数
-│   │   └── theme.js        # 主题常量与模式切换/类名解析
+│   ├── composables/       # Vue 组合式函数（跨组件共享响应式状态）
+│   │   └── useMainScroll.js    # 内容区滚动容器注册与滚动定位
+│   ├── utils/             # 无状态纯函数与常量
+│   │   ├── theme.js            # 主题常量与模式切换/类名解析
+│   │   ├── shuffle.js
+│   │   └── siteIcon.js         # 站点/分类图标解析与错误兜底
 │   ├── data/              # JSON 数据
 │   │   ├── announcements.json
 │   │   ├── contentPages.json   # 关于/声明/隐私 页内容
@@ -121,6 +119,7 @@ ACGN/
 │   ├── stores/            # Pinia 状态管理
 │   │   ├── __tests__/     # store 单元测试
 │   │   ├── announcements.js
+│   │   ├── contentPages.js     # 法律页查询 + 协议汇总目录页
 │   │   ├── friends.js
 │   │   ├── hitokoto.js
 │   │   ├── sidebar.js
@@ -132,7 +131,7 @@ ACGN/
 │   │   ├── SiteTrashView.vue
 │   │   ├── AnnouncementsListView.vue
 │   │   ├── AnnouncementDetailView.vue
-│   │   ├── ContentView.vue     # 关于/声明/隐私 共用
+│   │   ├── ContentView.vue     # 关于/声明/隐私/协议汇总 共用
 │   │   ├── PostSiteView.vue
 │   │   └── NotFoundView.vue
 │   ├── App.vue            # 根组件（主题变量 + 全局样式）
@@ -304,4 +303,4 @@ npm run test
 
 ---
 
-感谢您对 MyACGN 项目的支持！
+感谢您对 ACGN 项目的支持！

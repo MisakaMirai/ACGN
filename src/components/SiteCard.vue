@@ -37,7 +37,7 @@
 
 <script setup>
 import { computed } from 'vue'
-import { resolveIcon, handleIconError } from '@/composables/useSiteIcon'
+import { resolveIcon, handleIconError } from '@/utils/siteIcon'
 import arrowRightIcon from '@/assets/icons/arrow-right.svg'
 import Badge from './Badge.vue'
 
@@ -53,37 +53,15 @@ const onImgError = handleIconError
 </script>
 
 <style scoped>
-/* 栅格列宽（原 col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2）
-   列宽百分比 + 横向 padding，必须 border-box 否则栅格溢出 */
+/* 卡片容器 —— 栅格列宽由父级 SiteRow 控制，这里只管卡片本体 */
 .url-card {
-  box-sizing: border-box;
-  flex: 0 0 50%;
-  min-width: 0;
-  padding: 0 8px;
+  margin-bottom: 16px;
 }
-@media (min-width: 576px) {
-  .url-card {
-    flex: 0 0 33.333333%;
-  }
-}
-@media (min-width: 768px) {
-  .url-card {
-    flex: 0 0 25%;
-    padding: 0 16px;
-  }
-}
-@media (min-width: 1200px) {
-  .url-card {
-    flex: 0 0 16.666667%;
-  }
-}
-
 .url-body {
   position: relative;
   display: flex;
   flex-direction: column;
   height: calc(100% - 16px);
-  margin-bottom: 16px;
   transform: translateY(0);
   transition: transform 0.3s;
   border-radius: 16px;
@@ -95,7 +73,6 @@ const onImgError = handleIconError
   transform: translateY(-2px);
 }
 
-/* 卡片主体（原 card no-c mb-4） */
 .url-card-link {
   position: relative;
   display: flex;
@@ -185,39 +162,14 @@ const onImgError = handleIconError
   }
 }
 
-/* 内容管理页（失效归档等）内的卡片不做悬浮抬升 */
+/* 内容管理页（失效归档等）内禁用卡片 hover 抬升 */
 .site-content .url-body:hover,
 .site-content .url-body:active {
-  transform: none !important;
+  transform: none;
 }
 
 .togo-arrow {
   width: 16px;
   height: 16px;
-}
-
-/* ---- 暗色主题微调（原 main.css Theme Overrides） ---- */
-.dark .url-body {
-  background-color: var(--card-bg);
-}
-
-/* 禁用卡片 hover 抬升 */
-.dark .url-card:hover,
-.dark .url-card:hover .url-card-link,
-.dark .url-card:hover .togo {
-  transform: none !important;
-  color: var(--text) !important;
-}
-
-/* 链接 hover 保持主色 */
-.dark .url-card-link:hover,
-.dark .togo:hover {
-  color: var(--primary) !important;
-}
-
-/* 直达箭头暗色下保持弱化 */
-.dark .togo,
-.dark .togo:hover {
-  opacity: 0.3;
 }
 </style>

@@ -47,7 +47,7 @@ const scrollToTop = () => {
   width: 18px;
   height: 18px;
 }
-@media (max-width: 767.98px) {
+@media (max-width: 767px) {
   .go-up {
     right: 10px;
     bottom: 15px;

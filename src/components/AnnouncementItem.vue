@@ -20,11 +20,12 @@ defineProps({
 <style scoped>
 .ann-item {
   display: block;
-  padding: 16px;
+  padding: var(--card-padding, 16px);
   background: var(--card-bg);
   border-radius: 16px;
   color: var(--text);
   text-decoration: none;
+  transition: background-color 0.3s;
   -webkit-tap-highlight-color: transparent;
   touch-action: manipulation;
 }

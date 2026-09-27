@@ -1,22 +1,25 @@
 <template>
-  <ContentPage v-if="page" :page="page" />
+  <ContentPage
+    v-if="page"
+    :page="page"
+    :back-to="isSubPage ? '/terms' : ''"
+    back-label="返回协议汇总"
+  />
 </template>
 
 <script setup>
 import { computed, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import ContentPage from '@/components/ContentPage.vue'
-import { usePageTitle } from '@/composables/usePageTitle'
-import contentPages from '@/data/contentPages.json'
+import { useContentPagesStore } from '@/stores/contentPages'
 
-// 三个静态内容页（关于/隐私/免责）共用一个视图，由路由 meta.pageKey 指向对应数据
+// 四个静态内容页共用一个视图，由路由 meta.pageKey 指向对应数据
 const route = useRoute()
 const router = useRouter()
+const pagesStore = useContentPagesStore()
 
-const page = computed(() => contentPages.pages.find((p) => p.key === route.meta.pageKey))
-
-// 标题以数据为准，避免与路由 meta.title 双源不一致
-usePageTitle(computed(() => page.value?.title))
+const page = computed(() => pagesStore.findByKey(route.meta.pageKey))
+const isSubPage = computed(() => route.meta.pageKey !== 'terms')
 
 // 无效 pageKey 不再静默回退到第一页，直接转入 404
 watch(

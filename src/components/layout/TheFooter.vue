@@ -16,11 +16,7 @@
     </p>
 
     <nav class="footer-nav" aria-label="法律信息">
-      <ul class="footer-links">
-        <li v-for="link in legalLinks" :key="link.value">
-          <AppLink :to="link.to" muted>{{ link.label }}</AppLink>
-        </li>
-      </ul>
+      <AppLink :to="pagesStore.termsLink.to" muted>{{ pagesStore.termsLink.label }}</AppLink>
     </nav>
 
     <p class="footer-note">
@@ -38,8 +34,9 @@
 <script setup>
 import AppLink from '../AppLink.vue'
 import ScrollTopButton from '../ScrollTopButton.vue'
-import { legalLinks } from '@/composables/legalLinks'
+import { useContentPagesStore } from '@/stores/contentPages'
 
+const pagesStore = useContentPagesStore()
 const year = new Date().getFullYear()
 </script>
 
@@ -59,21 +56,6 @@ const year = new Date().getFullYear()
 .footer-sep {
   margin: 0 0.35em;
   color: var(--text-muted);
-}
-.footer-links {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  row-gap: 4px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-/* 分隔线用边框做，省掉额外的 <span>|</span> 与 mx-* 工具类 */
-.footer-links li + li {
-  padding-left: 14px;
-  border-left: 1px solid var(--border);
 }
 .footer-note {
   max-width: 800px;

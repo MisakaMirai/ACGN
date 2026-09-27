@@ -8,7 +8,7 @@
       <div class="sidebar-logo">
         <div class="logo overflow-hidden">
           <router-link to="/" class="sidebar-logo-link">
-            <img class="logo-img" :src="logoUrl" height="40" alt="MyACGN" loading="lazy" />
+            <img class="logo-img" :src="logoUrl" height="40" alt="ACGN" loading="lazy" />
           </router-link>
         </div>
       </div>
@@ -80,7 +80,7 @@ import { useSitesStore } from '@/stores/sites'
 import { useSidebarStore } from '@/stores/sidebar'
 import { useThemeStore } from '@/stores/theme'
 import { THEME_MODES, nextThemeMode, themeModeLabel } from '@/utils/theme'
-import { resolveNavIcon, handleIconError } from '@/composables/useSiteIcon'
+import { resolveNavIcon, handleIconError } from '@/utils/siteIcon'
 import logoUrl from '@/assets/images/20210727002253-59085.jpeg'
 import trashIcon from '@/assets/icons/trash.svg'
 import linkIcon from '@/assets/icons/link.svg'
@@ -282,7 +282,7 @@ const cycleTheme = () => {
 }
 
 /* 移动端侧边栏：遮罩层 + 抽屉 */
-@media (max-width: 767.98px) {
+@media (max-width: 767px) {
   .sidebar-nav {
     background: transparent !important;
     width: 100% !important;

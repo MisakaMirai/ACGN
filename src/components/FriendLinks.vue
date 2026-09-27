@@ -1,9 +1,9 @@
 <template>
-  <div v-if="friendsStore.links.length > 0">
+  <div v-if="store.links.length > 0">
     <SectionTitle :icon="bookmarkIcon">友情链接</SectionTitle>
     <Card>
       <a
-        v-for="link in friendsStore.links"
+        v-for="link in store.links"
         :key="link.id"
         :href="link.url"
         :title="link.description"
@@ -23,7 +23,7 @@ import bookmarkIcon from '@/assets/icons/bookmark.svg'
 import SectionTitle from './SectionTitle.vue'
 import Card from './Card.vue'
 
-const friendsStore = useFriendsStore()
+const store = useFriendsStore()
 </script>
 
 <style scoped>

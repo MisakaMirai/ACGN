@@ -20,7 +20,7 @@ export const useSidebarStore = defineStore('sidebar', () => {
 
   const handleResize = () => {
     const winWidth = window.innerWidth
-    if (winWidth < 767.98) {
+    if (winWidth < 768) {
       isMinimized.value = false
       hide()
     } else if (winWidth < 1024) {

@@ -2,7 +2,7 @@
   <div class="navbar">
     <div class="navbar-inner">
       <router-link to="/" class="navbar-logo mobile-only">
-        <img class="navbar-logo-img" loading="lazy" :src="logoUrl" height="40" alt="MyACGN" />
+        <img class="navbar-logo-img" loading="lazy" :src="logoUrl" height="40" alt="ACGN" />
       </router-link>
 
       <div class="navbar-left">
@@ -248,7 +248,7 @@ onMounted(() => {
     display: block;
   }
 }
-@media (max-width: 767.98px) {
+@media (max-width: 767px) {
   .navbar-inner {
     height: 56px;
     padding: 0 12px;
@@ -273,7 +273,7 @@ onMounted(() => {
     display: none;
   }
 }
-@media (max-width: 767.98px) {
+@media (max-width: 767px) {
   .desktop-only {
     display: none;
   }

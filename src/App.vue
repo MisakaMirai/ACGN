@@ -15,14 +15,11 @@ import TheNavbar from './components/layout/TheNavbar.vue'
 import TheMainLayout from './components/layout/TheMainLayout.vue'
 import { useSidebarStore } from './stores/sidebar'
 import { useThemeStore } from './stores/theme'
-import { usePageTitle } from './composables/usePageTitle'
 
 const sidebarStore = useSidebarStore()
 const themeStore = useThemeStore()
 
 const { initInteraction } = sidebarStore
-
-usePageTitle()
 
 let cleanupInteraction = null
 

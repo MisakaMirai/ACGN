@@ -18,7 +18,7 @@
 <script setup>
 import { ref, computed, onMounted, watch } from 'vue'
 import { useRoute } from 'vue-router'
-import { resolveNavIcon } from '@/composables/useSiteIcon'
+import { resolveNavIcon } from '@/utils/siteIcon'
 import SiteCard from './SiteCard.vue'
 import PillGroup from './PillGroup.vue'
 import SectionTitle from './SectionTitle.vue'

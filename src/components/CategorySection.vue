@@ -1,19 +1,14 @@
 <template>
-  <div :id="category.id">
-    <CatSectionTitle>{{ category.name }}</CatSectionTitle>
+  <div :id="category.id" ref="sectionRef">
+    <SectionTitle bar :icon="resolveNavIcon(category.icon)">{{ category.name }}</SectionTitle>
     <!-- 横向二级菜单：有子分类时显示在标题下方 -->
-    <div v-if="subTabs.length" class="cat-subnav">
-      <button
-        v-for="tab in subTabs"
-        :key="tab.id"
-        type="button"
-        class="pill pill-bordered cat-subnav-item"
-        :class="{ 'pill-primary': activeSub === tab.id }"
-        @click="activeSub = tab.id"
-      >
-        {{ tab.name }}
-      </button>
-    </div>
+    <PillGroup
+      v-if="subTabs.length"
+      :items="subTabs"
+      :active="activeSub"
+      bordered
+      @select="activeSub = $event"
+    />
     <SiteRow v-if="visibleSites.length">
       <SiteCard v-for="site in visibleSites" :key="site.id" :site="site" />
     </SiteRow>
@@ -21,9 +16,12 @@
 </template>
 
 <script setup>
-import { ref, computed } from 'vue'
+import { ref, computed, onMounted, watch } from 'vue'
+import { useRoute } from 'vue-router'
+import { resolveNavIcon } from '@/utils/siteIcon'
 import SiteCard from './SiteCard.vue'
-import CatSectionTitle from './CatSectionTitle.vue'
+import PillGroup from './PillGroup.vue'
+import SectionTitle from './SectionTitle.vue'
 import SiteRow from './SiteRow.vue'
 
 const props = defineProps({
@@ -35,9 +33,14 @@ const props = defineProps({
 
 const activeSub = ref('')
 
-// '' 表示"全部"
+// '' 表示"全部"；映射为 PillGroup 的 { value, label } 结构
 const subTabs = computed(() =>
-  props.category.children?.length ? [{ id: '', name: '全部' }, ...props.category.children] : []
+  props.category.children?.length
+    ? [{ id: '', name: '全部' }, ...props.category.children].map((sub) => ({
+        value: sub.id,
+        label: sub.name,
+      }))
+    : []
 )
 
 const visibleSites = computed(() => {
@@ -51,13 +54,17 @@ const visibleSites = computed(() => {
   if (!activeSub.value) return pool
   return pool.filter((site) => site.category === activeSub.value)
 })
-</script>
 
-<style scoped>
-.cat-subnav {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-2);
-  margin-bottom: var(--space-4);
+// 侧边栏分类链接带 hash，由命中的区块自己滚到内容区顶部（顶栏不遮挡，无固定偏移）
+const route = useRoute()
+const sectionRef = ref(null)
+
+const scrollSelfIntoView = (hash) => {
+  if (hash === '#' + props.category.id) {
+    sectionRef.value?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  }
 }
-</style>
+
+onMounted(() => scrollSelfIntoView(route.hash))
+watch(() => route.hash, scrollSelfIntoView, { flush: 'post' })
+</script>

@@ -1,12 +1,7 @@
 <template>
-  <div class="content">
-    <div class="ann-back">
-      <router-link to="/announcements" class="back-btn">
-        <img class="back-icon" :src="arrowLeftIcon" alt="" />
-        返回公告列表
-      </router-link>
-    </div>
-    <div v-if="!announcement" class="ann-empty">公告未找到</div>
+  <PageContent>
+    <BackBar to="/announcements" label="返回公告列表" />
+    <EmptyState v-if="!announcement">公告未找到</EmptyState>
     <article v-else class="ann-detail">
       <h1 class="ann-detail-title">{{ announcement.title }}</h1>
       <p class="ann-detail-meta">
@@ -16,98 +11,61 @@
         {{ announcement.content }}
       </div>
     </article>
-  </div>
+  </PageContent>
 </template>
 
 <script setup>
-import { ref, computed, watch } from 'vue'
+import { computed } from 'vue'
 import { useRoute } from 'vue-router'
 import { useAnnouncementsStore } from '@/stores/announcements'
-import { usePageTitle } from '@/composables/usePageTitle'
-import arrowLeftIcon from '@/assets/icons/arrow-left.svg'
+import EmptyState from '@/components/EmptyState.vue'
+import BackBar from '@/components/BackBar.vue'
+import PageContent from '@/components/PageContent.vue'
 
 const route = useRoute()
 const store = useAnnouncementsStore()
-const announcement = ref(null)
 
-usePageTitle(computed(() => announcement.value?.title))
-
-watch(
-  () => route.params.id,
-  (id) => {
-    // 重置为空，无效 id 时显示"公告未找到"而非残留上一条公告的数据
-    announcement.value = null
-    if (id) {
-      announcement.value = store.findById(id)
-    }
-  },
-  { immediate: true }
-)
+const announcement = computed(() => {
+  const id = route.params.id
+  if (!id) return null
+  return store.findById(id) || null
+})
 </script>
 
 <style scoped>
-/* 返回按钮 */
-.back-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  padding: 6px 16px;
-  border-radius: 999px;
-  background: var(--bg-surface);
-  color: var(--text-muted);
-  font-size: var(--font-size-sm);
-  text-decoration: none;
-  transition: var(--transition-normal);
-}
-.back-btn:hover {
-  color: var(--primary);
-}
-.ann-back {
-  display: flex;
-  margin-bottom: var(--space-3);
-}
-
-.ann-empty {
-  padding: 60px 20px;
-  text-align: center;
-  color: var(--text-muted);
-  background: var(--card-bg);
-  border-radius: var(--radius-2xl);
-}
-
 .ann-detail {
-  padding: var(--space-5);
+  padding: 20px;
   background: var(--card-bg);
-  border-radius: var(--radius-2xl);
+  border-radius: 16px;
 }
 
 .ann-detail-title {
-  margin: 0 0 var(--space-2);
-  font-size: var(--font-size-2xl);
-  font-weight: var(--font-weight-semibold);
-  color: var(--text-dark);
-  line-height: var(--line-height-tight);
+  margin: 0 0 8px;
+  font-size: 1.375rem;
+  font-weight: 600;
+  color: var(--text-heading);
+  line-height: 1.2;
 }
 
 .ann-detail-meta {
-  margin: 0 0 var(--space-4);
-  padding-bottom: var(--space-3);
+  margin: 0 0 16px;
+  padding-bottom: 12px;
   border-bottom: 1px solid var(--bg-gray);
   color: var(--text-muted);
 }
 
 .ann-detail-content {
-  color: var(--text-dark);
-  line-height: var(--line-height-relaxed);
+  color: var(--text-heading);
+  line-height: 1.8;
   white-space: pre-line;
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 767px) {
   .ann-detail {
-    padding: var(--space-4);
+    padding: 16px;
   }
   .ann-detail-title {
-    font-size: var(--font-size-xl);
+    font-size: 1.125rem;
   }
 }
 </style>

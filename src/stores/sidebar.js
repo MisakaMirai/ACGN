@@ -13,14 +13,14 @@ export const useSidebarStore = defineStore('sidebar', () => {
     isMobileOpen.value = !isMobileOpen.value
   }
 
-  // isChecked=true 展开，false 折叠为 mini
-  const triggerMini = (isChecked) => {
-    isMinimized.value = !isChecked
+  // 展开/折叠为 mini
+  const toggleMini = () => {
+    isMinimized.value = !isMinimized.value
   }
 
   const handleResize = () => {
     const winWidth = window.innerWidth
-    if (winWidth < 767.98) {
+    if (winWidth < 768) {
       isMinimized.value = false
       hide()
     } else if (winWidth < 1024) {
@@ -70,7 +70,7 @@ export const useSidebarStore = defineStore('sidebar', () => {
     isMinimized,
     hide,
     toggleMobile,
-    triggerMini,
+    toggleMini,
     initInteraction,
   }
 })

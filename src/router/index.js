@@ -1,4 +1,14 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
+import { useTitle } from '@vueuse/core'
+import { scrollMainTo } from '@/composables/useMainScroll'
+import { useContentPagesStore } from '@/stores/contentPages'
+import { useAnnouncementsStore } from '@/stores/announcements'
+import { useSitesStore } from '@/stores/sites'
+
+const SUFFIX = ' | ACGN'
+const HOME_TITLE = 'ACGN - ACG二次元导航盒子 | 动漫、漫画、游戏、资源导航'
+
+const title = useTitle()
 
 const routes = [
   {
@@ -25,6 +35,12 @@ const routes = [
     meta: { pageKey: 'disclaimer' },
   },
   {
+    path: '/terms',
+    name: 'Terms',
+    component: () => import('@/views/ContentView.vue'),
+    meta: { pageKey: 'terms' },
+  },
+  {
     path: '/postsite',
     name: 'PostSite',
     component: () => import('@/views/PostSiteView.vue'),
@@ -40,13 +56,11 @@ const routes = [
     path: '/announcements/:id',
     name: 'AnnouncementDetail',
     component: () => import('@/views/AnnouncementDetailView.vue'),
-    meta: { title: '公告详情' },
   },
   {
     path: '/sites/detail',
     name: 'SiteDetail',
     component: () => import('@/views/SiteDetailView.vue'),
-    // 由 SiteDetailView 内部用 usePageTitle 设置动态站点名标题
   },
   {
     path: '/sitetrash',
@@ -65,19 +79,51 @@ const routes = [
 const router = createRouter({
   history: createWebHashHistory(),
   routes,
-  scrollBehavior(to, from, savedPosition) {
-    if (to.hash) {
-      return {
-        el: to.hash,
-        behavior: 'smooth',
-        top: 80,
-      }
-    }
-    if (savedPosition) {
-      return savedPosition
-    }
-    return { top: 0 }
+  scrollBehavior(to) {
+    // 右侧内容区是独立滚动容器，窗口不滚动
+    // 带 hash 的定位交给被命中的分类区块（自身 scrollIntoView），这里只重置其他情况
+    if (!to.hash) scrollMainTo(0, 'auto')
+    return false
   },
+})
+
+// 统一页面标题：路由元信息 + store 查找，一处覆盖所有页面
+router.afterEach((to) => {
+  // 1. 静态 meta.title（投稿、公告列表、失效归档、404）
+  if (to.meta.title) {
+    title.value = to.meta.title + SUFFIX
+    return
+  }
+
+  // 2. 内容页（关于/隐私/免责/协议汇总）
+  if (to.meta.pageKey) {
+    const page = useContentPagesStore().findByKey(to.meta.pageKey)
+    if (page) {
+      title.value = page.title + SUFFIX
+      return
+    }
+  }
+
+  // 3. 公告详情（动态标题取公告名）
+  if (to.name === 'AnnouncementDetail' && to.query.id) {
+    const ann = useAnnouncementsStore().findById(to.query.id)
+    if (ann) {
+      title.value = ann.title + SUFFIX
+      return
+    }
+  }
+
+  // 4. 站点详情（动态标题取站名）
+  if (to.name === 'SiteDetail' && to.query.id) {
+    const result = useSitesStore().findSiteById(to.query.id)
+    if (result?.site) {
+      title.value = result.site.name + SUFFIX
+      return
+    }
+  }
+
+  // 5. 首页 / 兜底
+  title.value = HOME_TITLE
 })
 
 export default router

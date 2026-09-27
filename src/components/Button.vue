@@ -94,7 +94,7 @@ const isLink = computed(() => Boolean(props.to || props.href))
 }
 .btn-primary,
 .btn-primary:hover {
-  color: #fff;
+  color: var(--on-primary);
   background: var(--primary);
   border-color: var(--primary);
 }

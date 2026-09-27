@@ -1,4 +1,5 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
+import { scrollMainTo } from '@/composables/useMainScroll'
 
 const routes = [
   {
@@ -46,7 +47,6 @@ const routes = [
     path: '/sites/detail',
     name: 'SiteDetail',
     component: () => import('@/views/SiteDetailView.vue'),
-    // 由 SiteDetailView 内部用 usePageTitle 设置动态站点名标题
   },
   {
     path: '/sitetrash',
@@ -65,18 +65,11 @@ const routes = [
 const router = createRouter({
   history: createWebHashHistory(),
   routes,
-  scrollBehavior(to, from, savedPosition) {
-    if (to.hash) {
-      return {
-        el: to.hash,
-        behavior: 'smooth',
-        top: 80,
-      }
-    }
-    if (savedPosition) {
-      return savedPosition
-    }
-    return { top: 0 }
+  scrollBehavior(to) {
+    // 右侧内容区是独立滚动容器，窗口不滚动
+    // 带 hash 的定位交给被命中的分类区块（自身 scrollIntoView），这里只重置其他情况
+    if (!to.hash) scrollMainTo(0, 'auto')
+    return false
   },
 })
 

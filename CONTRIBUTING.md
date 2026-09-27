@@ -81,7 +81,7 @@ ACGN/
 │   │   ├── icons/        # 内联 SVG 图标
 │   │   └── images/       # Logo、favicon、站点图标
 │   ├── components/       # 可复用组件
-│   │   ├── layout/       # 布局组件（TheNavbar / TheSidebar / TheFooter）
+│   │   ├── layout/       # 布局组件（TheMainLayout / TheNavbar / TheSidebar / TheFooter）
 │   │   ├── LinkTag.vue         # 内/外链统一渲染
 │   │   ├── AppLink.vue         # 外链按钮
 │   │   ├── Button.vue          # 按钮
@@ -105,11 +105,11 @@ ACGN/
 │   │   └── FriendLinks.vue
 │   ├── composables/       # Vue 组合式函数
 │   │   ├── legalLinks.js       # 法律页面链接（LegalNav 与页脚共用）
-│   │   ├── themeConstants.js   # 主题令牌与 class 名
+│   │   ├── useMainScroll.js    # 内容区滚动容器注册与滚动定位
 │   │   ├── usePageTitle.js
 │   │   └── useSiteIcon.js
-│   ├── constants/
-│   │   └── app.js         # 页面标题常量
+│   ├── utils/             # 无状态纯函数
+│   │   └── theme.js        # 主题常量与模式切换/类名解析
 │   ├── data/              # JSON 数据
 │   │   ├── announcements.json
 │   │   ├── contentPages.json   # 关于/声明/隐私 页内容
@@ -137,7 +137,7 @@ ACGN/
 │   │   └── NotFoundView.vue
 │   ├── App.vue            # 根组件（主题变量 + 全局样式）
 │   └── main.js            # 应用入口
-├── .eslintrc.cjs
+├── eslint.config.js      # ESLint 扁平配置
 ├── .prettierrc
 ├── index.html             # Vite HTML 入口
 ├── package.json

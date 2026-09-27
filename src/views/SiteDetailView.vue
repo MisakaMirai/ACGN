@@ -223,14 +223,9 @@ watch(
   border-radius: 6px;
 }
 .alert-danger {
-  color: #721c24;
-  background-color: #f8d7da;
-  border-color: #f5c6cb;
-}
-.dark .alert-danger {
-  color: #f8d7da;
-  background-color: #5a1a1f;
-  border-color: #721c24;
+  color: var(--danger-text);
+  background-color: var(--danger-bg);
+  border-color: var(--danger-border);
 }
 
 /* 详情页移动端适配 */

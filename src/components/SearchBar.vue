@@ -1,12 +1,12 @@
 <template>
   <div class="content-search-section">
-    <div class="content-search-box" id="search-box">
+    <div id="search-box" class="content-search-box">
       <img class="content-search-icon" :src="tagIcon" alt="" />
       <input
+        id="search-input"
         ref="inputRef"
         type="text"
         class="content-search-input"
-        id="search-input"
         :value="modelValue"
         placeholder="输入关键字搜索站点名称、描述..."
         aria-label="搜索站点"
@@ -17,9 +17,9 @@
       />
       <button
         v-show="modelValue.trim()"
+        id="search-clear"
         type="button"
         class="content-search-clear"
-        id="search-clear"
         title="清除"
         @click="clear"
       >
@@ -117,10 +117,10 @@ const clear = () => {
 }
 
 @media (max-width: 767.98px) {
-  /* 移动端吸附在导航栏（56px）下方 */
+  /* 移动端吸附在内容区顶部（顶栏已在滚动容器之外） */
   .content-search-section {
     position: sticky;
-    top: 56px;
+    top: 0;
     z-index: 10;
     background: var(--bg);
     padding: 10px 12px 8px;

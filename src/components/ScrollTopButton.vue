@@ -6,16 +6,16 @@
 
 <script setup>
 import { computed } from 'vue'
-import { useWindowScroll } from '@vueuse/core'
+import { useScroll } from '@vueuse/core'
 import arrowUpIcon from '@/assets/icons/arrow-up.svg'
+import { mainScroller, scrollMainTo } from '@/composables/useMainScroll'
 
-// 浮动控件而非页脚内容，故独立成组件。
-// 显隐交给 useWindowScroll，取代手写的 scroll 监听 + setTimeout 节流。
-const { y } = useWindowScroll()
+// 右侧内容区是独立滚动容器，显隐交给 useScroll
+const { y } = useScroll(mainScroller)
 const visible = computed(() => y.value >= 50)
 
 const scrollToTop = () => {
-  window.scrollTo({ top: 0, behavior: 'smooth' })
+  scrollMainTo(0)
 }
 </script>
 

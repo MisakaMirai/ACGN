@@ -45,8 +45,8 @@ const year = new Date().getFullYear()
 
 <style scoped>
 .main-footer {
-  /* 水平边距对齐 PageContent 的 padding，左右才不会和上方内容错开 */
-  margin: 0.5rem 2rem 1rem;
+  /* flex column 容器中 margin-top:auto 保证短内容时页脚贴底 */
+  margin: auto 2rem 1rem;
   padding: 1.25rem 1rem;
   background: var(--bg-surface);
   border-radius: 16px;

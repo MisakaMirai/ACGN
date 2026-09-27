@@ -7,9 +7,9 @@
         <section v-for="section in page.sections" :key="section.heading" class="cp-section">
           <h3 class="cp-heading">{{ section.heading }}</h3>
           <component
+            :is="blockRenderers[block.type] || EmptyBlock"
             v-for="(block, index) in section.blocks"
             :key="index"
-            :is="blockRenderers[block.type] || EmptyBlock"
             :block="block"
           />
         </section>

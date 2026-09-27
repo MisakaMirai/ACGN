@@ -15,7 +15,7 @@
 
       <div class="sidebar-menu">
         <div class="sidebar-menu-inner">
-          <ul class="sidebar-nav-list" id="sidebar-nav-list">
+          <ul id="sidebar-nav-list" class="sidebar-nav-list">
             <li v-for="cat in store.categories" :key="cat.id" class="sidebar-item">
               <router-link :to="{ path: '/', hash: '#' + cat.id }" class="sidebar-menu-link">
                 <img
@@ -79,7 +79,7 @@ import { computed } from 'vue'
 import { useSitesStore } from '@/stores/sites'
 import { useSidebarStore } from '@/stores/sidebar'
 import { useThemeStore } from '@/stores/theme'
-import { THEME_MODES } from '@/composables/themeConstants'
+import { THEME_MODES, nextThemeMode, themeModeLabel } from '@/utils/theme'
 import { resolveNavIcon, handleIconError } from '@/composables/useSiteIcon'
 import logoUrl from '@/assets/images/20210727002253-59085.jpeg'
 import trashIcon from '@/assets/icons/trash.svg'
@@ -100,14 +100,11 @@ const themeIcons = {
 }
 
 // 当前模式标签（供迷你单钮 tooltip / aria）
-const currentLabel = computed(
-  () => THEME_MODES.find((m) => m.value === themeStore.sourceMode.value)?.label ?? ''
-)
+const currentLabel = computed(() => themeModeLabel(themeStore.sourceMode))
 
 // 迷你侧栏单钮：点击按 浅色 → 深色 → 跟随系统 循环，图标跟随当前模式
 const cycleTheme = () => {
-  const idx = THEME_MODES.findIndex((m) => m.value === themeStore.sourceMode.value)
-  themeStore.setMode(THEME_MODES[(idx + 1) % THEME_MODES.length].value)
+  themeStore.setMode(nextThemeMode(themeStore.sourceMode))
 }
 </script>
 
@@ -116,7 +113,7 @@ const cycleTheme = () => {
   --divider: rgba(129, 129, 129, 0.15);
   flex: 0 0 150px;
   font-size: 0.75rem;
-  height: 100vh;
+  height: 100%;
   z-index: 1080;
   position: sticky;
   top: 0;
@@ -135,7 +132,7 @@ const cycleTheme = () => {
   pointer-events: inherit;
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 100%;
   transition: background-color 0.3s;
   overflow: hidden;
 }

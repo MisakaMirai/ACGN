@@ -13,7 +13,7 @@
   white-space: nowrap;
   vertical-align: baseline;
   border-radius: 6px;
-  color: #fff;
+  color: var(--on-primary);
 }
 .badge-primary {
   background-color: var(--primary);

@@ -38,9 +38,9 @@
 
         <div class="navbar-mobile mobile-only">
           <button
+            id="sidebar-toggle"
             type="button"
             class="navbar-toggle"
-            id="sidebar-toggle"
             :aria-label="sidebarStore.isMobileOpen ? '关闭菜单' : '打开菜单'"
             :aria-expanded="sidebarStore.isMobileOpen"
             @click="sidebarStore.toggleMobile"
@@ -170,7 +170,7 @@ onMounted(() => {
 }
 .navbar-btn .menu-path {
   fill: none;
-  stroke: #888;
+  stroke: var(--icon-muted);
   stroke-width: 3;
   stroke-linecap: round;
   stroke-linejoin: round;

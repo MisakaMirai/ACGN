@@ -216,7 +216,6 @@ npm run test
           "description": "网站描述（简洁明了）",
           "category": "term-x",
           "detail": "站点详细介绍（可选）",
-          "isNew": false,
           "icon": "./example.com.png",
           "disabledAt": "",
           "createdAt": "2026-01-01 00:00:00"
@@ -237,10 +236,9 @@ npm run test
 | `description` | string  | 是   | 网站描述（50 字以内）            |
 | `category`    | string  | 是   | 分类 ID（如 `term-2`）           |
 | `detail`      | string  | 否   | 站点详细介绍（详情页展示）       |
-| `isNew`       | boolean | 是   | 是否新站点                       |
 | `icon`        | string  | 否   | 图标文件名                       |
 | `disabledAt`  | string  | 是   | 失效日期（空字符串表示正常运行） |
-| `createdAt`   | string  | 是   | 收录日期                         |
+| `createdAt`   | string  | 是   | 收录日期（`New` 徽章按此推算，30 天内算新站） |
 
 ### 公告数据
 

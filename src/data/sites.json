@@ -1051,6 +1051,17 @@
       "icon": "./game.svg",
       "sites": [
         {
+          "id": 480,
+          "name": "VN Club",
+          "url": "https://vnclub.org",
+          "description": "日文Galgame原版阅读社区与资料站",
+          "category": "term-7",
+          "detail": "面向日语原版（无汉化）Galgame 读者的开源社区与 Wiki，基于 VNDB 数据提供统计、排行、推荐与阅读工具教程，无账号、无追踪。",
+          "icon": "./vnclub.org.png",
+          "disabledAt": "",
+          "createdAt": "2026-10-01 00:00:00"
+        },
+        {
           "id": 479,
           "name": "SakuGAL",
           "url": "https://sakugal.com",

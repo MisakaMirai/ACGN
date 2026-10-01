@@ -11,7 +11,6 @@
           "url": "https://aniimg.com",
           "description": "全年龄动漫图片，显示403说明你IP被封了。",
           "category": "term-2",
-          "isNew": false,
           "icon": "",
           "disabledAt": "2026-05-14 00:00:00",
           "createdAt": "2025-01-01 00:00:00"
@@ -121,7 +120,6 @@
           "url": "https://kumanshe.com",
           "description": "以免费国漫为主",
           "category": "term-3",
-          "isNew": false,
           "detail": "酷漫社是一家漫画免费分享以及在线浏览平台，这里有及时的新番漫画，活跃的ACG氛围，有创意的漫画师们",
           "disabledAt": "2026-05-19 00:00:00",
           "createdAt": "2025-01-01 00:00:00"
@@ -132,7 +130,6 @@
           "url": "http://haliyy.com",
           "description": "资源较全，画质较差，路线多",
           "category": "term-3",
-          "isNew": false,
           "detail": "感谢服服服鸡的投稿",
           "disabledAt": "2026-05-19 00:00:00",
           "createdAt": "2025-01-01 00:00:00"
@@ -143,7 +140,6 @@
           "url": "https://www.acg.rw",
           "description": "画质一般，播放开始有广告",
           "category": "term-3",
-          "isNew": false,
           "disabledAt": "2026-05-19 00:00:00",
           "createdAt": "2025-01-01 00:00:00"
         },
@@ -153,7 +149,6 @@
           "url": "https://acgfantuan.com",
           "description": "以新番为主，无广告",
           "category": "term-3",
-          "isNew": false,
           "detail": "以新番为主，无广告，地址发布页：https://fantuantv.com/",
           "disabledAt": "2026-05-19 00:00:00",
           "createdAt": "2025-01-01 00:00:00"
@@ -164,7 +159,6 @@
           "url": "https://arlnigdm.com",
           "description": "无广告，番剧多",
           "category": "term-3",
-          "isNew": false,
           "disabledAt": "2026-05-19 00:00:00",
           "createdAt": "2025-01-01 00:00:00"
         },
@@ -174,7 +168,6 @@
           "url": "https://www.zzzfun.com",
           "description": "有时会挂，画质较高",
           "category": "term-3",
-          "isNew": false,
           "disabledAt": "2026-05-19 00:00:00",
           "createdAt": "2025-01-01 00:00:00"
         },
@@ -184,7 +177,6 @@
           "url": "https://omofun.tv/",
           "description": "【需要下载APP】画质高，弹幕多",
           "category": "term-3",
-          "isNew": false,
           "detail": "支持安卓和IOS",
           "disabledAt": "2026-05-19 00:00:00",
           "createdAt": "2025-01-01 00:00:00"
@@ -195,7 +187,6 @@
           "url": "https://www.5dm.app",
           "description": "【推荐】更新快，画质高",
           "category": "term-3",
-          "isNew": false,
           "disabledAt": "2026-05-19 00:00:00",
           "createdAt": "2025-01-01 00:00:00"
         },
@@ -205,7 +196,6 @@
           "url": "http://sbdm.net",
           "description": "在线动漫，含表番",
           "category": "term-3",
-          "isNew": false,
           "disabledAt": "2026-05-19 00:00:00",
           "createdAt": "2025-01-01 00:00:00"
         },
@@ -215,7 +205,6 @@
           "url": "http://www.edddh.net",
           "description": "含有无修BD画质动漫",
           "category": "term-3",
-          "isNew": false,
           "disabledAt": "2026-05-19 00:00:00",
           "createdAt": "2025-01-01 00:00:00"
         },
@@ -225,7 +214,6 @@
           "url": "https://www.yhdmz.org",
           "description": "【次推荐】",
           "category": "term-3",
-          "isNew": false,
           "disabledAt": "2026-05-19 00:00:00",
           "createdAt": "2025-01-01 00:00:00"
         }
@@ -330,7 +318,6 @@
           "url": "https://acgbeo.com",
           "description": "国内某不知名本子在线阅览站",
           "category": "term-5",
-          "isNew": false,
           "detail": "需要注册登入开放搜索权限。",
           "disabledAt": "2026-05-19 00:00:00",
           "createdAt": "2025-01-01 00:00:00"
@@ -368,7 +355,6 @@
           "url": "https://hentaidude.com",
           "description": "含上世纪里番，英文字幕，不全",
           "category": "term-8",
-          "isNew": false,
           "disabledAt": "2026-05-19 00:00:00",
           "createdAt": "2025-01-01 00:00:00"
         },
@@ -378,7 +364,6 @@
           "url": "https://members.hanime.tv",
           "description": "全英文字幕，免费账号最高720P，练英语必备",
           "category": "term-8",
-          "isNew": false,
           "disabledAt": "2026-05-19 00:00:00",
           "createdAt": "2025-01-01 00:00:00"
         }
@@ -465,7 +450,6 @@
           "url": "https://kgacg.com",
           "description": "积分制，下载次数受限，含AI",
           "category": "term-6",
-          "isNew": false,
           "detail": "一个分享与储存爱的地方！！----由匿名用户提供",
           "disabledAt": "2026-05-18 00:00:00",
           "createdAt": "2025-01-01 00:00:00"
@@ -476,7 +460,6 @@
           "url": "https://bbs.cloudwl.com",
           "description": "综合资源交流站",
           "category": "term-6",
-          "isNew": false,
           "detail": "感谢こんばんは的投稿",
           "disabledAt": "2026-05-18 00:00:00",
           "createdAt": "2025-01-01 00:00:00"
@@ -487,7 +470,6 @@
           "url": "https://hikarinoakari.com",
           "description": "推荐，ACG高音质音乐CD下载，有广告",
           "category": "term-6",
-          "isNew": false,
           "disabledAt": "2026-05-18 00:00:00",
           "createdAt": "2025-01-01 00:00:00"
         },
@@ -497,7 +479,6 @@
           "url": "http://cn.anmaxjp.com/mobile.html",
           "description": "以里番度盘下载为主，最早到09年",
           "category": "term-6",
-          "isNew": false,
           "disabledAt": "2026-05-18 00:00:00",
           "createdAt": "2025-01-01 00:00:00"
         },
@@ -507,7 +488,6 @@
           "url": "https://bbs.saraba1st.com/2b/forum.php",
           "description": "著名游戏动漫论坛",
           "category": "term-6",
-          "isNew": false,
           "disabledAt": "2026-05-18 00:00:00",
           "createdAt": "2025-01-01 00:00:00"
         },
@@ -517,7 +497,6 @@
           "url": "https://south.yuanacg.com",
           "description": "以galgame为主，需要注册【地址发布页】",
           "category": "term-6",
-          "isNew": false,
           "disabledAt": "2026-05-19 00:00:00",
           "createdAt": "2025-01-01 00:00:00"
         },
@@ -527,7 +506,6 @@
           "url": "http://www.futa404.com",
           "description": "ACG资讯站，知名度较大",
           "category": "term-6",
-          "isNew": false,
           "disabledAt": "2026-05-19 00:00:00",
           "createdAt": "2025-01-01 00:00:00"
         },
@@ -537,7 +515,6 @@
           "url": "https://nicemoe01.github.io",
           "description": "可自由发布资源的社区，目前已关闭注册。",
           "category": "term-6",
-          "isNew": false,
           "disabledAt": "2026-05-19 00:00:00",
           "createdAt": "2025-01-01 00:00:00"
         },
@@ -547,7 +524,6 @@
           "url": "https://hxcy.moe",
           "description": "熟人邀请机制注册，注册后开放绅士内容",
           "category": "term-6",
-          "isNew": false,
           "detail": "不要用代理。",
           "disabledAt": "2026-05-19 00:00:00",
           "createdAt": "2025-01-01 00:00:00"
@@ -558,7 +534,6 @@
           "url": "https://www.ponpomu.com",
           "description": "百合控聚集地！",
           "category": "term-6",
-          "isNew": false,
           "disabledAt": "2026-05-19 00:00:00",
           "createdAt": "2025-01-01 00:00:00"
         },
@@ -568,7 +543,6 @@
           "url": "https://www.sayhuahuo.com",
           "description": "知名ACG资源论坛【答题获取邀请码】",
           "category": "term-6",
-          "isNew": false,
           "detail": "目前开放注册，邀请码需要答题。",
           "disabledAt": "2026-05-19 00:00:00",
           "createdAt": "2025-01-01 00:00:00"
@@ -586,7 +560,6 @@
           "url": "https://galge.fun/subjects",
           "description": "中国著名galgame图书馆&amp;评分网站",
           "category": "term-9",
-          "isNew": false,
           "disabledAt": "2026-05-18 00:00:00",
           "createdAt": "2025-01-01 00:00:00"
         }
@@ -623,7 +596,6 @@
           "url": "https://www.galxp.com",
           "description": "免费分享galgame汉化和生肉资源，更新勤快",
           "category": "term-7",
-          "isNew": false,
           "detail": "免费分享galgame汉化和生肉资源，更新勤快（感谢nilihity的投稿~）",
           "disabledAt": "2026-05-19 00:00:00",
           "createdAt": "2025-01-01 00:00:00"
@@ -634,7 +606,6 @@
           "url": "https://xiayuge.top",
           "description": "主要以收录galgame的资源网站",
           "category": "term-7",
-          "isNew": false,
           "detail": "感谢zhhfate的投稿",
           "disabledAt": "2026-05-19 00:00:00",
           "createdAt": "2025-01-01 00:00:00"
@@ -645,7 +616,6 @@
           "url": "https://ercygame.com",
           "description": "生肉硬盘站，所有游戏均为PC版",
           "category": "term-7",
-          "isNew": false,
           "disabledAt": "2026-05-19 00:00:00",
           "createdAt": "2025-01-01 00:00:00"
         },
@@ -655,7 +625,6 @@
           "url": "https://05fx.glitch.me",
           "description": "某岛学家建的gal资源站",
           "category": "term-7",
-          "isNew": false,
           "disabledAt": "2026-05-19 00:00:00",
           "createdAt": "2025-01-01 00:00:00"
         },
@@ -665,7 +634,6 @@
           "url": "https://bbs.zdfx.net",
           "description": "终点论坛。欢迎来到终点论坛，这里热爱和平，以二次元相关话题为主，努力打造舒心畅快的聊天环境，本论坛是唯一地址，您的支持是论坛的动力",
           "category": "term-7",
-          "isNew": false,
           "detail": "目前需要科学上网。",
           "disabledAt": "2026-05-19 00:00:00",
           "createdAt": "2025-01-01 00:00:00"

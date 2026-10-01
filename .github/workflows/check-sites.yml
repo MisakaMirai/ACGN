@@ -1,0 +1,130 @@
+name: Check sites availability
+
+on:
+  schedule:
+    # 每周一 04:23 UTC 探活一轮
+    - cron: '23 4 * * 1'
+  workflow_dispatch:
+    inputs:
+      threshold:
+        description: '连续判定为失效的轮次阈值'
+        required: false
+        default: '2'
+      notify:
+        description: '是否创建/更新 Issue 报告'
+        type: boolean
+        required: false
+        default: true
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: check-sites
+  cancel-in-progress: false
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Restore previous probe state
+        uses: actions/cache/restore@v4
+        with:
+          path: .probe-state/site-health-state.json
+          key: site-probe-state-${{ github.run_id }}
+          restore-keys: |
+            site-probe-state-
+
+      - name: Probe sites
+        id: probe
+        run: |
+          mkdir -p .probe-state reports
+          node scripts/check-sites.js \
+            --threshold "${{ inputs.threshold || 2 }}" \
+            --state .probe-state/site-health-state.json \
+            --report reports/site-health.md
+
+      - name: Upload report artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: site-health-report-${{ github.run_number }}
+          path: reports/
+          retention-days: 30
+
+      - name: Save probe state
+        uses: actions/cache/save@v4
+        with:
+          path: .probe-state/site-health-state.json
+          key: site-probe-state-${{ github.run_id }}
+
+      - name: Publish report to issue
+        if: inputs.notify != false
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs')
+            const body = fs.readFileSync('reports/site-health.md', 'utf8')
+            const marker = '<!-- site-health-report -->'
+            const payload = `${marker}\n\n${body}`
+
+            // 标签不存在时先建好，否则带 labels 创建 Issue 会返回 422
+            try {
+              await github.rest.issues.getLabel({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                name: 'site-health',
+              })
+            } catch {
+              await github.rest.issues.createLabel({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                name: 'site-health',
+                color: '0e8a16',
+                description: '站点探活自动报告',
+              })
+            }
+
+            const { data: issues } = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              labels: 'site-health',
+              per_page: 1,
+            })
+
+            if (issues.length > 0) {
+              await github.rest.issues.update({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issues[0].number,
+                body: payload,
+              })
+              core.info(`已更新 Issue #${issues[0].number}`)
+            } else {
+              const created = await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title: `站点探活报告（${new Date().toISOString().slice(0, 10)}）`,
+                body: payload,
+                labels: ['site-health'],
+              })
+              core.info(`已创建 Issue #${created.data.number}`)
+            }
+
+      - name: Fail when confirmed dead sites exist
+        if: always() && steps.probe.outputs.confirmed-dead-count != '0'
+        run: |
+          echo "::error::检测到 ${{ steps.probe.outputs.confirmed-dead-count }} 个连续失效站点，详见探活报告"
+          exit 1

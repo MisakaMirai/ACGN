@@ -11,6 +11,7 @@
           "url": "https://www.2dwallpapers.com",
           "description": "壁纸分享平台，提供高质量二次元壁纸下载",
           "category": "term-2",
+          "detail": "以二次元、动漫与插画主题为主的壁纸站，按角色、作品和风格分类浏览，可下载壁纸原图，适合找桌面与手机用的动漫向壁纸；站点连通性一般，DNS 解析失败时需换网络环境再试。",
           "icon": "./www.2dwallpapers.com.png",
           "disabledAt": "",
           "createdAt": "2026-05-11 00:00:00"
@@ -21,6 +22,7 @@
           "url": "https://help.pixiv.digital",
           "description": "pixiv帮助中文站",
           "category": "term-2",
+          "detail": "pixiv 官方帮助中心的中文版（简体中文），按常见疑问、注册与登录、pixiv PREMIUM 高级会员、投稿与作品管理、搜索与浏览、账号安全及隐私等主题整理官方说明，并可在简体中文、English、日本語、한국어、繁體中文之间切换。",
           "icon": "./help.pixiv.digital.png",
           "disabledAt": "",
           "createdAt": "2026-05-08 00:00:00"
@@ -31,6 +33,7 @@
           "url": "https://wallhaven.cc",
           "description": "壁纸站，需登录查看全部内容，图片较多",
           "category": "term-2",
+          "detail": "老牌高清壁纸站，无需注册即可浏览，支持按最新、Toplist、随机三种方式查找，也能用标签与关键词检索（如 Japan、manga、Frieren 等标签墙），另有用户投稿与论坛板块。",
           "icon": "./wallhaven.cc.png",
           "disabledAt": "",
           "createdAt": "2025-01-01 00:00:00"
@@ -41,6 +44,7 @@
           "url": "https://pic.tjsky.net/pixiv",
           "description": "某个人站，每天会搬运P站排名前50图",
           "category": "term-2",
+          "detail": "ACG 萌的 pixiv 搬运页（共享盘），每天整理并搬运 pixiv 站内排行榜前 50 的图片作品，以共享盘形式提供；页面为前端应用，需开启 JavaScript 才能加载内容。",
           "icon": "./pic.tjsky.net.png",
           "disabledAt": "",
           "createdAt": "2025-01-01 00:00:00"
@@ -51,6 +55,7 @@
           "url": "https://hentai-img.com",
           "description": "18R很全动漫图片，显示403说明你IP被封了。",
           "category": "term-2",
+          "detail": "18R 动漫图片站，收录范围较全，带标签浏览与搜索功能；对非浏览器访问的风控较严，出现 403 通常说明访问来源 IP 被拦截，退出代理或换网络环境后再试即可。",
           "icon": "./hentai-img.com.png",
           "disabledAt": "",
           "createdAt": "2025-01-01 00:00:00"
@@ -61,6 +66,7 @@
           "url": "https://anime-pictures.net",
           "description": "全年龄的动漫图片和壁纸",
           "category": "term-2",
+          "detail": "全年龄向的动漫图片与壁纸站，收录超过 70 万张作品，支持按标签（Tags）、角色与画师检索浏览；站内提供注册登录、收藏与评论功能，并设有图片版权申请（RIGHTS request）入口，支持中英俄日德等多语言界面。",
           "icon": "./anime-pictures.net.png",
           "disabledAt": "",
           "createdAt": "2025-01-01 00:00:00"
@@ -71,6 +77,7 @@
           "url": "https://illusioncards.booru.org/index.php?page=post&s=list",
           "description": "日本著名i社角色卡下载站",
           "category": "term-2",
+          "detail": "日本 ILLUSION（i社）作品的角色卡下载与浏览站，集中收录历代作品的角色卡资源，常作为游戏相关 CG 与设定的补充来源；对非浏览器访问较敏感，可能返回 403。",
           "icon": "./illusioncards.booru.org.png",
           "disabledAt": "",
           "createdAt": "2025-01-01 00:00:00"
@@ -158,6 +165,7 @@
           "url": "https://www.pixiv.net",
           "description": "pixiv是提供插画等作品的投稿、阅览服务的「插画交流网站」。这里有各种各样不同风格的投稿作品，我们还会举办官方、用户企画的各种比赛。",
           "category": "term-2",
+          "detail": "全球最大的插画交流社区之一，支持浏览与投稿插画、漫画及小说。站内提供按时间与题材划分的排行榜、官方与用户企划的比赛（Contests）、约稿（Requests）、收藏夹，以及 How to draw 教程与创意板块。",
           "icon": "./www.pixiv.net.png",
           "disabledAt": "",
           "createdAt": "2025-01-01 00:00:00"
@@ -170,11 +178,34 @@
       "icon": "./play.svg",
       "sites": [
         {
+          "id": 482,
+          "name": "花子动漫",
+          "url": "https://www.huazidm.com/",
+          "description": "免费在线动漫观看平台",
+          "category": "term-3",
+          "detail": "基于苹果 CMS 的在线追番站，分区收录连载动画、TV 动画、剧场版、美漫、特摄与韩剧，首页提供按星期排布的追更周表与具体更新时段，可直接在线观看并保存观看记录；弹幕功能需搭配其 APP 使用。",
+          "icon": "./www.huazidm.com.png",
+          "disabledAt": "",
+          "createdAt": "2026-10-03 00:00:00"
+        },
+        {
+          "id": 483,
+          "name": "anibk",
+          "url": "https://www.anibk.com/",
+          "description": "番组百科之动漫科，番剧收藏整理站",
+          "category": "term-3",
+          "detail": "「番组百科」之动漫科（AniBK），以收藏和整理的方式展示番剧资料：收录每部动画的详细信息、截图与视频预览，并可按当季新番、每日推荐、排行榜、角色列表、OP/ED 列表等维度浏览，支持站内评分。",
+          "icon": "./www.anibk.com.ico",
+          "disabledAt": "",
+          "createdAt": "2026-10-03 00:00:00"
+        },
+        {
           "id": 460,
           "name": "嗷呜动漫",
           "url": "https://www.aowu.tv",
           "description": "免费在线动漫观看平台",
           "category": "term-3",
+          "detail": "面向追番的免费在线动漫播放站，主打更新及时、观看免费。部分请求会被站点风控拦截（返回 599），遇到时刷新页面或稍后再试即可。",
           "icon": "",
           "disabledAt": "",
           "createdAt": "2026-05-13 00:00:00"
@@ -185,6 +216,7 @@
           "url": "https://kimani.tv/?utm_source=myacgbox",
           "description": "无广告，免费无须注册，高速播放，当季动画同步更新",
           "category": "term-3",
+          "detail": "Kimani（金阿尼）日漫在线站，主打无广告、无需注册、高速播放，并同步更新当季动画。当前域名在部分网络环境下解析不稳定，可能需要更换 DNS 或使用代理访问。",
           "icon": "./kimani.tv.png",
           "disabledAt": "",
           "createdAt": "2025-01-01 00:00:00"
@@ -195,6 +227,7 @@
           "url": "https://eacg.net",
           "description": "画质一般，内容较全",
           "category": "term-3",
+          "detail": "以耽美与日漫为主的在线播放站，提供高清原碟、日漫、国语动漫、剧场版以及女频、日韩剧、美漫等分区；画质与线路较为普通但内容比较全，另提供播放客户端下载、观看记录、收藏与积分会员体系。",
           "icon": "./eacg.net.png",
           "disabledAt": "",
           "createdAt": "2025-01-01 00:00:00"
@@ -205,6 +238,7 @@
           "url": "https://www.opacg.com",
           "description": "某不知名小站，但更新勤快",
           "category": "term-3",
+          "detail": "体量不大的在线动漫小站，更新比较勤快，适合作为追番补番的备用源。站点路径调整较频繁，首页打不开时可尝试站内搜索或等待恢复。",
           "icon": "./www.opacg.com.png",
           "disabledAt": "",
           "createdAt": "2025-01-01 00:00:00"
@@ -215,6 +249,7 @@
           "url": "https://ebb.io",
           "description": "需要登入后才能观看，实时更新新番！",
           "category": "term-3",
+          "detail": "主打新番与旧番在线试看的动漫站，站点标题即为「新番旧番线上试看」；番剧更新比较实时，但部分播放需要登录账号后才能观看。",
           "icon": "./ebb.io.png",
           "disabledAt": "",
           "createdAt": "2025-01-01 00:00:00"
@@ -247,6 +282,7 @@
           "url": "https://anime.nicovideo.jp",
           "description": "日本bilibili",
           "category": "term-3",
+          "detail": "Niconico（ニコニコ）的动画综合站「Nアニメ」，把免费动画、动画直播、当季与来季番剧、排行榜与 50 音索引、声优信息以及漫画、插画内容集中在同一入口；部分内容需要 Niconico 账号登录。",
           "icon": "./anime.nicovideo.jp.png",
           "disabledAt": "",
           "createdAt": "2025-01-01 00:00:00"
@@ -257,6 +293,7 @@
           "url": "https://www.acfun.cn/bangumilist",
           "description": "AcFun弹幕视频网 - 认真你就输啦 (?ω?)ノ- ( ゜- ゜)つロ",
           "category": "term-3",
+          "detail": "AcFun 的番剧列表页，可在站内浏览番剧与相关视频，并按动画、娱乐、生活、音乐、游戏等分类检索。作为老牌弹幕站，番剧内容以独家与用户投稿为主，部分新番资源并不完整。",
           "icon": "./www.acfun.cn.png",
           "disabledAt": "",
           "createdAt": "2025-01-01 00:00:00"
@@ -267,6 +304,7 @@
           "url": "https://www.bilibili.com/anime",
           "description": "bilibili是国内知名的视频弹幕网站，这里有最及时的动漫新番，最棒的ACG氛围，最有创意的Up主。大家可以在这里找到许多欢乐。",
           "category": "term-3",
+          "detail": "B 站的番剧频道，收录正版引进与自制番剧，支持追番管理、更新表、标签筛选（原创／漫画改／小说改／游戏改、特摄等）与评分排序，并提供热播榜和按年份索引；大量热门番剧需要大会员或付费解锁。",
           "icon": "./www.bilibili.com.png",
           "disabledAt": "",
           "createdAt": "2025-01-01 00:00:00"
@@ -277,6 +315,7 @@
           "url": "https://www.agefans.cc",
           "description": "AGE动漫专注于整理高质量动漫资源，提供百度网盘下载。",
           "category": "term-3",
+          "detail": "以整理动漫资源为主的站，按番剧分类整理并提供百度网盘下载。站点使用非标准证书配置，部分网络环境会因证书域名不匹配而无法直接访问。",
           "icon": "./www.agefans.cc.png",
           "disabledAt": "",
           "createdAt": "2025-01-01 00:00:00"
@@ -294,6 +333,7 @@
           "url": "https://mangacopy.com",
           "description": "漫画站",
           "category": "term-12",
+          "detail": "拷贝漫画是面向全球华人的在线漫画站，覆盖日漫、国漫与同人志（含 18 禁）分类，提供发现、专题、题材与排行榜等浏览方式；因访问限制站点同时放出多个加速与备用入口，页脚也说明了作品来源与版权处理规则。",
           "icon": "./mangacopy.com.png",
           "disabledAt": "",
           "createdAt": "2026-05-14 00:00:00"
@@ -315,6 +355,7 @@
           "url": "https://www.colamanhua.com",
           "description": "更新较快，加载时间短，包含国漫日漫",
           "category": "term-12",
+          "detail": "以更新快、加载轻量见长的在线漫画站，收录国漫与日漫资源，图片体积较小、翻页响应快；站点连通性一般，偶尔会出现访问超时。",
           "icon": "./www.colamanhua.com.png",
           "disabledAt": "",
           "createdAt": "2025-01-01 00:00:00"
@@ -336,6 +377,7 @@
           "url": "https://www.2animx.com",
           "description": "可以找到相对齐全的冷门漫画或限制级漫画，但有的不能看，有的没更新",
           "category": "term-12",
+          "detail": "综合类在线漫画站，收录相对齐全，冷门作品与限制级漫画比较好找；部分作品存在缺章或久未更新的情况，遇到看不了的条目建议换站补齐。",
           "icon": "./www.2animx.com.png",
           "disabledAt": "",
           "createdAt": "2025-01-01 00:00:00"
@@ -357,6 +399,7 @@
           "url": "http://www.guoman8.cc",
           "description": "含日漫，更新很频繁，和正版速度基本一致",
           "category": "term-12",
+          "detail": "以国漫为主、同时收录日漫的在线漫画站，更新比较频繁，与正版进度基本同步；对非浏览器访问有风控，直接抓取常返回 403。",
           "icon": "./www.guoman8.cc.png",
           "disabledAt": "",
           "createdAt": "2025-01-01 00:00:00"
@@ -367,6 +410,7 @@
           "url": "https://www.mangabz.com",
           "description": "部分长久未更新",
           "category": "term-12",
+          "detail": "老牌日漫在线阅读站，可按题材分类（热血、恋爱、校园、冒险、科幻、生活等）浏览，并提供人气推荐与热度排行、阅读历史与收藏功能；热门作品更新较快，但部分作品长期停更。",
           "icon": "./www.mangabz.com.png",
           "disabledAt": "",
           "createdAt": "2025-01-01 00:00:00"
@@ -377,6 +421,7 @@
           "url": "http://www.dm5.com",
           "description": "需要开全局代理，部分漫画更新很慢",
           "category": "term-12",
+          "detail": "覆盖国漫、日漫、港台与韩漫的在线漫画站，提供分类浏览、排行榜、搜漫引擎全网搜索、阅读历史云端同步，并支持客户端 APP；部分线路需要代理才能稳定加载。",
           "icon": "./www.dm5.com.png",
           "disabledAt": "",
           "createdAt": "2025-01-01 00:00:00"
@@ -387,6 +432,7 @@
           "url": "https://manga.bilibili.com",
           "description": "B站正版漫画",
           "category": "term-12",
+          "detail": "B 站正版漫画阅读平台，收录官方连载作品与漫画人原创投稿，按校园、恋爱、古风、玄幻等题材推荐热门与新作；正版作品多数需要付费解锁。",
           "icon": "./manga.bilibili.com.png",
           "disabledAt": "",
           "createdAt": "2025-01-01 00:00:00"
@@ -408,6 +454,7 @@
           "url": "https://www.webtoons.com/",
           "description": "漫画平台，包含多种语言版本的漫画内容",
           "category": "term-12",
+          "detail": "韩国 Naver 旗下的 WEBTOON 平台，跨 23 种题材收录大量条漫、漫画与韩漫作品，提供 ORIGINALS 原创作品、分类浏览、排行榜与 CANVAS 创作入口，可在网页或官方 APP 阅读与下载。",
           "icon": "./www.webtoons.com.ico",
           "disabledAt": "",
           "createdAt": "2026-05-17 00:00:00"
@@ -435,6 +482,7 @@
           "url": "http://riven.cfd",
           "description": "松鼠症倉庫【發佈頁】",
           "category": "term-5",
+          "detail": "松鼠症倉庫的发布页（Cloudflare 站点），每日更新并把新资源放在页面顶部链接里，需要用迅雷 APP 抓取，下载后解压本地观看；页面本身不含资源列表。",
           "icon": "./riven.cfd.png",
           "disabledAt": "",
           "createdAt": "2025-01-01 00:00:00"
@@ -445,6 +493,7 @@
           "url": "https://www.wnacg.com",
           "description": "日韩本子都有，可预览",
           "category": "term-5",
+          "detail": "老牌的本子汉化分享站，分类覆盖同人志、杂志与短篇、单行本、CG 画集、3D 漫画、Cosplay 与韩漫合集，汉化与日语原文双版本，多数作品可先预览再决定下载；另设论坛与 AI 脱衣、换脸类内容板块。",
           "icon": "./www.wnacg.com.png",
           "disabledAt": "",
           "createdAt": "2025-01-01 00:00:00"
@@ -477,6 +526,7 @@
           "url": "https://asmhentai.com",
           "description": "英文界面，本子较全",
           "category": "term-5",
+          "detail": "英文界面的在线本子阅读站，站内宣称收录超过 40 万个本子与同人志图集，支持随机浏览以及按 Parodies、Tags、Characters、Artists、Groups 分类检索，并在页面上提供 IMHentai、HentaiRox 等镜像站入口。",
           "icon": "./asmhentai.com.png",
           "disabledAt": "",
           "createdAt": "2025-01-01 00:00:00"
@@ -537,6 +587,7 @@
           "url": "https://h-ciyuan.com",
           "description": "里番全汉化，画质清晰，无需登录",
           "category": "term-8",
+          "detail": "面向成人向内容的综合站，分类包含里番系列合集、成人游戏、成人漫画、同人动画与 Flash 小黄油，并提供相关内容的在线浏览与下载；站内用标签系统整理内容，资源以合集形式更新为主。",
           "icon": "./h-ciyuan.com.png",
           "disabledAt": "",
           "createdAt": "2025-01-01 00:00:00"
@@ -547,6 +598,7 @@
           "url": "https://hentai.tv",
           "description": "无广告|英文字幕",
           "category": "term-8",
+          "detail": "以 HD 里番为主的在线播放站，可按标题、品牌与标签检索，提供无修版本并保持每日更新；站内另有 AI 生成内容板块与播放列表（Library），浏览时会遇到浏览器与年龄限制提示。",
           "icon": "./hentai.tv.png",
           "disabledAt": "",
           "createdAt": "2025-01-01 00:00:00"
@@ -557,6 +609,7 @@
           "url": "https://muchohentai.com",
           "description": "💡最高1080P|英文字幕",
           "category": "term-8",
+          "detail": "以 HD 里番为主的免费在线播放站，提供系列列表（Series List）与题材分类（Genre List）、新作发布与每日随机视频、更新日历及片段预览，并设有 Hentai Games 与 AI 主题板块，支持电脑与移动端观看。",
           "icon": "./muchohentai.com.png",
           "disabledAt": "",
           "createdAt": "2025-01-01 00:00:00"
@@ -567,6 +620,7 @@
           "url": "https://hentaimama.io",
           "description": "英文字幕|很全|画质无法调，学英语的可以看",
           "category": "term-8",
+          "detail": "以英文字幕里番与 3D 作品为主的免费播放站，站内标注有无修（Uncensored）版本，可按系列列表与题材分类浏览，片库数量较多；播放器画质档位固定、无法在站内调节。",
           "icon": "./hentaimama.io.png",
           "disabledAt": "",
           "createdAt": "2025-01-01 00:00:00"
@@ -577,6 +631,7 @@
           "url": "https://avbebe.com/archives/category/h%e5%8b%95%e7%95%ab%e5%bd%b1%e7%89%87",
           "description": "中文繁体字幕，连下个月预告都有",
           "category": "term-8",
+          "detail": "AVbebe 的动画（動畫卡通）分类页，以中文繁体字幕的里番及相关影片为主，更新紧跟片源，甚至会提前放出下个月的预告；对非浏览器访问有风控，直接抓取会返回 403。",
           "icon": "./avbebe.com.png",
           "disabledAt": "",
           "createdAt": "2025-01-01 00:00:00"
@@ -617,6 +672,7 @@
           "description": "动漫资源站",
           "icon": "./anibt.net.png",
           "category": "term-6",
+          "detail": "面向字幕组与追番用户的动画资源站，首页按周一至周日给出放送时间表，并分设最新资源、开坑计划与字幕组板块；每部番剧可查看集数、评分与种子数量，支持按番剧、字幕组、标签搜索以及订阅管理与我的订阅。",
           "disabledAt": "",
           "createdAt": "2026-05-26 00:00:00"
         },
@@ -626,6 +682,7 @@
           "url": "https://aqua-aria.company",
           "description": "二次元资源分享",
           "category": "term-6",
+          "detail": "以漫画、动画与轻小说为主的二次元资源分享站，作品页按类型、分类、连载状态、作者与出版社整理册数和更新日期，并以磁力链接形式提供下载。",
           "icon": "./aqua-aria.company.png",
           "disabledAt": "",
           "createdAt": "2026-05-07 00:00:00"
@@ -647,6 +704,7 @@
           "url": "https://www.vikacg.com",
           "description": "免费ACG综合资源，但需要做任务赚积分下载",
           "category": "term-6",
+          "detail": "提供免费 ACG 综合资源的下载站，覆盖动画、漫画、游戏与音乐等分类；下载需要积分，而积分需通过完成站内任务获得，因此更适合愿意花时间做任务的用户；对非浏览器访问有风控，直接抓取返回 403。",
           "icon": "./www.vikacg.com.png",
           "disabledAt": "",
           "createdAt": "2025-01-01 00:00:00"
@@ -657,6 +715,7 @@
           "url": "https://f95zone.to",
           "description": "建议英语四级，ACG综合资源下载",
           "category": "term-6",
+          "detail": "欧美向的 18R 综合资源论坛，板块覆盖成人游戏（含 AVG／视觉小说，PC 与 Android）、漫画、Mod 与作弊工具等，帖子量大、更新频繁；站内检索与浏览大量内容需要一定的英语阅读能力。",
           "icon": "./f95zone.to.png",
           "disabledAt": "",
           "createdAt": "2025-01-01 00:00:00"
@@ -678,6 +737,7 @@
           "url": "https://i.iacg.site",
           "description": "本子里番色图游戏综合资源博客",
           "category": "term-6",
+          "detail": "以推荐而非索引为主的个人资源博客，设置「每日一本」「每日一图」「每周一剧」等固定栏目，另含插画集与 Pixiv 画师鉴赏、里番与 Galgame 推荐、同人音声和站点维护记录，并提供站内纠错计划、Telegram 频道与群组。",
           "icon": "./i.iacg.site.png",
           "disabledAt": "",
           "createdAt": "2025-01-01 00:00:00"
@@ -688,6 +748,7 @@
           "url": "https://hentaibanchi.com",
           "description": "18R二次元3d游戏下载|Ads下载|需要梯子|",
           "category": "term-6",
+          "detail": "18R 二次元（3D）游戏下载站，资源按日本同人志番号与 maker 分类整理（如［d_827918］、電脳ヒロインズ等），条目内标注配信日期与文件容量并附评论；访问通常需要代理。",
           "icon": "./hentaibanchi.com.png",
           "disabledAt": "",
           "createdAt": "2025-01-01 00:00:00"
@@ -698,6 +759,7 @@
           "url": "https://bbs.sumisora.net",
           "description": "早期核心gal玩家聚集地",
           "category": "term-6",
+          "detail": "面向 Galgame 玩家的早期中文论坛，版块以游戏区与相关资源、交流讨论为主，站内还办过 Galgame 角色投票等活动；页面为老式 GBK 编码，用现代浏览器打开可能出现乱码。",
           "icon": "./bbs.sumisora.net.png",
           "disabledAt": "",
           "createdAt": "2025-01-01 00:00:00"
@@ -708,6 +770,7 @@
           "url": "https://www.keyfc.net/bbs",
           "description": "Key社游戏专门论坛",
           "category": "term-6",
+          "detail": "Key 社（Key／Visual Arts）作品的专门论坛，聚集《Key》系列游戏的玩家与资源讨论，兼收与 Key 相关的同人、资讯与汉化内容；站点响应较慢，访问不太稳定。",
           "icon": "./www.keyfc.net.png",
           "disabledAt": "",
           "createdAt": "2025-01-01 00:00:00"
@@ -718,6 +781,7 @@
           "url": "https://bbs2.seikuu.com",
           "description": "论坛出了几位良心的汉化者而出名",
           "category": "term-6",
+          "detail": "以 ACGMN 为名的综合 ACG 论坛，版块覆盖动画、漫画、游戏、音乐、轻小说与 Galgame，站内设有强推、精品资源与二次元内容分区；页面提示主站地址已变更，bbs4 为当前入口，表格版对浏览器与编码兼容性较差。",
           "icon": "./bbs2.seikuu.com.png",
           "disabledAt": "",
           "createdAt": "2025-01-01 00:00:00"
@@ -728,6 +792,7 @@
           "url": "https://bbs.nga.cn",
           "description": "综合类玩家社区",
           "category": "term-6",
+          "detail": "NGA（艾泽拉斯）综合玩家社区，游戏分区之外也有动漫等 ACG 综合讨论与资源内容，是国内规模最大的兴趣社区之一；对非浏览器访问有风控，直接抓取返回 403，需要登录后才能完整浏览。",
           "icon": "./bbs.nga.cn.png",
           "disabledAt": "",
           "createdAt": "2025-01-01 00:00:00"
@@ -738,6 +803,7 @@
           "url": "https://hmoe.top",
           "description": "小众综合ACG资源网站",
           "category": "term-6",
+          "detail": "由一群热爱二次元、喜欢分享的人组成的资源分享团体站点，页面首屏就是致萌友的一封信，主打 ACG 资源聚合与分享；站点同时支持 http 与 https，打不开时把 http 换成 https 即可。",
           "icon": "./hmoe.top.png",
           "disabledAt": "",
           "createdAt": "2025-01-01 00:00:00"
@@ -748,6 +814,7 @@
           "url": "https://www.tsdm39.com/forum.php",
           "description": "人气很高，论坛非常活跃",
           "category": "term-6",
+          "detail": "以 Angel Beats! 起的国内老牌动漫论坛（Discuz 架设），同时是 TSDM 字幕组的发布阵地，设有新番、动漫勋章、搬运台、萌战等板块，以及签到打工、积分银行、头衔与勋章系统；站内已办过 16 周年坛庆，人气与活跃度都很高。",
           "icon": "./www.tsdm39.com.png",
           "disabledAt": "",
           "createdAt": "2025-01-01 00:00:00"
@@ -758,6 +825,7 @@
           "url": "https://gmgard.com",
           "description": "以发布冷门日系游戏为主，邀请注册制度",
           "category": "term-6",
+          "detail": "以二次元资源分享与交流为主的社区，设有资源列表、汉化组专区、意见建议、投稿与求物版，资源分动画、游戏、漫画、画集、声乐、绘画等分类并附标签；采用邀请注册制，近期还上线了 AI 视频生成站点。",
           "icon": "./gmgard.com.png",
           "disabledAt": "",
           "createdAt": "2025-01-01 00:00:00"
@@ -768,6 +836,7 @@
           "url": "https://www.acgcbk.vip",
           "description": "面码藏宝库，现阶段还不需要邀请码。",
           "category": "term-6",
+          "detail": "以「面码藏宝库」为特色的 ACG 资源站，曾长期采用邀请码注册，现阶段注册暂不需要邀请码即可加入；资源以番剧、动画与同人内容为主，对非浏览器访问有风控。",
           "icon": "./www.acgcbk.vip.png",
           "disabledAt": "",
           "createdAt": "2025-01-01 00:00:00"
@@ -778,6 +847,7 @@
           "url": "https://ecchi.iwara.tv",
           "description": "日本著名原创R18-MMD鉴赏交流平台",
           "category": "term-6",
+          "detail": "日本知名的 R18 MMD 视频站，聚集大量原创三维动画与用户投稿，以鉴赏和交流为主；当前域名需登录后浏览，首页为前端应用，需开启 JavaScript 才能加载内容。",
           "icon": "./ecchi.iwara.tv.png",
           "disabledAt": "",
           "createdAt": "2025-01-01 00:00:00"
@@ -854,6 +924,7 @@
           "url": "https://cangku.moe",
           "description": "绅士仓库",
           "category": "term-6",
+          "detail": "以网盘资源形式分享二次元内容的仓库型站点，收录本子、同人志等资源；首页内容依赖脚本动态加载，直接访问可能看不到资源列表，需要登录或在站内检索。",
           "icon": "./cangku.moe.png",
           "disabledAt": "",
           "createdAt": "2025-01-01 00:00:00"
@@ -864,6 +935,7 @@
           "url": "https://bbs.kfmax.com",
           "description": "绯月是一个以动漫、游戏、音乐、绘画等为主题的论坛。",
           "category": "term-6",
+          "detail": "以动漫、游戏、音乐、绘画等为主题的综合型中文论坛，GalGame 与 ACG 资源分享是主要板块，另设社区讨论区；站点为老式页面布局，部分内容需登录后才能查看。",
           "icon": "./bbs.kfmax.com.png",
           "disabledAt": "",
           "createdAt": "2025-01-01 00:00:00"
@@ -896,6 +968,7 @@
           "url": "https://bbs.imoutolove.me",
           "description": "ACGN综合论坛，包含资源分享、讨论区等",
           "category": "term-6",
+          "detail": "国内规模最大的 ACG 综合论坛之一，讨论区按动画、漫画、游戏、音乐、同人、轻小说与东方 Project 等分区组织，是汉化与同人资源发布、求助与交流的集中地，注册需邮箱验证。",
           "icon": "./bbs.imoutolove.me.ico",
           "disabledAt": "",
           "createdAt": "2026-05-17 00:00:00"
@@ -908,11 +981,23 @@
       "icon": "./university.svg",
       "sites": [
         {
+          "id": 481,
+          "name": "范库hub",
+          "url": "https://fankuhub.com/",
+          "description": "番库计划，番剧资料库与二次元社区",
+          "category": "term-9",
+          "detail": "番库计划是面向二次元用户的番剧资料库与社区，聚合 Bangumi、MyAnimeList、AniList 等平台的番剧评分、热度、角色与制作人员资料，提供本季新番与追番时间表、番剧索引、热度榜与评分榜，支持追番进度管理、站内评分和番剧讨论。",
+          "icon": "./fankuhub.com.png",
+          "disabledAt": "",
+          "createdAt": "2026-10-03 00:00:00"
+        },
+        {
           "id": 272,
           "name": "GAL图书馆",
           "url": "https://gallibrary.pw/index.html",
           "description": "导航处有时间馆功能，很有特色",
           "category": "term-9",
+          "detail": "Galgame 资源导航站，除资源库、榜单、签到与留言板外，最特别的是「时间馆」——可按年份时间线检索历年作品；站内还有音乐馆、对话记录与看板娘等交互玩法，页面会提示旧域名被污染、需访问新域名。",
           "icon": "./gallibrary.pw.png",
           "disabledAt": "",
           "createdAt": "2025-01-01 00:00:00"
@@ -923,6 +1008,7 @@
           "url": "https://www.hpoi.net/index/home",
           "description": "手办维基|手办大全",
           "category": "term-9",
+          "detail": "以手办、模玩资料为核心的中文百科社区，收录手办与模型（含高达、机甲模型、国模、真实模型、S.H.Figuarts、粘土人、毛绒布偶、雕像、兵人等）资料与参考价格，并支持舔图、晒图与用户投稿；站内常驻 WF 展会、厂商活动与新番资讯，可按 IP 和厂商检索模型。",
           "icon": "./www.hpoi.net.png",
           "disabledAt": "",
           "createdAt": "2025-01-01 00:00:00"
@@ -933,6 +1019,7 @@
           "url": "https://myanimelist.net",
           "description": "番剧图书馆（包含里番），英文界面",
           "category": "term-9",
+          "detail": "全球最活跃的动画与漫画数据库与社区之一，可建立个人追番／观看列表，按季度、题材与类型检索条目，并提供评分、评测、推荐、论坛、Club 与新闻，以及人物和制作公司页面；英文界面为主，收录范围包含里番与成熟向作品。",
           "icon": "./myanimelist.net.png",
           "disabledAt": "",
           "createdAt": "2025-01-01 00:00:00"
@@ -954,6 +1041,7 @@
           "url": "http://moe-gameaward.com/top.html",
           "description": "萌系游戏大赏是日本一个评选成人向美少女游戏的奖项，由萌系游戏大赏实行委员会主办。",
           "category": "term-9",
+          "detail": "日本「萌えゲーアワード」官方站，评选以美少女角色为主题的成人向与全年龄向游戏，分 R18、E15、E12 与全年龄档；除年度评选外还每月开设「月間賞」投票并公布结果，页面为日文且列表需等待脚本加载。",
           "icon": "./moe-gameaward.com.png",
           "disabledAt": "",
           "createdAt": "2025-01-01 00:00:00"
@@ -1008,6 +1096,7 @@
           "url": "https://vgmdb.net",
           "description": "欧美著名acg音乐图书馆",
           "category": "term-9",
+          "detail": "以游戏与动画音乐为主的曲库资料库，收录专辑、曲目、原声碟与歌手信息，并提供厂牌、作曲、专辑封面与曲目列表的交叉检索，是查询 ACG 音乐出处的主要站点；对非浏览器访问有风控，直接抓取返回 403。",
           "icon": "./vgmdb.net.png",
           "disabledAt": "",
           "createdAt": "2025-01-01 00:00:00"
@@ -1018,6 +1107,7 @@
           "url": "https://anidb.net",
           "description": "欧美著名日本动漫图书馆&amp;评分网站",
           "category": "term-9",
+          "detail": "以日本动画为主的数据库，收录条目的制作公司、播出信息与关联作品，并提供动画、漫画、音乐、周边等维度的关联检索与用户评分，数据以严谨著称；对非浏览器访问有风控，直接抓取返回 403。",
           "icon": "./anidb.net.png",
           "disabledAt": "",
           "createdAt": "2025-01-01 00:00:00"
@@ -1039,6 +1129,7 @@
           "url": "https://seiya-saiga.com",
           "description": "著名galgame日文版攻略和存档大全",
           "category": "term-9",
+          "detail": "自 2004 年起运营的日文攻略站，长期公开 PC 游戏与 Galgame 的攻略与存档资料，首页按作品名列出推荐攻略并持续更新；页面为日文，作品多按品牌整理。",
           "icon": "./seiya-saiga.com.png",
           "disabledAt": "",
           "createdAt": "2025-01-01 00:00:00"
@@ -1067,6 +1158,7 @@
           "url": "https://sakugal.com",
           "description": "免费galgame资源分享-珍惜每一段恋之故事，每日更新",
           "category": "term-7",
+          "detail": "以「樱之歌」名义运营的 Galgame 资源分享站，每日更新，提供安卓、iOS、Tyranor、ONS、KRKR、macOS、Linux 等平台版本与品牌标签（含 PC R18、安卓 APK、全年龄、竹子社、Key、ANIM 等），并附剧情介绍与高速直链下载。",
           "icon": "./sakugal.com.ico",
           "disabledAt": "",
           "createdAt": "2026-09-08 00:00:00"
@@ -1077,6 +1169,7 @@
           "url": "https://searchgal.homes",
           "description": "Galgame搜索站",
           "category": "term-7",
+          "detail": "面向 Galgame 的检索站，可按作品与关键词搜索各类资源；站点证书链不完整，部分环境会报 UNABLE_TO_GET_ISSUER_CERT_LOCALLY，需要在浏览器中手动信任证书或换用支持该证书的访问方式。",
           "icon": "./searchgal.homes.svg",
           "disabledAt": "",
           "createdAt": "2026-05-14 00:00:00"
@@ -1087,6 +1180,7 @@
           "url": "https://www.hikarinagi.org",
           "description": "Galgame资源站",
           "category": "term-7",
+          "detail": "面向二次元同好的 ACGN 社区，除 Galgame 资源外也分享日漫、漫画与周边情报，内容以文章形式发布，支持评论、关注与推荐流；部分内容需要积分，APP 端访问通常需要代理。",
           "icon": "./www.hikarinagi.org.png",
           "disabledAt": "",
           "createdAt": "2026-05-14 00:00:00"
@@ -1097,6 +1191,7 @@
           "url": "https://www.kungal.com",
           "description": "Galgame资源站",
           "category": "term-7",
+          "detail": "开源运营的 Galgame 论坛与资料库站点，板块分为 Galgame 全站动态、Gal 情报、Gal 资源以及资源和求助等，话题涵盖新作动态、汉化与国际化、引擎、评测与数据分析；项目在 GitHub 开源，并强调永久免费。",
           "icon": "./www.kungal.com.ico",
           "disabledAt": "",
           "createdAt": "2026-05-14 00:00:00"
@@ -1107,6 +1202,7 @@
           "url": "https://lzacg.one",
           "description": "提供GalGame汉硬直链下载，资源较多",
           "category": "term-7",
+          "detail": "提供 Galgame 汉化包与硬盘直链下载的资源站，收录量较大；硬盘直链意味着需要自行准备网盘环境，实际下载速度与可用性取决于网盘侧；对非浏览器访问有风控，直接抓取返回 403。",
           "icon": "./lzacg.one.png",
           "disabledAt": "",
           "createdAt": "2025-01-01 00:00:00"
@@ -1117,6 +1213,7 @@
           "url": "https://www.gogalgame.com",
           "description": "人气较小，但更新勤快",
           "category": "term-7",
+          "detail": "人气相对较小但更新勤快的 Galgame 资源站，条目更新比较频繁；站点证书签名链异常，部分环境会提示无法验证，访问时可能需要手动处理证书警告。",
           "icon": "./www.gogalgame.com.png",
           "disabledAt": "",
           "createdAt": "2025-01-01 00:00:00"
@@ -1127,6 +1224,7 @@
           "url": "https://acgngames.net",
           "description": "含有原创和转载的机翻。",
           "category": "term-7",
+          "detail": "Galgame 资源站，收录原创与转载的机翻作品，机翻内容适合了解剧情或试玩；当前域名解析失败（ENOTFOUND），可能已更换域名或暂时下线。",
           "icon": "./acgngames.net.png",
           "disabledAt": "",
           "createdAt": "2025-01-01 00:00:00"
@@ -1166,6 +1264,7 @@
           "url": "https://www.lightnovel.us/cn",
           "description": "以分享轻小说为主，部分内容需要注册积分制度。",
           "category": "term-18",
+          "detail": "以轻小说分享为主的站点，收录作品可在线阅读或下载；部分内容需要注册并按积分制度获取。站点证书链在部分环境无法验证，访问时需注意浏览器的安全提示。",
           "disabledAt": "",
           "createdAt": "2025-01-01 00:00:00"
         },
@@ -1175,6 +1274,7 @@
           "url": "https://vol.moe",
           "description": "支持下载轻小说epub版和漫画",
           "category": "term-18",
+          "detail": "轻小说与漫画的 EPUB／Kindle 格式下载站，除在线阅读器与分类检索（题材、语言、地区、篇幅、状态等筛选）外，还支持把漫画推送到 Kindle 等设备阅读；部分内容需要 VIP。",
           "icon": "./vol.moe.png",
           "disabledAt": "",
           "createdAt": "2025-01-01 00:00:00"
@@ -1185,6 +1285,7 @@
           "url": "https://kakuyomu.jp",
           "description": "日语正版轻小说在线阅读",
           "category": "term-18",
+          "detail": "KADOKAWA 与 はてな 合作的免费 Web 小说平台，可读可写也可投稿，题材覆盖奇幻、SF、恋爱、恐怖、推理等，二创作品同样可以发布；站内分为「ネクスト」（连载中）与「書籍化作品」（已出版）两大区块，也是日本轻小说新人投稿的主要入口之一。",
           "icon": "./kakuyomu.jp.png",
           "disabledAt": "",
           "createdAt": "2025-01-01 00:00:00"
@@ -1195,6 +1296,7 @@
           "url": "https://book.sfacg.com",
           "description": "付费正版日轻小说",
           "category": "term-18",
+          "detail": "国内规模较大的轻小说站，同时提供日本轻小说的正版付费阅读与 TXT 下载，并主推原创征文：书库按魔幻、玄幻、古风、科幻、校园、都市、游戏、同人、悬疑等分类，另有排行榜、论坛、在线漫画与 APP；正版作品需充值 VIP。",
           "icon": "./book.sfacg.com.png",
           "disabledAt": "",
           "createdAt": "2025-01-01 00:00:00"
@@ -1205,6 +1307,7 @@
           "url": "https://www.linovel.net",
           "description": "国内创办较早的轻小说纯原创平台",
           "category": "term-18",
+          "detail": "国内创办较早的轻小说平台，以纯原创作品为主，设有书库分类、排行榜与作者投稿体系，同时兼顾部分引进作品；站点响应较慢，访问可能超时。",
           "icon": "./www.linovel.net.png",
           "disabledAt": "",
           "createdAt": "2025-01-01 00:00:00"
@@ -1215,6 +1318,7 @@
           "url": "https://www.wenku8.net/index.php",
           "description": "国内著名轻小说阅读及下载的文库",
           "category": "term-18",
+          "detail": "国内最知名的轻小说文库之一，按类型、标签、出版社等入口检索，作品多为轻小说与日文小说的中文翻译，支持在线阅读与 TXT 下载；站点与国内 IP 段之间存在访问限制，直接抓取常返回 403。",
           "icon": "./www.wenku8.net.png",
           "disabledAt": "",
           "createdAt": "2025-01-01 00:00:00"
@@ -1225,6 +1329,7 @@
           "url": "https://n.novelia.cc",
           "description": "轻小说阅读平台",
           "category": "term-18",
+          "detail": "以机器翻译为核心的工具型站点，会自动生成并分享轻小说译文，适合快速浏览原文剧情梗概，或对照生僻表达；页面为前端应用，需启用 JavaScript 才能显示。",
           "icon": "./n.novelia.cc.png",
           "disabledAt": "",
           "createdAt": "2026-05-16 00:00:00"
@@ -1253,6 +1358,7 @@
           "url": "https://bangumi.moe",
           "description": "名次比起其它站点来说不大",
           "category": "term-4",
+          "detail": "以「番組、萌え（bangumi.moe）」为名的萌系资源社区站点，采用 Team／Admin／Publish 等角色制，站内提供 Guide 与帮助文档并支持繁体中文、简体中文与 English；作为萌系资源站，名次与流量不及 bangumi.tv。",
           "disabledAt": "",
           "createdAt": "2025-01-01 00:00:00"
         },
@@ -1262,6 +1368,7 @@
           "url": "https://share.acgnx.se",
           "description": "部分番剧有4K资源，非常齐全",
           "category": "term-4",
+          "detail": "以网盘分享为主的动漫资源库，收录比较齐全，部分番剧提供 4K 片源；资源通过网盘链接发放，需要对应网盘客户端才能下载；对非浏览器访问有风控，直接抓取返回 403。",
           "icon": "./share.acgnx.se.png",
           "disabledAt": "",
           "createdAt": "2025-01-01 00:00:00"
@@ -1272,6 +1379,7 @@
           "url": "https://vcb-s.com",
           "description": "国内非常著名动漫压制组，目前无法访问。",
           "category": "term-4",
+          "detail": "国内最知名的动漫压制与发布组之一（VCB-Studio），以高码率高质量片源的整理与发布闻名，作品多通过网络流出；对非浏览器访问有风控，直接抓取返回 403，站点目前也无法直接访问。",
           "disabledAt": "",
           "createdAt": "2025-01-01 00:00:00"
         },
@@ -1281,6 +1389,7 @@
           "url": "https://acg.rip",
           "description": "知名动漫bt下载资源站",
           "category": "term-4",
+          "detail": "以 BT 与磁力为主的动漫资源索引站，分类覆盖动画、日剧、综艺、音乐与合集，并提供站内搜索、发布组投稿须知与自建 Tracker；新番整理较勤，条目多为生肉或压制片源。",
           "icon": "./acg.rip.png",
           "disabledAt": "",
           "createdAt": "2025-01-01 00:00:00"
@@ -1291,6 +1400,7 @@
           "url": "http://miobt.com",
           "description": "＊MioBT＊★就是＊MioBT＊喵～",
           "category": "term-4",
+          "detail": "以喵为卖点的 BT 资源分享站，首页风格偏娱乐化；站点正文依赖脚本加载，直接抓取取不到内容，需要在浏览器中打开并按分类检索。",
           "disabledAt": "",
           "createdAt": "2025-01-01 00:00:00"
         },
@@ -1300,6 +1410,7 @@
           "url": "https://www.dongmanhuayuan.com",
           "description": "动漫下载资源站",
           "category": "term-4",
+          "detail": "面向动漫爱好者的资源分享站，提供动画、漫画、动漫音乐与游戏等内容的下载与交流；站点响应较慢，访问容易超时，可尝试镜像或备用入口。",
           "icon": "./www.dongmanhuayuan.com.ico",
           "disabledAt": "",
           "createdAt": "2026-05-26 00:00:00"
@@ -1310,6 +1421,7 @@
           "url": "http://www.comicat.org",
           "description": "漫猫动漫BT",
           "category": "term-4",
+          "detail": "以动漫 BT 与磁力为主的分享站，主要提供新番与旧番的片源下载；站点正文依赖脚本加载，直接抓取取不到内容，需在浏览器中打开查看分类与种子。",
           "disabledAt": "",
           "createdAt": "2025-01-01 00:00:00"
         },
@@ -1319,6 +1431,7 @@
           "url": "https://mikanani.me",
           "description": "蜜柑计划：新一代的动漫下载站",
           "category": "term-4",
+          "detail": "Mikan Project（蜜柑计划）是新一代动漫 BT 下载站，按星期与类型（TV 动画、剧场版、OVA 等）给出新番种子列表，支持搜索与 RSS 订阅；注册后可使用订阅功能追踪更新，并查看番剧字幕与开播信息。",
           "icon": "./mikanani.me.png",
           "disabledAt": "",
           "createdAt": "2025-01-01 00:00:00"
@@ -1329,6 +1442,7 @@
           "url": "http://www.kisssub.org",
           "description": "爱恋动漫BT下载，爱恋BT分享站，动漫下载，BT磁力，字幕组，生肉资源，BD资源",
           "category": "term-4",
+          "detail": "以字幕组与 BD、生肉资源为特色的动漫 BT 分享站，收录新番与经典番剧片源；站点正文依赖脚本加载，直接抓取取不到内容，需要在浏览器中浏览分类。",
           "disabledAt": "",
           "createdAt": "2025-01-01 00:00:00"
         },
@@ -1338,6 +1452,7 @@
           "url": "https://dmhy.anoneko.com",
           "description": "动漫花园资源网是一个动漫爱好者交流的平台,提供最及时,最全面的动画,漫画,动漫音乐,动漫下载,BT,ED,动漫游戏,资讯,分享,交流,讨论.",
           "category": "term-4",
+          "detail": "動漫花園資源網是面向动漫爱好者的资源交流站，除动画（季度全集、BD／DVD／OVA 等片源）外还收录漫画（港台与日文原版）、动漫音乐与同人音乐、日剧、RAW、游戏与特摄，并提供每周节目表、完结节目表、新番资源索引与标题格式说明。",
           "icon": "./dmhy.anoneko.com.png",
           "disabledAt": "",
           "createdAt": "2025-01-01 00:00:00"
@@ -1355,6 +1470,7 @@
           "url": "https://www.cmoa.jp",
           "description": "日本官方最全漫画电子版购买平台",
           "category": "term-14",
+          "detail": "日本规模最大的漫画电子商店（Lindor 集团），宣称收录约 198 万册漫画与电子书，除付费购买外每天更新「姓氏まごと免费」与「1 卷まるごと無料」等免费作品，并提供免费试读；页面需开启 JavaScript 才能正常浏览。",
           "icon": "./www.cmoa.jp.png",
           "disabledAt": "",
           "createdAt": "2025-01-01 00:00:00"
@@ -1365,6 +1481,7 @@
           "url": "https://www.digiket.com/game",
           "description": "日本知名ACG网上购物平台",
           "category": "term-14",
+          "detail": "日本老牌数字商品商店（電天），覆盖游戏（PC、主机、掌机）、同人志与同人软件、书籍与漫画、音乐与影像软件等，商品以数字版下载为主，支持日语与繁体中文页面；页面为 Shift_JIS 编码，用 UTF-8 环境抓取会出现乱码。",
           "icon": "./www.digiket.com.png",
           "disabledAt": "",
           "createdAt": "2025-01-01 00:00:00"
@@ -1375,6 +1492,7 @@
           "url": "https://www.suruga-ya.jp",
           "description": "日本著名中古店",
           "category": "term-14",
+          "detail": "骏河屋是日本知名的游戏、古书、CD、DVD 与周边回收寄售连锁店，线上同时销售最新与怀旧复古游戏、书籍漫画、同人志与 BL、手办模型、卡牌等；设有新品入库、预约与专题，也可以直接寄售家中藏品。",
           "icon": "./www.suruga-ya.jp.png",
           "disabledAt": "",
           "createdAt": "2025-01-01 00:00:00"
@@ -1385,6 +1503,7 @@
           "url": "https://a.sofmap.com",
           "description": "日本知名ACG网上购物平台",
           "category": "term-14",
+          "detail": "Sofmap 集团旗下的秋叶原系零售平台（AKIBAソフマップ／Sofmap），销售 PC 周边、手办模型、影音与家电等多品类，是日本规模最大的动漫游戏连锁零售体系之一，站内分多个分站并有会员折扣与积分活动；页面为 Shift_JIS 编码，抓取时容易乱码。",
           "icon": "./a.sofmap.com.png",
           "disabledAt": "",
           "createdAt": "2025-01-01 00:00:00"
@@ -1395,6 +1514,7 @@
           "url": "http://gyutto.com",
           "description": "日本知名ACG网上购物平台",
           "category": "term-14",
+          "detail": "以同人志与同人商品为主的日本电商平台，同时经营游戏、漫画与成年（18R）内容，并区分男性向与女性向分类；页面为 Shift_JIS 编码，直接抓取会出现乱码。",
           "icon": "./gyutto.com.png",
           "disabledAt": "",
           "createdAt": "2025-01-01 00:00:00"
@@ -1405,6 +1525,7 @@
           "url": "https://www.amiami.jp",
           "description": "以手办为主的网购平台",
           "category": "term-14",
+          "detail": "AmiAmi 是日本以手办、模型为中心的宅文化购物平台，商品覆盖 Figure、模型、扭蛋、食玩、卡牌与同人周边，支持新品预约、到店取货与海外直邮；对非浏览器访问有风控，直接抓取返回 403。",
           "icon": "./www.amiami.jp.png",
           "disabledAt": "",
           "createdAt": "2025-01-01 00:00:00"
@@ -1415,6 +1536,7 @@
           "url": "https://ec.toranoana.jp/tora_r/ec",
           "description": "虎の穴，日本著名ACG购买平台",
           "category": "term-14",
+          "detail": "虎之穴是日本规模最大的同人志贩售平台，区分全年龄与成年（成人向）、男性向与女性向频道，分类细到同人漫画、同人小说、CG 集、复制本（コピー誌）、同人音乐与同人软件，另售书籍、漫画、杂志、模型手办与中古品；支持后付款与邮件便寄送，并开设 VTuber、Cosplay 等专题。",
           "icon": "./ec.toranoana.jp.png",
           "disabledAt": "",
           "createdAt": "2025-01-01 00:00:00"
@@ -1481,6 +1603,7 @@
               "url": "https://www.tokyotosho.info",
               "description": "国外bt下载站",
               "category": "term-11",
+              "detail": "面向日本媒体的 BitTorrent 索引站（Tokyo Toshokan），可注册登录后提交种子，并支持搜索、RSS 输出与分类浏览，是 BT 资源检索的常用入口；站点提供多个域名与 SSL 版入口，主站在 Rizon 的 #tokyotosho 频道也有同步。",
               "icon": "./www.tokyotosho.info.png",
               "disabledAt": "",
               "createdAt": "2025-01-01 00:00:00"
@@ -1491,6 +1614,7 @@
               "url": "https://www.ggbases.com",
               "description": "ACG游戏bt下载工站",
               "category": "term-11",
+              "detail": "以 Galgame（同人游戏）为主的 BT 与磁力资源索引站，条目数达数万，站内按 bishop、uncen、slg、ntr、RPG、act 以及 Miel、Waffle 等引擎或厂牌打标签，支持中英日关键词检索，并提供有图预览与文件列表；资源以生肉居多。",
               "icon": "./www.ggbases.com.png",
               "disabledAt": "",
               "createdAt": "2025-01-01 00:00:00"
@@ -1501,6 +1625,7 @@
               "url": "https://anidex.info",
               "description": "国外bt下载站",
               "category": "term-11",
+              "detail": "以同人游戏（同人 CG）为主的 BT 与磁力索引站，是海外获取 Galgame 类资源常用的入口；站点对访问环境要求较高，抓取时常返回 502，建议使用代理并降低并发。",
               "disabledAt": "",
               "createdAt": "2025-01-01 00:00:00"
             },
@@ -1510,6 +1635,7 @@
               "url": "https://sukebei.nyaa.si",
               "description": "全球著名R18-ACG-bt下载站",
               "category": "term-11",
+              "detail": "Nyaa 旗下的 18R BT 社区（Sukebei），专注东亚系成人媒体，收录里番、同人本、FC2 内容与部分同人游戏，条目更新极其频繁并显示大小、时间、种子与做种数；搜索引擎收录量大，适合直接按关键词找磁力。",
               "icon": "./sukebei.nyaa.si.png",
               "disabledAt": "",
               "createdAt": "2025-01-01 00:00:00"
@@ -1538,6 +1664,7 @@
               "url": "https://motrix.app/zh-CN",
               "description": "支持下载HTTP|FTP|BT|磁力",
               "category": "term-15",
+              "detail": "跨平台的全功能下载管理器，一个界面内同时管理普通文件、BT 任务与插件，支持 HTTP／FTP、BitTorrent 与磁力链接，可管理 Tracker、设置限速与并发，并通过插件扩展命名、链接解析等能力；官网提供 2.0 与 1.x（Black Hole）两个版本，源码在 GitHub。",
               "icon": "./motrix.app.png",
               "disabledAt": "",
               "createdAt": "2025-01-01 00:00:00"
@@ -1548,6 +1675,7 @@
               "url": "https://www.qbittorrent.org/download.php",
               "description": "免费|BT磁力下载|P2P下载",
               "category": "term-15",
+              "detail": "免费开源的跨平台 BT 与磁力客户端，以无广告、占用低著称，支持 RSS 下载、分类与做种管理、种子创建与 WebUI 远程控制，提供 Windows、macOS、Linux 等多平台版本；对非浏览器访问有风控，官网下载页直接抓取返回 403。",
               "icon": "./www.qbittorrent.org.png",
               "disabledAt": "",
               "createdAt": "2025-01-01 00:00:00"
@@ -1558,6 +1686,7 @@
               "url": "https://github.com/c0re100/qBittorrent-Enhanced-Edition/releases",
               "description": "免费|BT磁力下载|P2P下载",
               "category": "term-15",
+              "detail": "基于 qBittorrent 的非官方增强版（c0re100/qBittorrent-Enhanced-Edition），在官方版本上追加功能，并直接在此处提供各版本安装包与更新日志；项目自述为 Unofficial，适合想要官方版之外附加能力的用户。",
               "icon": "./github.com.png",
               "disabledAt": "",
               "createdAt": "2025-01-01 00:00:00"
@@ -1608,6 +1737,7 @@
               "url": "https://t.me/SomeACG",
               "description": "每日少女壁纸推送",
               "category": "term-17",
+              "detail": "每日少女壁纸推送频道，壁纸以 Pixiv 精选的 PC 桌面为主，保持（佛系）日更、偶尔断更；频道另有配套网站 someacg.top，可在 Telegram 预览页直接取图。",
               "icon": "./t.me.png",
               "disabledAt": "",
               "createdAt": "2025-01-01 00:00:00"
@@ -1618,6 +1748,7 @@
               "url": "https://t.me/ysqkacg",
               "description": "黄油资源频道，每日推送。",
               "category": "term-17",
+              "detail": "青空次元社的 18R 游戏（黄油）资源推送频道，以每日更新片源为主；Telegram 预览页不会展开频道内容，需加入频道或群组后查看。",
               "icon": "./t.me.png",
               "disabledAt": "",
               "createdAt": "2025-01-01 00:00:00"
@@ -1628,6 +1759,7 @@
               "url": "https://t.me/SauceNAObot",
               "description": "SauceNao的tg官方机器人，发送图片即可搜索图源。",
               "category": "term-17",
+              "detail": "SauceNAO 的官方 Telegram 机器人，发图（图片、GIF 或贴纸）即可调用 saucenao.com 的 API 反查图源，是在手机上做以图搜图最省事的方式；匿名使用存在速率与结果数限制。",
               "icon": "./t.me.png",
               "disabledAt": "",
               "createdAt": "2025-01-01 00:00:00"
@@ -1638,6 +1770,7 @@
               "url": "https://t.me/ovov1234",
               "description": "每日更新Pixiv美图",
               "category": "term-17",
+              "detail": "分享来自 pixiv 与 X 平台的美图与壁纸频道，内容以二次元、蔚蓝档案、原神、崩坏：星穹铁道、鸣潮等手游角色为主，约每半个月更新一次；另设有一个 v2 频道。",
               "icon": "./t.me.png",
               "disabledAt": "",
               "createdAt": "2025-01-01 00:00:00"
@@ -1648,6 +1781,7 @@
               "url": "https://t.me/gal_porter",
               "description": "每日会更新旧汉化资源",
               "category": "term-17",
+              "detail": "以搬运旧作与旧汉化 Galgame 资源为主的频道，订阅量不小，主要把往期老资源重新整理上架，适合用来补老游戏。",
               "icon": "./t.me.png",
               "disabledAt": "",
               "createdAt": "2025-01-01 00:00:00"
@@ -1658,6 +1792,7 @@
               "url": "https://t.me/KonachanPopular",
               "description": "每日都会刷新排行榜",
               "category": "term-17",
+              "detail": "自动同步 konachan 每日排行榜的图片推送频道，用来追踪当天最热门的动漫图；内容跟随 Konachan 榜单刷新，无需手动翻页。",
               "icon": "./t.me.png",
               "disabledAt": "",
               "createdAt": "2025-01-01 00:00:00"
@@ -1668,6 +1803,7 @@
               "url": "https://t.me/galzd",
               "description": "终点论坛官方TG群组",
               "category": "term-17",
+              "detail": "终点论坛（终点之城 Galgame 板块）的官方 Telegram 入口，以群组邀请链接的形式提供，主要用于接收论坛与站内 Galgame 资源的更新通知。",
               "icon": "./t.me.png",
               "disabledAt": "",
               "createdAt": "2025-01-01 00:00:00"
@@ -1678,6 +1814,7 @@
               "url": "https://t.me/hhgal",
               "description": "忧郁的loli官方TG群组",
               "category": "term-17",
+              "detail": "对应「忧郁的loli」小站的 Telegram 群组（群名：黄油点心品鉴团），成员规模在千人左右，主要用于站点资源更新通知与日常交流。",
               "icon": "./t.me.png",
               "disabledAt": "",
               "createdAt": "2025-01-01 00:00:00"
@@ -1688,6 +1825,7 @@
               "url": "https://t.me/joinchat/QsPMo01bK-rHzPbCYXw4KQ",
               "description": "初音的青葱官方TG群组",
               "category": "term-17",
+              "detail": "「初音的青葱」Galgame 站的官方 Telegram 群组，入口是 t.me/joinchat 形式的邀请链接，用于接收汉化与新作资源通知，需从邀请链接加入。",
               "icon": "./t.me.png",
               "disabledAt": "",
               "createdAt": "2025-01-01 00:00:00"
@@ -1698,6 +1836,7 @@
               "url": "https://t.me/nc_raws",
               "description": "推送BT发布通知并自动上传到TG",
               "category": "term-17",
+              "detail": "NC-Raws 字幕组的 Telegram 入口，负责把 BT 站的发布通知同步到频道并自动上传资源，是其片源发布的第一手渠道。",
               "icon": "./t.me.png",
               "disabledAt": "",
               "createdAt": "2025-01-01 00:00:00"
@@ -1708,6 +1847,7 @@
               "url": "https://t.me/acgvia",
               "description": "记录一些悬赏的动漫图出处",
               "category": "term-17",
+              "detail": "用于悬赏征集动漫图出处的频道，会记录并整理投稿的图片来源（作者与原始出处），对想找无水印图的人比较有用。",
               "icon": "./t.me.png",
               "disabledAt": "",
               "createdAt": "2025-01-01 00:00:00"
@@ -1718,6 +1858,7 @@
               "url": "https://t.me/AnimeNep",
               "description": "涅普涅普的动画仓库",
               "category": "term-17",
+              "detail": "涅普涅普的动画仓库，由频道机器人抓取各大 BT 站的新番更新并自动上传（原档、无二压），提供简／繁／日字幕版本，可直接在 Telegram 内播放或下载；另配有动画搜索与新番推送机器人、报错与吐槽机器人，以及公告索引与讨论群。",
               "icon": "./t.me.png",
               "disabledAt": "",
               "createdAt": "2025-01-01 00:00:00"
@@ -1728,6 +1869,7 @@
               "url": "https://t.me/acg_nsfw",
               "description": "黄油游戏每日推送",
               "category": "term-17",
+              "detail": "关注者规模很大的 18R Galgame 推送频道，按 ADV／SLG／ACT／RPG／QSP／3D 等类型标签分发资源；关联群组只作为频道讨论区，频道简介还提醒擅自进群会被「关进镜子」一天。",
               "icon": "./t.me.png",
               "disabledAt": "",
               "createdAt": "2025-01-01 00:00:00"
@@ -1745,6 +1887,7 @@
               "url": "https://ai.animedb.cn",
               "description": "可以在线以图识别番剧和Galgame游戏，准确度较高",
               "category": "term-13",
+              "detail": "以图识番的在线 AI 引擎（动漫基因库），支持上传、拖拽、粘贴图片或输入图片 URL 识别番剧与 Galgame 画面，结果按可能性排序，也可用于查找人物 CP；站内声明只做识别、不提供任何动画资源，另设历史记录、Telegram 与 QQ 交流群及讨论区。",
               "icon": "./ai.animedb.cn.png",
               "disabledAt": "",
               "createdAt": "2025-01-01 00:00:00"
@@ -1766,6 +1909,7 @@
               "url": "https://ascii2d.net",
               "description": "日本知名以图搜图工具",
               "category": "term-13",
+              "detail": "日本知名的以图搜图服务（ascii2d），可按图片 URL 或本地图片检索相似与同一作品图，站内提供搜索历史、排行榜，并提供 Chrome、Firefox、Edge 浏览器扩展以便右键搜图。",
               "icon": "./ascii2d.net.png",
               "disabledAt": "",
               "createdAt": "2025-01-01 00:00:00"
@@ -1776,6 +1920,7 @@
               "url": "https://tineye.com",
               "description": "国外知名以图搜图工具",
               "category": "term-13",
+              "detail": "老牌的通用型反向图片搜索引擎，对全网图片的「最早出现位置」与相似图检索能力最强，适合追查图片来源与素材授权；对非浏览器访问有风控，直接抓取返回 403。",
               "icon": "./tineye.com.png",
               "disabledAt": "",
               "createdAt": "2025-01-01 00:00:00"
@@ -1786,6 +1931,7 @@
               "url": "https://yandex.com/images",
               "description": "可用来搜索相似图",
               "category": "term-13",
+              "detail": "Yandex 的图片反向搜索，可上传图片或输入图片 URL 查找相似图，是二次元图源搜索的常用补充入口；站点对自动化请求有 SmartCaptcha 验证，脚本批量调用容易触发验证码，需要在浏览器中手动确认。",
               "icon": "./yandex.com.png",
               "disabledAt": "",
               "createdAt": "2025-01-01 00:00:00"
@@ -1796,6 +1942,7 @@
               "url": "https://iqdb.org",
               "description": "国内著名多平台图源搜索工具",
               "category": "term-13",
+              "detail": "一次查询多个图源的聚合搜索工具，可同时检索 Danbooru、gelbooru、Konachan、Sankaku 等常见二次元图库并汇总候选结果；支持直接用 URL 查询（需允许一方 cookie 与 JavaScript），也可手动填写查询链接。",
               "icon": "./iqdb.org.png",
               "disabledAt": "",
               "createdAt": "2025-01-01 00:00:00"
@@ -1806,6 +1953,7 @@
               "url": "https://trace.moe",
               "description": "全球著名以图搜番工具",
               "category": "term-13",
+              "detail": "全球最常用的以截图识番引擎（Anime Scene Search），拖入动画截图即可定位作品、集数与具体时间点，对动画截图的识别准确率很高；除动画外也适用于 Galgame 等带动画画面片段的内容。",
               "icon": "./trace.moe.png",
               "disabledAt": "",
               "createdAt": "2025-01-01 00:00:00"
@@ -1816,6 +1964,7 @@
               "url": "https://saucenao.com",
               "description": "全球著名图源搜索工具",
               "category": "term-13",
+              "detail": "运营十余年的老牌图源检索工具，可按 Safe／Auto／All DBs 选择检索范围，并分别指定 pixiv、Nico Nico Seiga、Danbooru、drawr、Yande.re、FAKKU、Shutterstock、2D-Market 等库；对本子与 CG 类的命中尤其好，匿名使用有次数限制。",
               "icon": "./saucenao.com.png",
               "disabledAt": "",
               "createdAt": "2025-01-01 00:00:00"
@@ -1828,11 +1977,34 @@
           "icon": "./tools.svg",
           "sites": [
             {
+              "id": 485,
+              "name": "动画巡礼地图",
+              "url": "https://www.anitabi.cn/",
+              "description": "共享动画取景圣地地标与截图的地图工具",
+              "category": "term-16",
+              "detail": "anitabi map 动画巡礼地图，用于共享动画取景圣地（圣地巡礼）的地标与现场截图。作品信息来自番组计划，可在地图对应坐标点击投稿地标截图，审核后即可显示，方便出发前整理行程、到当地现查周边圣地。",
+              "icon": "./www.anitabi.cn.ico",
+              "disabledAt": "",
+              "createdAt": "2026-10-03 00:00:00"
+            },
+            {
+              "id": 484,
+              "name": "VocaWiki",
+              "url": "https://voca.wiki/",
+              "description": "Vocaloid 相关百科与资料站",
+              "category": "term-16",
+              "detail": "Vocawiki（术力口百科全书）是开放注册的中文 VOCALOID 主题百科，收录音声合成软件（VOCALOID、UTAU、CeVIO、VOICEROID、Synthesizer V、NEUTRINO、ACE Studio、A.I.VOICE 等）、虚拟歌手与衍生角色、P主及画师/声音提供者、使用 Vocaloid 的歌曲与专辑，并整理 VOCARAN、周刊月榜、NICONICO 与 bilibili 投稿等榜单；内容采用 CC BY-NC-SA 4.0 授权。",
+              "icon": "./voca.wiki.ico",
+              "disabledAt": "",
+              "createdAt": "2026-10-03 00:00:00"
+            },
+            {
               "id": 468,
               "name": "DIO动漫人脸识别",
               "url": "https://dio.jite.me/",
               "description": "上传动漫/二次元图片，自动识别角色姓名和所属作品",
               "category": "term-16",
+              "detail": "基于 AI 的动漫人脸识别工具（DeepInsightOtaku），上传动漫或二次元图片即可识别画面中的角色姓名与所属作品，站方称已收录 4200 部动漫与 2600 部 Galgame 并持续补充；识别不准时可在页内提交反馈，也提供 QQ 交流群。",
               "disabledAt": "",
               "createdAt": "2026-05-16 00:00:00"
             },
@@ -1842,6 +2014,7 @@
               "url": "https://lovelive10.com",
               "description": "Love Live相关",
               "category": "term-16",
+              "detail": "Love Live 系列粉丝向站点，整理系列作品、角色与歌曲等信息；站点证书链不完整，部分环境会提示无法验证证书，访问时需手动处理证书警告。",
               "icon": "./lovelive10.com.png",
               "disabledAt": "",
               "createdAt": "2026-05-14 00:00:00"
@@ -1852,6 +2025,7 @@
               "url": "https://drawref.cn",
               "description": "绘画参考",
               "category": "term-16",
+              "detail": "面向画师的绘画参考「笔记本」站点，可收藏参考图与教程、点击标题跳转原帖、记录使用心得，并按绘画体裁、人物性别、人体、色彩、材质、透视、构图等细分标签检索；站规明确仅供人类创作参考，禁止搬运 AI 生成与特定画师作品。",
               "icon": "./drawref.cn.png",
               "disabledAt": "",
               "createdAt": "2026-05-14 00:00:00"
@@ -1862,6 +2036,7 @@
               "url": "https://game8.jp",
               "description": "日本最大級の游戏攻略wiki网站",
               "category": "term-16",
+              "detail": "日本规模最大的游戏攻略 wiki，覆盖手机与主机游戏并保持实时更新，原生支持日语与英语；站内按作品给出攻略页、角色与养成要素解析、抽卡概率、推荐装备及通关思路，并配有讨论区与作品评价。",
               "icon": "./game8.jp.png",
               "disabledAt": "",
               "createdAt": "2025-01-01 00:00:00"
@@ -1872,6 +2047,7 @@
               "url": "https://pjsekai.sega.jp",
               "description": "世界计划 彩色舞台 feat. 初音未来 官方网站",
               "category": "term-16",
+              "detail": "SEGA 与 Colorful Palette 联手打造的《世界计划 彩色舞台！feat. 初音未来》官方站点，介绍企划与角色世界观、收录最新 NEWS 与宣传素材，并提供多语言版本与官方社群入口。",
               "icon": "./pjsekai.sega.jp.png",
               "disabledAt": "",
               "createdAt": "2026-05-13 00:00:00"
@@ -1882,6 +2058,7 @@
               "url": "https://sekai.best/",
               "description": "Project Sekai 的网络数据库查看器",
               "category": "term-16",
+              "detail": "第三方制作的 Project Sekai Colorful Stage 网页数据库与工具站，可查询卡牌、角色与活动数据；页面为前端应用，需开启 JavaScript 才能加载。",
               "icon": "./sekai.best.png",
               "disabledAt": "",
               "createdAt": "2026-05-24 00:00:00"
@@ -1902,6 +2079,7 @@
               "url": "https://acgsecrets.hk",
               "description": "查看最新番剧",
               "category": "term-16",
+              "detail": "香港动漫情报站，栏目包括文章、新闻、新番表与资料库，常发布 ACGHK（香港动漫电玩节）现场的演出报告与嘉宾访谈（如 ReoNa 的 Special Live 后续采访），以繁体中文内容为主。",
               "icon": "./acgsecrets.hk.png",
               "disabledAt": "",
               "createdAt": "2025-01-01 00:00:00"
@@ -1923,6 +2101,7 @@
               "url": "https://github.com/feilongfl/Cimoc",
               "description": "安卓平台漫画聚合类阅读器",
               "category": "term-16",
+              "detail": "开源的 Android 在线漫画阅读器（feilongfl/Cimoc），可添加各类漫画源进行聚合阅读，支持下载缓存与自定义源；项目在 GitHub 维护，发布页可直接下载 APK。",
               "icon": "./github.com.png",
               "disabledAt": "",
               "createdAt": "2025-01-01 00:00:00"
@@ -1933,6 +2112,7 @@
               "url": "https://www.exview.ml",
               "description": "漫画小说聚合类应用，可多平台下载",
               "category": "term-16",
+              "detail": "同时聚合漫画与小说的阅读应用，提供多平台（桌面与移动端）版本下载，便于把多个图源与书源统一管理阅读；当前域名解析失败（ENOTFOUND），可能需要寻找新的下载入口或镜像。",
               "disabledAt": "",
               "createdAt": "2025-01-01 00:00:00"
             },
@@ -1953,6 +2133,7 @@
               "url": "https://mudauchi.info",
               "description": "日本游戏攻略站，全日语",
               "category": "term-16",
+              "detail": "全日文的游戏资讯与攻略博客（Mudauchi Games），除攻略正文外还提供 Metascore 评价与分数汇总、游戏新闻、任天堂相关资讯与厂商采访，并开放游戏厂商的 Press Release 投稿入口。",
               "icon": "./mudauchi.info.png",
               "disabledAt": "",
               "createdAt": "2025-01-01 00:00:00"
@@ -1963,6 +2144,7 @@
               "url": "https://virtual-youtuber.userlocal.jp",
               "description": "显示VTuber实时热度",
               "category": "term-16",
+              "detail": "由ユーザーローカル提供的 VTuber 排行榜，实时统计并展示粉丝数与影片播放量，支持按急上昇、直播中、新人、事务所别（ホロライブ、にじさんじ、Brave group 等）筛选，并列出配信日程与热门影片、切片。",
               "icon": "./virtual-youtuber.userlocal.jp.png",
               "disabledAt": "",
               "createdAt": "2025-01-01 00:00:00"
@@ -1973,6 +2155,7 @@
               "url": "https://yuc.wiki",
               "description": "新番查找表",
               "category": "term-16",
+              "detail": "以「長門番堂」为名的作者向新番查找表（Yuc's Anime List），首页会发布自制 1/6 比例手办的绘制与预售信息（多在 bilibili 会员购），并按年份（2026 回溯到 2020）整理新番作品清单。",
               "icon": "./yuc.wiki.png",
               "disabledAt": "",
               "createdAt": "2025-01-01 00:00:00"
@@ -1983,6 +2166,7 @@
               "url": "https://xf.hmacg.cn",
               "description": "展示日本新番表",
               "category": "term-16",
+              "detail": "由 Hazx 整理的季度新番表（Hazx 新番表／H萌），逐条列出当季新番的播放时间与可观看站点，并提供图片版预览与下载；站内按年份与季度归档了 2023 年至今的历期新番表。",
               "icon": "./hmacg.cn.png",
               "disabledAt": "",
               "createdAt": "2025-01-01 00:00:00"
@@ -2015,6 +2199,7 @@
               "url": "https://www.lisani.jp",
               "description": "日本本土ACG新闻，网速很慢",
               "category": "term-16",
+              "detail": "日本动画音乐门户站（リスアニ！），每日更新当季动画 OP／ED 一览、歌手与声优访谈、现场演出报告、播放列表与相关活动资讯，同时售票并组织 LISANI！TAIPEI 等线下与海外活动，页面为日文。",
               "icon": "./www.lisani.jp.png",
               "disabledAt": "",
               "createdAt": "2025-01-01 00:00:00"
@@ -2025,6 +2210,7 @@
               "url": "https://www.animatetimes.com",
               "description": "日本本土ACG资讯站",
               "category": "term-16",
+              "detail": "日本大型动画资讯站（アニメイトタイムズ），每日更新动画新闻、声优动态、电台节目、PV 与试看影像，并设有动画、声优、电影、漫画轻小说、游戏、音乐等分类排行、话题专栏，以及每周更新的动画影像与歌曲配信汇总（含卡拉 OK 联动信息）。",
               "icon": "./www.animatetimes.com.png",
               "disabledAt": "",
               "createdAt": "2025-01-01 00:00:00"
@@ -2035,6 +2221,7 @@
               "url": "https://biu.moe",
               "description": "在线ACG音乐，注册需要在手机网页版",
               "category": "term-16",
+              "detail": "以在线音乐形式提供 ACG 曲目的站点，曲目以 Vocaloid 与动漫音乐为主；注册流程依赖移动端网页版，用桌面浏览器访问注册入口可能不可用。当前域名解析失败（ENOTFOUND），访问前需确认站点是否仍在线。",
               "disabledAt": "",
               "createdAt": "2025-01-01 00:00:00"
             },
@@ -2044,6 +2231,7 @@
               "url": "https://github.com/zeas2/Kirikiroid2/releases",
               "description": "GAL手机模拟器，只支持krkr2引擎",
               "category": "term-16",
+              "detail": "运行在 Android 上的 Galgame 模拟器（Kirikiroid2），用于在手机上直接运行 KiriKiri 引擎（krkr2）的游戏项目；APK 与更新日志在 GitHub Releases 发布，需要自备游戏本体。",
               "icon": "./github.com.png",
               "disabledAt": "",
               "createdAt": "2025-01-01 00:00:00"
@@ -2087,6 +2275,7 @@
               "url": "https://github.com/EhTagTranslation/EhSyringe/releases",
               "description": "配合E站食用，注入后全站中文化",
               "category": "term-16",
+              "detail": "E-Hentai 的汉化增强工具（EhTagTranslation/EhSyringe），把中文翻译注入到 E-Hentai 页面中以实现全站中文化，并附带标签翻译等功能；扩展与更新在 GitHub Releases 发布，需配合浏览器扩展管理器使用。",
               "icon": "./github.com.png",
               "disabledAt": "",
               "createdAt": "2025-01-01 00:00:00"
@@ -2097,6 +2286,7 @@
               "url": "https://cheatengine.org",
               "description": "游戏内存修改器，RPG玩家狂喜",
               "category": "term-16",
+              "detail": "开源的内存修改器与调试工具，可附加到运行中的游戏进程搜索并修改内存数值，常用于 RPG 数值修改与调试；同时提供教程、Lua 脚本支持与 DBVM 内核，官网含各平台下载与 Wiki。",
               "icon": "./cheatengine.org.png",
               "disabledAt": "",
               "createdAt": "2025-01-01 00:00:00"
@@ -2140,6 +2330,7 @@
               "url": "https://hub.imikufans.com",
               "description": "分享同人创作、讨论新番神作",
               "category": "term-16",
+              "detail": "基于 Misskey 联邦实例搭建的二次元兴趣社区（白葱社区），面向葱粉、绘画与游戏爱好者发布动态、讨论新番；需启用 JavaScript 才能加载，登录后可在时间线与通知中互动。",
               "disabledAt": "",
               "createdAt": "2026-05-16 00:00:00"
             },
@@ -2149,6 +2340,7 @@
               "url": "https://w.atwiki.jp/vocaloidchly",
               "description": "Vocaloid中文歌词Wiki",
               "category": "term-16",
+              "detail": "协作编辑的 VOCALOID 中文歌词 wiki（atwiki 搭建），以收录原创曲的中文翻译为主，欢迎译者补全缺失曲目与歌词；站内按标签分类，标签数量超过显示上限时建议用搜索列检索，并附有翻译礼仪说明。",
               "disabledAt": "",
               "createdAt": "2026-05-16 00:00:00"
             },
@@ -2158,6 +2350,7 @@
               "url": "https://mukuu.herokuapp.com",
               "description": "定制3D2 MOD",
               "category": "term-16",
+              "detail": "COM3D2／CM3D 定制服装与发型 MOD 的检索汇总服务，可按角色、发型、衣装、预设等分类查找并跳转至各配布处（含 Twitter、GitHub、Mega、getuploader 等常见网盘）；页面为前端应用，需开启 JavaScript。",
               "disabledAt": "",
               "createdAt": "2026-05-16 00:00:00"
             }
@@ -2185,6 +2378,7 @@
               "url": "https://www.a-zmanga.net",
               "description": "漫画很全，含冷门，国外付费网盘下载",
               "category": "term-22",
+              "detail": "以网盘分发为主的漫画资源站，收录较全且冷门作品也多，资源通过海外付费网盘发放，需要对应的网盘工具与访问环境；对非浏览器访问有风控，直接抓取返回 503。",
               "icon": "./www.a-zmanga.net.png",
               "disabledAt": "",
               "createdAt": "2025-01-01 00:00:00"
@@ -2224,6 +2418,7 @@
               "url": "https://paper2gal.com/",
               "description": "论文转Galgame工具",
               "category": "term-21",
+              "detail": "把学术论文转成交互式视觉小说的 AI 工具（Paper2Galgame），上传 PDF 后可用 AI 对话与动漫风格的学习伙伴讲解论文内容，把阅读变成互动学习；软件为专有产品，官方仅此一站且不开源。",
               "icon": "./paper2gal.com.png",
               "disabledAt": "",
               "createdAt": "2026-05-26 00:00:00"
@@ -2234,6 +2429,7 @@
               "url": "https://anime-sedai.egoist.dev/",
               "description": "动画世代 - 点击选择你看过的动画",
               "category": "term-21",
+              "detail": "交互式动画足迹统计工具（Anime Sedai／动画世代），通过点击标记你看过的动画来生成可视化的观看统计图；页面为前端应用，需开启 JavaScript 才能渲染。",
               "disabledAt": "",
               "createdAt": "2026-05-24 00:00:00"
             },
@@ -2243,6 +2439,7 @@
               "url": "https://app.illuminarty.ai",
               "description": "在线识别AI图",
               "category": "term-21",
+              "detail": "在线的 AI 生成图片检测工具（Illuminarty），可上传图片判断其是否由生成式模型产出，适合用来辨别网图真伪；页面为前端应用，需启用 JavaScript。",
               "icon": "./app.illuminarty.ai.png",
               "disabledAt": "",
               "createdAt": "2025-01-01 00:00:00"
@@ -2253,6 +2450,7 @@
               "url": "https://hbr.quest/schedule",
               "description": "【红烧天堂】活动日程查询站",
               "category": "term-21",
+              "detail": "《Heaven Burns Red》的第三方资料库与活动日程查询站（Seraph Database），可查询角色、装备与活动日程等信息；页面为前端应用，需开启 JavaScript。",
               "icon": "./hbr.quest.png",
               "disabledAt": "",
               "createdAt": "2025-01-01 00:00:00"
@@ -2263,6 +2461,7 @@
               "url": "https://aidn.jp/mikutap",
               "description": "一个缓解压力的有趣网站，MIKU粉福利",
               "category": "term-21",
+              "detail": "初音未来声线的解压互动小站（Mikutap），点击、拖拽或按任意键即可触发带声音与反馈动画的互动，玩法参考 Patatap；由 daniwell 制作，需要开启声音，部分移动端与浏览器不被支持。",
               "icon": "./aidn.jp.png",
               "disabledAt": "",
               "createdAt": "2025-01-01 00:00:00"
@@ -2273,6 +2472,7 @@
               "url": "https://waifulabs.com",
               "description": "二次元老婆生成器",
               "category": "term-21",
+              "detail": "免费的在线 AI 二次元头像生成器（Waifu Labs），通过逐步选择偏好让机器学习模型学习你的取向，四步生成专属角色立绘，站点免费使用。",
               "icon": "./waifulabs.com.png",
               "disabledAt": "",
               "createdAt": "2025-01-01 00:00:00"
@@ -2283,6 +2483,7 @@
               "url": "https://www.thiswaifudoesnotexist.net",
               "description": "二次元角色故事背景生成器（英文）",
               "category": "term-21",
+              "detail": "Gwern 制作的神经网络生成演示站，每次刷新会随机生成一张由 StyleGAN 2 产出并经 waifu2x 放大的 1024px 二次元头像，并配上一段 GPT-3 生成的设定文字；必须启用 JavaScript 才会加载。",
               "icon": "./www.thiswaifudoesnotexist.net.png",
               "disabledAt": "",
               "createdAt": "2025-01-01 00:00:00"
@@ -2293,6 +2494,7 @@
               "url": "https://make.girls.moe/#",
               "description": "按照你的喜好，AI自动生成二次元老婆",
               "category": "term-21",
+              "detail": "开源的 AI 角色生成器（MakeGirlsMoe），可指定发色、发型、表情等属性自动生成二次元角色图；模型基于 DCGAN、条件 DCGAN 等方案，页面为前端应用，需开启 JavaScript。",
               "icon": "./make.girls.moe.png",
               "disabledAt": "",
               "createdAt": "2025-01-01 00:00:00"
@@ -2303,6 +2505,7 @@
               "url": "https://unlock-music-ix.netlify.app",
               "description": "移除已购音乐的加密保护",
               "category": "term-21",
+              "detail": "用于移除已购买音乐文件加密保护的开源工具（unlock-music），可批量解密本地音乐以便在其他设备或播放器上使用；站点部署在 Netlify 上，对非浏览器访问有风控，直接抓取返回 403。",
               "icon": "./unlock-music-ix.netlify.app.png",
               "disabledAt": "",
               "createdAt": "2025-01-01 00:00:00"
@@ -2313,6 +2516,7 @@
               "url": "https://pcrdfans.com/battle",
               "description": "公主连接竞技场查询攻略",
               "category": "term-21",
+              "detail": "《公主连结 Re:Dive》的竞技场（JJC）数据查询站，可按服务器（国服／台服／日服／国际服）、位置（前卫／中卫／后卫）、属性（火／水／风／光／暗）与角色筛选，并分别检索 1～3 队的进攻、防守阵容用于配队分析。",
               "icon": "./pcrdfans.com.png",
               "disabledAt": "",
               "createdAt": "2025-01-01 00:00:00"

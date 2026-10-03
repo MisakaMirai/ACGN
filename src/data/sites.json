@@ -6,6 +6,28 @@
       "icon": "./image.svg",
       "sites": [
         {
+          "id": 486,
+          "name": "EGAITE",
+          "url": "https://egaite.art",
+          "description": "日本插画投稿社区，可投稿分享插画与漫画",
+          "category": "term-2",
+          "detail": "EGAITE 是日本的插画投稿社区（イラスト投稿コミュニティ），可投稿、分享插画与漫画作品，支持站内涂鸦创作与标签、排行榜浏览，面向画师与绘画爱好者交流。",
+          "icon": "./egaite.art.png",
+          "disabledAt": "",
+          "createdAt": "2026-10-03 00:00:00"
+        },
+        {
+          "id": 488,
+          "name": "Poipiku",
+          "url": "https://poipiku.com/",
+          "description": "日本轻量插画投稿箱，适合随手涂鸦分享",
+          "category": "term-2",
+          "detail": "Poipiku（ポイピク）是日本的轻量级插画投稿站，定位「插画管理箱」，适合随手上传涂鸦与草图，支持按作品、角色与 CP 等标签归档浏览，可与 X（Twitter）等 SNS 联动投稿，画师使用广泛。",
+          "icon": "./poipiku.com.png",
+          "disabledAt": "",
+          "createdAt": "2026-10-03 00:00:00"
+        },
+        {
           "id": 458,
           "name": "2D Wallpapers",
           "url": "https://www.2dwallpapers.com",
@@ -467,6 +489,17 @@
       "icon": "./book.svg",
       "sites": [
         {
+          "id": 501,
+          "name": "禁漫天堂发布页",
+          "url": "https://jmcomicog.net/",
+          "description": "禁漫天堂官方发布页，提供最新地址与APP下载",
+          "category": "term-5",
+          "detail": "禁漫天堂的官方发布页（回家的路），用于发布最新可用域名与镜像地址，并提供 Android／iOS 客户端下载；主站域名经常变动，可通过此页获取最新入口。",
+          "icon": "./jmcomicog.net.png",
+          "disabledAt": "",
+          "createdAt": "2026-10-03 00:00:00"
+        },
+        {
           "id": 403,
           "name": "ReadHentai",
           "url": "https://readhentai.info",
@@ -665,6 +698,94 @@
       "name": "ACG资源社区",
       "icon": "./users.svg",
       "sites": [
+        {
+          "id": 487,
+          "name": "八千代的小屋",
+          "url": "https://yachiyo.cn/",
+          "description": "《超时空辉夜姬》粉丝社区与插画交流站",
+          "category": "term-6",
+          "detail": "由☽八千代☾个人运营的插画交流网站，同时是《超时空辉夜姬》粉丝社区（超时空辉夜姬论坛），提供作品画廊、涂鸦 BBS、绘茶（在线合绘）与音乐等内容，支持中文、日本語、English、한국어多语言界面。",
+          "icon": "./yachiyo.cn.png",
+          "disabledAt": "",
+          "createdAt": "2026-10-03 00:00:00"
+        },
+        {
+          "id": 489,
+          "name": "银色子弹SBSUB",
+          "url": "https://sbsub.com/",
+          "description": "名侦探柯南粉丝组织，出品柯南字幕与资讯",
+          "category": "term-6",
+          "detail": "银色子弹（简称银弹，英文 SBSUB）是由柯南热爱者组成的非营利爱好者组织，创建于 2015 年，致力于培养更多柯南迷，出品《名侦探柯南》TV 动画与剧场版字幕、汉化漫画，并发布柯南相关资讯。",
+          "icon": "./sbsub.com.png",
+          "disabledAt": "",
+          "createdAt": "2026-10-03 00:00:00"
+        },
+        {
+          "id": 490,
+          "name": "柯研所",
+          "url": "https://www.keyansuo.club/",
+          "description": "名侦探柯南民间粉丝研究组织",
+          "category": "term-6",
+          "detail": "柯研所成立于 2018 年，是《名侦探柯南》民间网络粉丝组织，主要收集整理柯南资料档案、讨论分析案件与主线剧情、传播柯南相关信息并组织柯南相关活动；站点有 WAF 防护，直接抓取可能返回 403。",
+          "icon": "./www.keyansuo.club.png",
+          "disabledAt": "",
+          "createdAt": "2026-10-03 00:00:00"
+        },
+        {
+          "id": 491,
+          "name": "所长的谣言",
+          "url": "https://tukuyomi.cc.cd/",
+          "description": "像素风个人站聚合入口",
+          "category": "term-6",
+          "detail": "个人站长「所长」的聚合入口页，汇集其名下各站点与项目的跳转链接；页面为纯静态单页，采用像素字体与硬阴影的复古风格设计。",
+          "icon": "./tukuyomi.cc.cd.png",
+          "disabledAt": "",
+          "createdAt": "2026-10-03 00:00:00"
+        },
+        {
+          "id": 492,
+          "name": "ACGN二次元宇宙神奇小站",
+          "url": "https://acgn.cn/",
+          "description": "二次元社区，含ACGN四大模块资料内容",
+          "category": "term-6",
+          "detail": "ACGN 站是国内的二次元社区，包含动画、漫画、游戏、小说（ACGN）四大模块的最新资料内容，定位全方位的动漫百科二次元宇宙空间站。",
+          "icon": "./acgn.cn.png",
+          "disabledAt": "",
+          "createdAt": "2026-10-03 00:00:00"
+        },
+        {
+          "id": 493,
+          "name": "喵御宅Mfuns",
+          "url": "https://www.mfuns.net",
+          "description": "兴趣至上的ACGN内容社区",
+          "category": "term-6",
+          "detail": "喵御宅（Mfuns）是兴趣至上的 ACGN 内容平台，动画、游戏、音乐、文章等内容每日更新；主打创作自由、扶持友善的社区氛围，支持用户投稿创作，并设有等级、勋章等社区玩法。",
+          "icon": "./www.mfuns.net.png",
+          "disabledAt": "",
+          "createdAt": "2026-10-03 00:00:00"
+        },
+        {
+          "id": 494,
+          "name": "動漫研究",
+          "url": "https://hank-web.magn.space/",
+          "description": "分享動漫消息的繁体个人博客",
+          "category": "term-6",
+          "detail": "「動漫研究」是繁体中文的个人向动漫资讯博客，分享新番与各类动画作品消息，内容涵盖 Fate、刀剑神域、进击的巨人、魔法少女等题材；页面为前端应用，需开启 JavaScript 浏览。",
+          "icon": "./hank-web.magn.space.png",
+          "disabledAt": "",
+          "createdAt": "2026-10-03 00:00:00"
+        },
+        {
+          "id": 495,
+          "name": "Elaina Website",
+          "url": "http://magus.elaina.vin/",
+          "description": "《魔女之旅》伊蕾娜主题粉丝站",
+          "category": "term-6",
+          "detail": "《魔女之旅》伊蕾娜（Elaina）主题的粉丝站（elaina-website-next），站内包含角色介绍与相关资料板块；页面为前端应用，需开启 JavaScript 才能加载内容。",
+          "icon": "./magus.elaina.vin.svg",
+          "disabledAt": "",
+          "createdAt": "2026-10-03 00:00:00"
+        },
         {
           "id": 476,
           "name": "ANIBT",
@@ -981,6 +1102,17 @@
       "icon": "./university.svg",
       "sites": [
         {
+          "id": 496,
+          "name": "柯南百科",
+          "url": "https://www.conanpedia.com/",
+          "description": "名侦探柯南档案馆，中文柯南百科",
+          "category": "term-9",
+          "detail": "柯南百科（名侦探柯南档案馆）是中文的《名侦探柯南》专题百科，收录角色、案件、剧集、剧场版等资料条目，由粉丝共同编辑维护，可查阅柯南世界观与主线剧情相关内容。",
+          "icon": "./www.conanpedia.com.png",
+          "disabledAt": "",
+          "createdAt": "2026-10-03 00:00:00"
+        },
+        {
           "id": 481,
           "name": "范库hub",
           "url": "https://fankuhub.com/",
@@ -1259,6 +1391,17 @@
       "icon": "./ai.svg",
       "sites": [
         {
+          "id": 502,
+          "name": "哔哩轻小说",
+          "url": "https://www.linovelib.com/",
+          "description": "日本轻小说在线阅读与下载站",
+          "category": "term-18",
+          "detail": "哔哩轻小说（linovelib）是日本轻小说在线阅读站，收录大量日轻与国产轻小说，按文库、作者与分类浏览，支持在线分章阅读；站点有 Cloudflare 防护，直接抓取会遇到验证页。",
+          "icon": "./www.linovelib.com.png",
+          "disabledAt": "",
+          "createdAt": "2026-10-03 00:00:00"
+        },
+        {
           "id": 165,
           "name": "轻之国度",
           "url": "https://www.lightnovel.us/cn",
@@ -1439,10 +1582,11 @@
         {
           "id": 28,
           "name": "爱恋动漫BT",
-          "url": "http://www.kisssub.org",
+          "url": "https://www.kisssub.org",
           "description": "爱恋动漫BT下载，爱恋BT分享站，动漫下载，BT磁力，字幕组，生肉资源，BD资源",
           "category": "term-4",
           "detail": "以字幕组与 BD、生肉资源为特色的动漫 BT 分享站，收录新番与经典番剧片源；站点正文依赖脚本加载，直接抓取取不到内容，需要在浏览器中浏览分类。",
+          "icon": "./www.kisssub.org.png",
           "disabledAt": "",
           "createdAt": "2025-01-01 00:00:00"
         },
@@ -1464,6 +1608,50 @@
       "name": "ACG购物",
       "icon": "./shopping-bag.svg",
       "sites": [
+        {
+          "id": 497,
+          "name": "Fantia",
+          "url": "https://fantia.jp/",
+          "description": "日本创作者支援平台，画师Coser粉丝赞助",
+          "category": "term-14",
+          "detail": "Fantia（ファンティア）是日本的创作者支援平台，画师、Coser、音声创作者等可开设粉丝俱乐部发布会员限定内容，粉丝按月费方案赞助支持；站内二次元创作者密集，含大量 R-18 内容，部分内容需付费解锁。",
+          "icon": "./fantia.jp.png",
+          "disabledAt": "",
+          "createdAt": "2026-10-03 00:00:00"
+        },
+        {
+          "id": 498,
+          "name": "BOOTH",
+          "url": "https://booth.pm",
+          "description": "pixiv旗下同人创作物与周边市场",
+          "category": "term-14",
+          "detail": "BOOTH 是 pixiv 旗下的创作物市场，同人社团与个人创作者可销售同人志、周边、插画集、音声、3D 模型与素材等数字／实体商品，支持海外代购转运；站点有 Cloudflare 防护，直接抓取会遇到验证页。",
+          "icon": "./booth.pm.png",
+          "disabledAt": "",
+          "createdAt": "2026-10-03 00:00:00"
+        },
+        {
+          "id": 499,
+          "name": "Skeb",
+          "url": "https://skeb.jp/",
+          "description": "日本画师约稿委托平台",
+          "category": "term-14",
+          "detail": "Skeb 是日本的创作委托平台，可向画师、声优、视频作者等创作者发送约稿请求（リクエスト），按创作者设定的价格委托插画、漫画、音声等作品；支持海外用户与多语言，页面为前端应用，需开启 JavaScript。",
+          "icon": "./skeb.jp.png",
+          "disabledAt": "",
+          "createdAt": "2026-10-03 00:00:00"
+        },
+        {
+          "id": 500,
+          "name": "iikoe",
+          "url": "https://iikoe.org/",
+          "description": "日本音声委托站，请声优朗读指定文章",
+          "category": "term-14",
+          "detail": "iikoe（いい声）是日本的音声委托网站，用户可向站内声优付费请求朗读喜欢的文章与台词，涵盖朗读、ASMR、角色语音等类型；站内可浏览声优样音与评价后下单。",
+          "icon": "./iikoe.org.png",
+          "disabledAt": "",
+          "createdAt": "2026-10-03 00:00:00"
+        },
         {
           "id": 183,
           "name": "cmoa",
@@ -1977,6 +2165,61 @@
           "icon": "./tools.svg",
           "sites": [
             {
+              "id": 503,
+              "name": "posite-c",
+              "url": "https://www.posite-c.com",
+              "description": "日本个人工具站，含动画节目表与Nico生评论工具",
+              "category": "term-16",
+              "detail": "posite-c 是日本的个人工具站，配布自制工具并提供动画节目表，代表作是 NicoNico 生放送评论浏览工具（ニコ生コメントビューア），另收录动画相关信息，适合追日本台动画播出时间。",
+              "icon": "./www.posite-c.com.ico",
+              "disabledAt": "",
+              "createdAt": "2026-10-03 00:00:00"
+            },
+            {
+              "id": 504,
+              "name": "BowlRoll",
+              "url": "https://bowlroll.net/",
+              "description": "MMD模型与创作素材配布站",
+              "category": "term-16",
+              "detail": "BowlRoll 是日本的创作素材配布站，以 MMD（MikuMikuDance）模型配布最为知名，同时提供视频、图像、音乐、游戏等作品的公开与素材、程序的分发及信息共享，是 MMD 创作者常用资源站。",
+              "icon": "./bowlroll.net.png",
+              "disabledAt": "",
+              "createdAt": "2026-10-03 00:00:00"
+            },
+            {
+              "id": 505,
+              "name": "御宅世界",
+              "url": "https://anime.acgcon.top/",
+              "description": "御宅向动漫综合站",
+              "category": "term-16",
+              "detail": "御宅世界是面向御宅族的动漫综合站（anime.acgcon.top），聚合动画相关内容；页面为前端应用，需开启 JavaScript 才能加载内容。",
+              "icon": "./anime.acgcon.top.png",
+              "disabledAt": "",
+              "createdAt": "2026-10-03 00:00:00"
+            },
+            {
+              "id": 506,
+              "name": "番組表.Gガイド",
+              "url": "https://bangumi.org/",
+              "description": "日本电视台官方节目表与动画播出查询",
+              "category": "term-16",
+              "detail": "番組表.Gガイド（bangumi.org）提供日本地上波、BS、CS 电视台的官方节目表、广播信息与排行，可查询各台动画的准确播出时间，是追新番放送时间的实用工具。",
+              "icon": "./bangumi.org.png",
+              "disabledAt": "",
+              "createdAt": "2026-10-03 00:00:00"
+            },
+            {
+              "id": 507,
+              "name": "Wayback Machine",
+              "url": "https://web.archive.org/",
+              "description": "网页时光机，查询网站历史快照",
+              "category": "term-16",
+              "detail": "Wayback Machine（网页时光机）是 Internet Archive 的网页存档服务，可查询网站历年历史快照，用于找回已关闭的 ACG 站点、失效页面与历史资源；国内直连可能不稳定。",
+              "icon": "./web.archive.org.png",
+              "disabledAt": "",
+              "createdAt": "2026-10-03 00:00:00"
+            },
+            {
               "id": 485,
               "name": "动画巡礼地图",
               "url": "https://www.anitabi.cn/",
@@ -2412,6 +2655,50 @@
           "name": "其它小工具",
           "icon": "./tools.svg",
           "sites": [
+            {
+              "id": 508,
+              "name": "HMCL启动器",
+              "url": "https://hmcl.huangyuhui.net/",
+              "description": "跨平台开源Minecraft启动器",
+              "category": "term-21",
+              "detail": "Hello Minecraft! Launcher（HMCL）是开源的跨平台 Minecraft 启动器，支持整合包管理、自动安装与多版本共存，已有多年历史、累计使用量巨大，是 MC 玩家常用启动器之一。",
+              "icon": "./hmcl.huangyuhui.net.png",
+              "disabledAt": "",
+              "createdAt": "2026-10-03 00:00:00"
+            },
+            {
+              "id": 509,
+              "name": "Modrinth",
+              "url": "https://modrinth.com/discover/mods",
+              "description": "Minecraft模组搜索下载平台",
+              "category": "term-21",
+              "detail": "Modrinth 是现代化的 Minecraft 模组平台，可搜索浏览数千个 MC Mod，提供即时准确的搜索与版本、加载器等筛选，同时收录整合包、资源包与光影，另有官方启动器 App。",
+              "icon": "./modrinth.com.png",
+              "disabledAt": "",
+              "createdAt": "2026-10-03 00:00:00"
+            },
+            {
+              "id": 510,
+              "name": "BiliTool",
+              "url": "https://bilitool.top/",
+              "description": "B站视频解析下载工具",
+              "category": "term-21",
+              "detail": "BiliTool 是面向 B 站（bilibili）的在线工具站，提供视频解析与下载等功能；页面为前端应用，需开启 JavaScript 才能使用。",
+              "icon": "./bilitool.top.png",
+              "disabledAt": "",
+              "createdAt": "2026-10-03 00:00:00"
+            },
+            {
+              "id": 511,
+              "name": "月盒MoonBox",
+              "url": "https://two-moons.site/",
+              "description": "交互式乐理教学与AI音乐工具",
+              "category": "term-21",
+              "detail": "月盒 MoonBox 基于交互式教程与 AI 音乐助手进行基础乐理教学，内含和弦编辑、乐句记录、视唱练耳等多种音乐实用工具，适合音乐创作入门。",
+              "icon": "./two-moons.site.png",
+              "disabledAt": "",
+              "createdAt": "2026-10-03 00:00:00"
+            },
             {
               "id": 477,
               "name": "Paper2Gal",

@@ -200,6 +200,83 @@
       "icon": "./play.svg",
       "sites": [
         {
+          "id": 515,
+          "name": "TVer",
+          "url": "https://tver.jp/",
+          "description": "日本五家电视台免费视频回看",
+          "category": "term-3",
+          "detail": "由日テレ、テレビ朝日、TBS、テレビ東京与フジテレビ五家民营电视台共同推出的免费视频服务（キャッチアップ），可回看刚播出的节目与部分地区直播，并设有 Anime 动画分类；多数内容无需登录即可观看，部分节目存在地区与登录限制。",
+          "icon": "./tver.jp.png",
+          "disabledAt": "",
+          "createdAt": "2026-10-05 00:00:00"
+        },
+        {
+          "id": 522,
+          "name": "E站弹幕网",
+          "url": "https://www.ezdmw.site/",
+          "description": "ACG社区，在线观看与下载",
+          "category": "term-3",
+          "detail": "国内 ACG 综合社区，兼顾追番与在线观看：番剧部分分连载动画、完结动画、番剧索引、新番排行榜与新番时间表，社区部分有文章、佳句、问答、漫评与动漫图集；支持弹幕开关、追番记录、签到萌币与手机 APP，多数资源主打无广告在线与下载。",
+          "icon": "./www.ezdmw.site.png",
+          "disabledAt": "",
+          "createdAt": "2026-10-05 00:00:00"
+        },
+        {
+          "id": 523,
+          "name": "次元城动画",
+          "url": "https://www.cycanime.com/",
+          "description": "高质量在线追番网站",
+          "category": "term-3",
+          "detail": "以高质量在线追番为定位的动画站（cycanime.com 目前会跳转到 cycani.org），面向动漫爱好者提供番剧在线播放与追番体验；首页与列表为前端应用，抓取正文时需要执行 JavaScript，图标与站内素材需从跳转后的域名获取。",
+          "icon": "./www.cycanime.com.png",
+          "disabledAt": "",
+          "createdAt": "2026-10-05 00:00:00"
+        },
+        {
+          "id": 524,
+          "name": "打驴动漫",
+          "url": "https://www.dalvdm.cc/",
+          "description": "主打无广告的番剧在线站",
+          "category": "term-3",
+          "detail": "以无广告播放为卖点的番剧站，收录日本与国产番剧及动漫电影，首页按热门新番与评分推荐，并提供搜索历史、播放记录、求片与手机 APP 下载；访问 dalvdm.cc 会跳转到当前实际域名，站方提醒以官网标识为准，注意甄别仿冒站点。",
+          "icon": "./www.dalvdm.cc.png",
+          "disabledAt": "",
+          "createdAt": "2026-10-05 00:00:00"
+        },
+        {
+          "id": 525,
+          "name": "七色番",
+          "url": "https://www.7sefun.top/",
+          "description": "番剧与剧场在线播放站",
+          "category": "term-3",
+          "detail": "番剧聚合站，分 TV 番剧、剧场电影与特摄剧三类，收录 TV 番剧 5800 余部、剧场电影 900 余部，并提供追番周表与求番留言板块；站方提示主域名已更换，部分地区用户可能需要代理才能正常播放。",
+          "icon": "./www.7sefun.top.png",
+          "disabledAt": "",
+          "createdAt": "2026-10-05 00:00:00"
+        },
+        {
+          "id": 527,
+          "name": "稀饭ACG",
+          "url": "https://xifan.moe/",
+          "description": "动漫漫画Galgame聚合站",
+          "category": "term-3",
+          "detail": "稀饭的 ACG 聚合站，由稀饭动漫（XIFANAnime，提供新版与旧版两个入口）、花火漫画（HanabiManga）与 NekoGAL（Galgame 资源站）三部分组成，并单独提供各服务的运行状态页面；动漫站主打更新速度与高清播放体验。",
+          "icon": "./xifan.moe.png",
+          "disabledAt": "",
+          "createdAt": "2026-10-05 00:00:00"
+        },
+        {
+          "id": 528,
+          "name": "Anime1.me",
+          "url": "https://anime1.me/",
+          "description": "上百部动画免费在线看",
+          "category": "term-3",
+          "detail": "面向繁体中文用户的免费动画在线观看站，收录上百部日本动画，按年份与季节归档列表并标注字幕组，支持关键词搜索、更新订阅通知与 Discord 社群；站方声明仅以 anime1.me 为唯一运营域名，注意甄别钓鱼仿站。",
+          "icon": "./anime1.me.png",
+          "disabledAt": "",
+          "createdAt": "2026-10-05 00:00:00"
+        },
+        {
           "id": 482,
           "name": "花子动漫",
           "url": "https://www.huazidm.com/",
@@ -698,6 +775,39 @@
       "name": "ACG资源社区",
       "icon": "./users.svg",
       "sites": [
+        {
+          "id": 516,
+          "name": "VOCAKEY",
+          "url": "https://vocakey.wiki",
+          "description": "VOCALOID公益百科与资源站",
+          "category": "term-6",
+          "detail": "基于 MediaWiki 搭建的 VOCALOID 公益百科与资源站（VOCAKEY），收录虚拟歌手资料与原创曲的中文歌词，并设有「资源集合下载站」；站点坚持非盈利、无广告，禁止倒卖资源与将资源用于商业用途，并持续维护盗售者名单，声明与 VOCAKEY.INFO 无直接联系。",
+          "icon": "./vocakey.wiki.png",
+          "disabledAt": "",
+          "createdAt": "2026-10-05 00:00:00"
+        },
+        {
+          "id": 519,
+          "name": "萌社区",
+          "url": "https://moe.one/",
+          "description": "签到向二次元综合社区",
+          "category": "term-6",
+          "detail": "以签到与萌点体系为主的二次元综合社区（moe.one），板块包含综合版块、互联网、生活日志、福利、交易区与站务管理，置顶精华与积分抽奖内容较多；社区同时运营萌盘网盘（pan.moe）与星抱月球网盘，站内也有拼车订阅与技术折腾类分享帖。",
+          "icon": "./moe.one.png",
+          "disabledAt": "",
+          "createdAt": "2026-10-05 00:00:00"
+        },
+        {
+          "id": 526,
+          "name": "MAD Producer 麦德工坊",
+          "url": "https://madproducer.com/",
+          "description": "MAD/AMV赛事信息平台",
+          "category": "term-6",
+          "detail": "国内 MAD／AMV 二次创作的综合信息平台（麦德工坊），由麦德映画与 InFInite Team 共同构建，汇总国内外 MAD 赛事信息与比赛日历、MAD 组织名单、入门文档（What's MAD）、新番表与研究文章，并可订阅 Google 日历、iCalendar 或 Outlook 形式的赛事日程。",
+          "icon": "./madproducer.com.png",
+          "disabledAt": "",
+          "createdAt": "2026-10-05 00:00:00"
+        },
         {
           "id": 487,
           "name": "八千代的小屋",
@@ -1485,6 +1595,17 @@
       "icon": "./download.svg",
       "sites": [
         {
+          "id": 518,
+          "name": "動漫花園資源網",
+          "url": "https://share.dmhy.org/",
+          "description": "动漫花园官方BT资源分享站",
+          "category": "term-4",
+          "detail": "动漫花园（動漫花園資源網）的官方发布平台，以 BT／磁力方式即时分享动画、漫画与音乐资源，注册免费；站内提供分类与高级搜索、AJAX 搜索建议、按分类或联盟订阅的 RSS、每周节目表，以及字幕组联盟发布页，部分地区直连会超时，可改用其镜像站。",
+          "icon": "./share.dmhy.org.png",
+          "disabledAt": "",
+          "createdAt": "2026-10-05 00:00:00"
+        },
+        {
           "id": 393,
           "name": "菲特动漫",
           "url": "https://fitacg.com",
@@ -2165,6 +2286,39 @@
           "icon": "./tools.svg",
           "sites": [
             {
+              "id": 521,
+              "name": "BS日テレ",
+              "url": "https://www.bs4.jp/",
+              "description": "日本BS卫星免费播出频道",
+              "category": "term-16",
+              "detail": "日本电视台的 BS 卫星频道（BS日本テレ），以卫星信号面向全国免费播出，用电视天线即可收看，同时提供节目表以及在 TVer、Hulu 上的同步直播；节目以新闻、综艺、韩国电视剧与音乐节目为主，也会在官网提示冒充本台的虚假广告。",
+              "icon": "./www.bs4.jp.png",
+              "disabledAt": "",
+              "createdAt": "2026-10-05 00:00:00"
+            },
+            {
+              "id": 514,
+              "name": "日本テレビ",
+              "url": "https://www.ntv.co.jp/",
+              "description": "日本电视台官方网站",
+              "category": "term-16",
+              "detail": "日本电视台（NTV／日テレ）官网，汇总剧集、综艺、新闻、电影、活动与动画等节目信息及各节目官网入口，并整理了节目官方 SNS、Hybridcast 与数据广播相关说明；热门节目可在 TVer 与 Hulu 同步观看，站内提供中文界面入口。",
+              "icon": "./www.ntv.co.jp.png",
+              "disabledAt": "",
+              "createdAt": "2026-10-05 00:00:00"
+            },
+            {
+              "id": 513,
+              "name": "読売テレビ",
+              "url": "https://www.ytv.co.jp/",
+              "description": "日本读卖电视台官方网站",
+              "category": "term-16",
+              "detail": "读卖电视台（Yomiuri TV）的官方网站，提供每日节目表、新闻、电影、商品与活动等信息，并按动画等分类开设节目页面；站点为日文，节目相关内容随播出日程持续更新。",
+              "icon": "./www.ytv.co.jp.png",
+              "disabledAt": "",
+              "createdAt": "2026-10-05 00:00:00"
+            },
+            {
               "id": 503,
               "name": "posite-c",
               "url": "https://www.posite-c.com",
@@ -2655,6 +2809,39 @@
           "name": "其它小工具",
           "icon": "./tools.svg",
           "sites": [
+            {
+              "id": 512,
+              "name": "FontInAss",
+              "url": "https://font.anibt.net/",
+              "description": "ASS字幕字体子集化工具",
+              "category": "term-21",
+              "detail": "ANiBT 站内的字幕处理工具（FontInAss），上传 ASS／SSA 字幕文件后会自动从其字体库中匹配所需的字体，输出体积大幅缩小的子集化字幕，解决字体过大导致播放器卡顿或缺字的问题；页面为纯前端应用。",
+              "icon": "./font.anibt.net.svg",
+              "disabledAt": "",
+              "createdAt": "2026-10-05 00:00:00"
+            },
+            {
+              "id": 517,
+              "name": "Picrew（ぷりみり）",
+              "url": "https://picrew.me",
+              "description": "可自制角色的图片生成器平台",
+              "category": "term-21",
+              "detail": "日本知名的免费图片生成器（画像メーカー）平台，可自由组合部件制作二次元角色立绘，也能把自己的自制生成器发布给其他玩家使用；站内按标签检索、设有热门与更新排行，无需登录即可试玩，支持日语、英语、韩语等界面。",
+              "icon": "./picrew.me.png",
+              "disabledAt": "",
+              "createdAt": "2026-10-05 00:00:00"
+            },
+            {
+              "id": 520,
+              "name": "萌盘",
+              "url": "https://pan.moe/",
+              "description": "萌社区网盘，注册送1TB",
+              "category": "term-21",
+              "detail": "萌社区（moe.one）旗下的免费网盘服务，注册即赠 1TB 永久空间，社区成员最高可扩容到 5TB；支持境内外多节点高速存储与 WebDav 挂载，无需安装 APP 即可管理与分享文件，并设有侵权与违规内容举报通道。",
+              "icon": "./pan.moe.png",
+              "disabledAt": "",
+              "createdAt": "2026-10-05 00:00:00"
+            },
             {
               "id": 508,
               "name": "HMCL启动器",

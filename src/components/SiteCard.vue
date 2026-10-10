@@ -2,7 +2,7 @@
   <div class="url-card">
     <div class="url-body">
       <router-link
-        :to="{ name: 'SiteDetail', query: { id: site.id } }"
+        :to="{ name: 'SiteDetail', params: { id: site.id } }"
         class="url-card-link"
         :title="site.description"
         rel="noopener noreferrer"

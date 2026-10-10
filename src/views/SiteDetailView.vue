@@ -74,9 +74,9 @@ import tagIcon from '@/assets/icons/tag.svg'
 const route = useRoute()
 const store = useSitesStore()
 
-// 路由 query.id 直接驱动查找结果（computed 自动响应，无需 watch+ref）
+// 路由 params.id 直接驱动查找结果（computed 自动响应，无需 watch+ref）
 const routeResult = computed(() => {
-  const id = route.query.id
+  const id = route.params.id
   if (!id) return null
   return store.findSiteById(id)
 })

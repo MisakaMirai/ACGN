@@ -58,7 +58,7 @@ const routes = [
     component: () => import('@/views/AnnouncementDetailView.vue'),
   },
   {
-    path: '/sites/detail',
+    path: '/sites/:id',
     name: 'SiteDetail',
     component: () => import('@/views/SiteDetailView.vue'),
   },
@@ -105,8 +105,8 @@ router.afterEach((to) => {
   }
 
   // 3. 公告详情（动态标题取公告名）
-  if (to.name === 'AnnouncementDetail' && to.query.id) {
-    const ann = useAnnouncementsStore().findById(to.query.id)
+  if (to.name === 'AnnouncementDetail' && to.params.id) {
+    const ann = useAnnouncementsStore().findById(to.params.id)
     if (ann) {
       title.value = ann.title + SUFFIX
       return
@@ -114,8 +114,8 @@ router.afterEach((to) => {
   }
 
   // 4. 站点详情（动态标题取站名）
-  if (to.name === 'SiteDetail' && to.query.id) {
-    const result = useSitesStore().findSiteById(to.query.id)
+  if (to.name === 'SiteDetail' && to.params.id) {
+    const result = useSitesStore().findSiteById(to.params.id)
     if (result?.site) {
       title.value = result.site.name + SUFFIX
       return

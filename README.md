@@ -8,7 +8,7 @@
 
 **也可以直接在 GitHub 上编辑（PR 目标分支：`develop`）：**
 - [编辑 sites.json](https://github.com/MomokiShiran/ACGN/edit/develop/src/data/sites.json) — 添加/修改网站条目
-- [上传站点图标](https://github.com/MomokiShiran/ACGN/tree/develop/src/assets/images/sites) — 添加图标文件
+- [上传站点图标](https://github.com/MomokiShiran/ACGN/tree/develop/public/icons/sites) — 添加图标文件
 
 **如涉及网站隐私、防护安全等问题，请贵站站长或个人及时联系邮箱 help@acgn-world.com 我们将在第一时间紧急处理！**
 

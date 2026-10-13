@@ -75,11 +75,13 @@
 ACGN/
 ├── .github/               # GitHub Actions 工作流
 ├── public/                # 不经构建处理的静态资源
+│   ├── icons/            # 站点图标（sites/）与分类图标（nav/）
+│   └── assets/           # favicon 等公共资源
 ├── scripts/               # Node 脚本（站点数据校验等）
 ├── src/
 │   ├── assets/           # 静态资源
 │   │   ├── icons/        # 内联 SVG 图标
-│   │   └── images/       # Logo、favicon、站点图标
+│   │   └── images/       # Logo、favicon
 │   ├── components/       # 可复用组件
 │   │   ├── layout/       # 布局组件（TheMainLayout / TheNavbar / TheSidebar / TheFooter）
 │   │   ├── LinkTag.vue         # 内/外链统一渲染
@@ -207,7 +209,7 @@ npm run test
     {
       "id": "term-x",
       "name": "分类名称",
-      "icon": "✨",
+      "icon": "/icons/nav/image.svg",
       "sites": [
         {
           "id": 1,
@@ -216,7 +218,7 @@ npm run test
           "description": "网站描述（简洁明了）",
           "category": "term-x",
           "detail": "站点详细介绍（可选）",
-          "icon": "./example.com.png",
+          "icon": "/icons/sites/example.com.png",
           "disabledAt": "",
           "createdAt": "2026-01-01 00:00:00"
         }
@@ -236,7 +238,7 @@ npm run test
 | `description` | string  | 是   | 网站描述（50 字以内）            |
 | `category`    | string  | 是   | 分类 ID（如 `term-2`）           |
 | `detail`      | string  | 否   | 站点详细介绍（详情页展示）       |
-| `icon`        | string  | 否   | 图标文件名                       |
+| `icon`        | string  | 否   | 图标路径（`/icons/sites/` 开头） |
 | `disabledAt`  | string  | 是   | 失效日期（空字符串表示正常运行） |
 | `createdAt`   | string  | 是   | 收录日期（`New` 徽章按此推算，30 天内算新站） |
 
@@ -273,14 +275,14 @@ npm run test
 ### 方式二：直接贡献代码
 
 1. 在 `src/data/sites.json` 对应分类的 `sites` 数组末尾添加新条目
-2. 如有需要，将图标放入 `src/assets/images/sites/`
+2. 如有需要，将图标放入 `public/icons/sites/`，并在数据的 `icon` 字段填写 `/icons/sites/文件名`
 3. 运行 `npm run validate` 确保数据合规
 4. 提交 Pull Request 到 `develop` 分支
 
 ### 方式三：GitHub 网页编辑（无需克隆）
 
 1. 打开 [sites.json 编辑页](https://github.com/MomokiShiran/ACGN/edit/develop/src/data/sites.json)，直接在 GitHub 上修改并提交
-2. 打开 [站点图标目录](https://github.com/MomokiShiran/ACGN/tree/develop/src/assets/images/sites)，上传新图标文件
+2. 打开 [站点图标目录](https://github.com/MomokiShiran/ACGN/tree/develop/public/icons/sites)，上传新图标文件
 3. GitHub 会自动创建 Fork 和分支，提交后发起 Pull Request
 
 ### 网站收录标准

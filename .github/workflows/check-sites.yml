@@ -36,7 +36,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '22'
 
       - name: Restore previous probe state
         uses: actions/cache/restore@v4
@@ -123,8 +123,7 @@ jobs:
               core.info(`已创建 Issue #${created.data.number}`)
             }
 
-      - name: Fail when confirmed dead sites exist
+      - name: Notify when confirmed dead sites exist
         if: always() && steps.probe.outputs.confirmed-dead-count != '0'
         run: |
-          echo "::error::检测到 ${{ steps.probe.outputs.confirmed-dead-count }} 个连续失效站点，详见探活报告"
-          exit 1
+          echo "::warning::检测到 ${{ steps.probe.outputs.confirmed-dead-count }} 个连续失效站点，详见探活报告"

@@ -166,14 +166,10 @@ const relatedSites = computed(() => {
   line-height: 1.8;
 }
 .site-detail-avatar {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 80px;
   height: 80px;
   margin-right: 12px;
   flex-shrink: 0;
-  border-radius: 50%;
 }
 .site-detail-avatar-img {
   width: 100%;
@@ -185,8 +181,6 @@ const relatedSites = computed(() => {
 .site-detail-actions {
   display: flex;
   align-items: center;
-  gap: 8px;
-  flex-wrap: wrap;
 }
 
 /* 相关站点 */

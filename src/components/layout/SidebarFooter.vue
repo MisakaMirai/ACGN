@@ -123,4 +123,14 @@ const cycleTheme = () => {
   flex: none;
   width: 100%;
 }
+
+/* 移动端抽屉内主题按钮放大到可点区域 */
+@media (max-width: 767px) {
+  .sidebar-theme {
+    padding: 0 16px 10px;
+  }
+  .theme-btn {
+    height: 40px;
+  }
+}
 </style>

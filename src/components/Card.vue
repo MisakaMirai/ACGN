@@ -18,4 +18,9 @@
     background-color 0.3s,
     box-shadow 0.3s;
 }
+@media (max-width: 767px) {
+  .card {
+    margin-bottom: 12px;
+  }
+}
 </style>

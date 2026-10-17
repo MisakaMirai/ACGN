@@ -64,4 +64,11 @@ const year = new Date().getFullYear()
 .footer-note + .footer-note {
   margin-top: 4px;
 }
+
+@media (max-width: 767px) {
+  .main-footer {
+    margin: auto 12px 12px;
+    padding: 1rem 12px;
+  }
+}
 </style>

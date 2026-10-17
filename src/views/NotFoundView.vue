@@ -25,4 +25,13 @@ import Button from '@/components/Button.vue'
   margin: 0 0 16px;
   color: var(--text-muted);
 }
+@media (max-width: 767px) {
+  .not-found-code {
+    font-size: 56px;
+    margin-bottom: 16px;
+  }
+  .not-found-title {
+    font-size: 1.5rem;
+  }
+}
 </style>

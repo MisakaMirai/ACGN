@@ -45,4 +45,9 @@ const store = useFriendsStore()
   position: relative;
   margin-right: 5px;
 }
+@media (max-width: 767px) {
+  .friendlink-link {
+    font-size: 0.875rem;
+  }
+}
 </style>

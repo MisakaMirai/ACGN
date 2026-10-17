@@ -56,4 +56,13 @@ defineProps({
   border-radius: 999px;
   background: var(--primary);
 }
+@media (max-width: 767px) {
+  .section-title {
+    margin-bottom: 12px;
+    font-size: 0.875rem;
+  }
+  .section-title-bar {
+    font-size: 1rem;
+  }
+}
 </style>

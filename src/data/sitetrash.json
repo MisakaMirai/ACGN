@@ -3,7 +3,7 @@
     {
       "id": "term-2",
       "name": "次元美图",
-      "icon": "./image.svg",
+      "icon": "/icons/nav/image.svg",
       "sites": [
         {
           "id": 158,
@@ -60,7 +60,7 @@
     {
       "id": "term-3",
       "name": "在线动漫",
-      "icon": "./play.svg",
+      "icon": "/icons/nav/play.svg",
       "sites": [
         {
           "id": 169,
@@ -222,7 +222,7 @@
     {
       "id": "term-12",
       "name": "在线漫画",
-      "icon": "./manga.svg",
+      "icon": "/icons/nav/manga.svg",
       "sites": [
         {
           "id": 66,
@@ -280,7 +280,7 @@
     {
       "id": "term-5",
       "name": "在线本子",
-      "icon": "./book.svg",
+      "icon": "/icons/nav/book.svg",
       "sites": [
         {
           "id": 1011,
@@ -327,7 +327,7 @@
     {
       "id": "term-8",
       "name": "在线里番",
-      "icon": "./audio.svg",
+      "icon": "/icons/nav/audio.svg",
       "sites": [
         {
           "id": 1020,
@@ -372,7 +372,7 @@
     {
       "id": "term-6",
       "name": "ACG资源社区",
-      "icon": "./users.svg",
+      "icon": "/icons/nav/users.svg",
       "sites": [
         {
           "id": 1001,
@@ -552,7 +552,7 @@
     {
       "id": "term-9",
       "name": "ACG图书馆",
-      "icon": "./university.svg",
+      "icon": "/icons/nav/university.svg",
       "sites": [
         {
           "id": 50,
@@ -568,7 +568,7 @@
     {
       "id": "term-7",
       "name": "Galgame",
-      "icon": "./game.svg",
+      "icon": "/icons/nav/game.svg",
       "sites": [
         {
           "id": 1008,
@@ -643,30 +643,30 @@
     {
       "id": "term-18",
       "name": "轻小说",
-      "icon": "./ai.svg",
+      "icon": "/icons/nav/ai.svg",
       "sites": []
     },
     {
       "id": "term-4",
       "name": "动漫下载",
-      "icon": "./download.svg",
+      "icon": "/icons/nav/download.svg",
       "sites": []
     },
     {
       "id": "term-14",
       "name": "ACG购物",
-      "icon": "./shopping-bag.svg",
+      "icon": "/icons/nav/shopping-bag.svg",
       "sites": []
     },
     {
       "id": "tool-collection",
       "name": "工具大全",
-      "icon": "./toolbox.svg",
+      "icon": "/icons/nav/toolbox.svg",
       "children": [
         {
           "id": "term-11",
           "name": "BT下载站",
-          "icon": "./download.svg",
+          "icon": "/icons/nav/download.svg",
           "sites": [
             {
               "id": 1003,
@@ -693,25 +693,25 @@
         {
           "id": "term-15",
           "name": "BT下载软件",
-          "icon": "./download.svg",
+          "icon": "/icons/nav/download.svg",
           "sites": []
         },
         {
           "id": "term-17",
           "name": "Telegram频道",
-          "icon": "./telegram.svg",
+          "icon": "/icons/nav/telegram.svg",
           "sites": []
         },
         {
           "id": "term-13",
           "name": "图源搜索工具",
-          "icon": "./search.svg",
+          "icon": "/icons/nav/search.svg",
           "sites": []
         },
         {
           "id": "term-16",
           "name": "进阶ACG必备",
-          "icon": "./tools.svg",
+          "icon": "/icons/nav/tools.svg",
           "sites": [
             {
               "id": 146,
@@ -728,7 +728,7 @@
         {
           "id": "term-22",
           "name": "付费网盘资源下载",
-          "icon": "./cloud-download.svg",
+          "icon": "/icons/nav/cloud-download.svg",
           "sites": [
             {
               "id": 1017,
@@ -745,7 +745,7 @@
         {
           "id": "term-21",
           "name": "其它小工具",
-          "icon": "./tools.svg",
+          "icon": "/icons/nav/tools.svg",
           "sites": []
         }
       ]

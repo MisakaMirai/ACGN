@@ -37,4 +37,9 @@ const emit = defineEmits(['select'])
   gap: 8px;
   margin-bottom: 16px;
 }
+@media (max-width: 767px) {
+  .pill-group {
+    margin-bottom: 12px;
+  }
+}
 </style>

@@ -18,8 +18,8 @@
 }
 @media (max-width: 767px) {
   .site-row {
-    margin-right: 0;
-    margin-left: 0;
+    margin-right: -6px;
+    margin-left: -6px;
   }
 }
 
@@ -44,6 +44,12 @@
 @media (min-width: 1200px) {
   .site-row > * {
     flex: 0 0 16.666667%;
+  }
+}
+@media (max-width: 767px) {
+  .site-row > * {
+    flex: 0 0 50%;
+    padding: 0 6px;
   }
 }
 </style>

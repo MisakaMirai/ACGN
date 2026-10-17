@@ -9,7 +9,7 @@ const sitesPath = path.join(__dirname, '../src/data/sites.json')
 const sitetrashPath = path.join(__dirname, '../src/data/sitetrash.json')
 
 const DATETIME_RE = /^\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}$/
-const ICON_RE = /^(?:(?:https?:)?\/\/|\/|\.\/)/
+const ICON_RE = /^(?:(?:https?:)?\/\/|\/icons\/)/
 
 function readAndParse(filePath) {
   try {
@@ -84,7 +84,7 @@ function validateRequiredFields(categories, fileName) {
       if (site.icon && !ICON_RE.test(site.icon)) {
         console.error(
           `✗ 站点 icon 格式异常 [${fileName} -> ${categoryName}]:`,
-          `${site.name || site.id} 的值 '${site.icon}'，应为 URL、/ 开头或 ./ 开头相对路径（本地图标请统一使用 ./ 前缀）`
+          `${site.name || site.id} 的值 '${site.icon}'，应为 URL 或 /icons/ 开头路径（本地图标请统一使用 /icons/sites/ 前缀）`
         )
         hasError = true
       }
@@ -259,15 +259,22 @@ function collectSiteIconRefs(categories) {
   return refs
 }
 
-function checkLocalRefs(refs, iconDir, dirLabel) {
-  const IMAGE_EXT_RE = /\.(png|ico|jpg|jpeg|gif|svg|webp)$/i
-  const URL_RE = /^(?:https?:)?\/\//
-  const localRefs = [...refs].filter(
-    (ref) => ref && !URL_RE.test(ref) && !ref.startsWith('/') && IMAGE_EXT_RE.test(ref)
+const URL_RE = /^(?:https?:)?\/\//
+const IMAGE_EXT_RE = /\.(png|ico|jpg|jpeg|gif|svg|webp)$/i
+const SITE_ICON_PREFIX = '/icons/sites/'
+const NAV_ICON_PREFIX = '/icons/nav/'
+
+function checkLocalRefs(refs, prefix, iconDir, dirLabel) {
+  const refBasenames = new Set(
+    [...refs]
+      .filter((ref) => ref && !URL_RE.test(ref) && ref.startsWith(prefix) && IMAGE_EXT_RE.test(ref))
+      .map((ref) => ref.slice(prefix.length))
+      .filter(Boolean)
   )
 
-  const refBasenames = new Set(localRefs.map((ref) => ref.split('/').pop()).filter(Boolean))
-  const missing = [...refBasenames].filter((basename) => !fs.existsSync(path.join(iconDir, basename)))
+  const missing = [...refBasenames].filter(
+    (basename) => !fs.existsSync(path.join(iconDir, basename))
+  )
   if (missing.length > 0) {
     console.error(`✗ 以下数据引用的图标文件不存在:`)
     for (const basename of missing) console.error(`   ${dirLabel}/${basename}`)
@@ -283,39 +290,26 @@ function checkIconReferences(categoriesList, siteIconDir, navIconDir) {
     for (const ref of collectCategoryIconRefs(categories)) allNavRefs.add(ref)
   }
 
-  let hasError = checkLocalRefs(allSiteRefs, siteIconDir, 'assets/images/sites')
+  let hasError = checkLocalRefs(allSiteRefs, SITE_ICON_PREFIX, siteIconDir, 'public/icons/sites')
 
-  const IMAGE_EXT_RE = /\.(png|ico|jpg|jpeg|gif|svg|webp)$/i
-  const URL_RE = /^(?:https?:)?\/\//
   const siteRefBasenames = new Set(
     [...allSiteRefs]
-      .filter((ref) => ref && !URL_RE.test(ref) && !ref.startsWith('/') && IMAGE_EXT_RE.test(ref))
-      .map((ref) => ref.split('/').pop())
+      .filter((ref) => ref && !URL_RE.test(ref) && ref.startsWith(SITE_ICON_PREFIX))
+      .map((ref) => ref.slice(SITE_ICON_PREFIX.length))
       .filter(Boolean)
   )
 
   if (fs.existsSync(siteIconDir)) {
-    const files = fs.readdirSync(siteIconDir).filter((f) => /\.(png|ico)$/i.test(f))
+    const files = fs.readdirSync(siteIconDir).filter((f) => IMAGE_EXT_RE.test(f))
     const orphan = files.filter((f) => !siteRefBasenames.has(f))
     if (orphan.length > 0) {
       hasError = true
       console.error(`✗ 以下站点图标未被任何数据引用（疑似孤儿，请删除）:`)
-      for (const f of orphan) console.error(`   assets/images/sites/${f}`)
+      for (const f of orphan) console.error(`   public/icons/sites/${f}`)
     }
   }
 
-  const navLocalRefs = [...allNavRefs].filter(
-    (ref) => ref && !URL_RE.test(ref) && !ref.startsWith('/') && path.extname(ref).toLowerCase() === '.svg'
-  )
-  const navRefBasenames = new Set(navLocalRefs.map((ref) => ref.split('/').pop()).filter(Boolean))
-  const navMissing = [...navRefBasenames].filter(
-    (basename) => !fs.existsSync(path.join(navIconDir, basename))
-  )
-  if (navMissing.length > 0) {
-    hasError = true
-    console.error(`✗ 以下分类图标文件不存在:`)
-    for (const basename of navMissing) console.error(`   assets/icons/${basename}`)
-  }
+  hasError = checkLocalRefs(allNavRefs, NAV_ICON_PREFIX, navIconDir, 'public/icons/nav') || hasError
 
   if (!hasError) {
     console.log(`✓ 图标引用完整，无缺失文件、无孤儿图标`)
@@ -345,8 +339,8 @@ function main() {
   const trashResult = validateFile(sitetrashPath)
   hasError = sitesResult.hasError || trashResult.hasError
 
-  const iconDir = path.join(__dirname, '../src/assets/images/sites')
-  const navIconDir = path.join(__dirname, '../src/assets/icons')
+  const iconDir = path.join(__dirname, '../public/icons/sites')
+  const navIconDir = path.join(__dirname, '../public/icons/nav')
   hasError = checkIconReferences([sitesResult.categories, trashResult.categories], iconDir, navIconDir) || hasError
 
   console.log('\n校验完成！')

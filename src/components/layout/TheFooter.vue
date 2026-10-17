@@ -3,15 +3,11 @@
     <ScrollTopButton />
 
     <p class="footer-copyright">
-      © {{ year }} ACGN
+      © {{ year }} {{ SITE_NAME }}
       <span class="footer-sep" aria-hidden="true">·</span>
       Powered by
-      <AppLink
-        href="https://github.com/MomokiShiran/ACGN"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <strong>ACGN</strong>
+      <AppLink :href="REPO_URL" target="_blank" rel="noopener noreferrer">
+        <strong>{{ SITE_NAME }}</strong>
       </AppLink>
     </p>
 
@@ -21,7 +17,7 @@
 
     <p class="footer-note">
       <strong>联系方式：</strong>若有任何问题或合作，请发送邮件至
-      <AppLink href="mailto:help@acgn-world.com" muted>help@acgn-world.com</AppLink>
+      <AppLink :href="`mailto:${CONTACT_EMAIL}`" muted>{{ CONTACT_EMAIL }}</AppLink>
     </p>
     <p class="footer-note">
       <strong>免责声明：</strong>本站仅提供网站链接导航服务，不存储、不制作、不传播任何内容。
@@ -35,6 +31,7 @@
 import AppLink from '../AppLink.vue'
 import ScrollTopButton from '../ScrollTopButton.vue'
 import { useContentPagesStore } from '@/stores/contentPages'
+import { SITE_NAME, CONTACT_EMAIL, REPO_URL } from '@/config'
 
 const pagesStore = useContentPagesStore()
 const year = new Date().getFullYear()
@@ -66,5 +63,12 @@ const year = new Date().getFullYear()
 }
 .footer-note + .footer-note {
   margin-top: 4px;
+}
+
+@media (max-width: 767px) {
+  .main-footer {
+    margin: auto 12px 12px;
+    padding: 1rem 12px;
+  }
 }
 </style>

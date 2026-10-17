@@ -107,4 +107,17 @@ const isLink = computed(() => Boolean(props.to || props.href))
   height: 16px;
   flex-shrink: 0;
 }
+
+/* 移动端保证可点区域 ≥ 36px */
+@media (max-width: 767px) {
+  .btn-sm {
+    min-height: 36px;
+  }
+  .btn-md {
+    min-height: 40px;
+  }
+  .btn-lg {
+    min-height: 44px;
+  }
+}
 </style>

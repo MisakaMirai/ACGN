@@ -1,11 +1,12 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import { useTitle } from '@vueuse/core'
-import { scrollMainTo } from '@/composables/useMainScroll'
+import { useMainScrollStore } from '@/stores/mainScroll'
 import { useContentPagesStore } from '@/stores/contentPages'
 import { useAnnouncementsStore } from '@/stores/announcements'
 import { useSitesStore } from '@/stores/sites'
+import { SITE_NAME } from '@/config'
 
-const SUFFIX = ' | ACGN'
+const SUFFIX = ` | ${SITE_NAME}`
 const HOME_TITLE = 'ACGN - ACG二次元导航盒子 | 动漫、漫画、游戏、资源导航'
 
 const title = useTitle()
@@ -58,7 +59,7 @@ const routes = [
     component: () => import('@/views/AnnouncementDetailView.vue'),
   },
   {
-    path: '/sites/detail',
+    path: '/sites/:id',
     name: 'SiteDetail',
     component: () => import('@/views/SiteDetailView.vue'),
   },
@@ -82,7 +83,7 @@ const router = createRouter({
   scrollBehavior(to) {
     // 右侧内容区是独立滚动容器，窗口不滚动
     // 带 hash 的定位交给被命中的分类区块（自身 scrollIntoView），这里只重置其他情况
-    if (!to.hash) scrollMainTo(0, 'auto')
+    if (!to.hash) useMainScrollStore().scrollTo(0, 'auto')
     return false
   },
 })
@@ -105,8 +106,8 @@ router.afterEach((to) => {
   }
 
   // 3. 公告详情（动态标题取公告名）
-  if (to.name === 'AnnouncementDetail' && to.query.id) {
-    const ann = useAnnouncementsStore().findById(to.query.id)
+  if (to.name === 'AnnouncementDetail' && to.params.id) {
+    const ann = useAnnouncementsStore().findById(to.params.id)
     if (ann) {
       title.value = ann.title + SUFFIX
       return
@@ -114,8 +115,8 @@ router.afterEach((to) => {
   }
 
   // 4. 站点详情（动态标题取站名）
-  if (to.name === 'SiteDetail' && to.query.id) {
-    const result = useSitesStore().findSiteById(to.query.id)
+  if (to.name === 'SiteDetail' && to.params.id) {
+    const result = useSitesStore().findSiteById(to.params.id)
     if (result?.site) {
       title.value = result.site.name + SUFFIX
       return

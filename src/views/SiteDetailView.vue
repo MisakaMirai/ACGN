@@ -59,7 +59,7 @@ import { computed } from 'vue'
 import { useRoute } from 'vue-router'
 import { useSitesStore } from '@/stores/sites'
 import { resolveIcon, handleIconError } from '@/utils/siteIcon'
-import { shuffle } from '@/utils/shuffle'
+import { seededShuffle } from '@/utils/shuffle'
 import SiteCard from '@/components/SiteCard.vue'
 import SectionTitle from '@/components/SectionTitle.vue'
 import SiteRow from '@/components/SiteRow.vue'
@@ -74,9 +74,9 @@ import tagIcon from '@/assets/icons/tag.svg'
 const route = useRoute()
 const store = useSitesStore()
 
-// 路由 query.id 直接驱动查找结果（computed 自动响应，无需 watch+ref）
+// 路由 params.id 直接驱动查找结果（computed 自动响应，无需 watch+ref）
 const routeResult = computed(() => {
-  const id = route.query.id
+  const id = route.params.id
   if (!id) return null
   return store.findSiteById(id)
 })
@@ -96,7 +96,7 @@ const siteUrl = computed(() => {
   }
 })
 
-// 同分类相关站点：随机抽取最多 6 个
+// 同分类相关站点：以站点 id 为种子稳定抽样最多 6 个（避免 computed 重复求值时跳动）
 const relatedSites = computed(() => {
   if (!site.value || !categoryName.value) return []
   const seen = new Set([site.value.id])
@@ -107,7 +107,7 @@ const relatedSites = computed(() => {
       pool.push(s)
     }
   }
-  return shuffle(pool).slice(0, 6)
+  return seededShuffle(pool, site.value.id).slice(0, 6)
 })
 </script>
 
@@ -166,14 +166,10 @@ const relatedSites = computed(() => {
   line-height: 1.8;
 }
 .site-detail-avatar {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 80px;
   height: 80px;
   margin-right: 12px;
   flex-shrink: 0;
-  border-radius: 50%;
 }
 .site-detail-avatar-img {
   width: 100%;
@@ -185,8 +181,6 @@ const relatedSites = computed(() => {
 .site-detail-actions {
   display: flex;
   align-items: center;
-  gap: 8px;
-  flex-wrap: wrap;
 }
 
 /* 相关站点 */

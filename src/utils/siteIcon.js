@@ -1,36 +1,30 @@
-import defaultIcon from '@/assets/images/favicon.png'
-import linkIcon from '@/assets/icons/link.svg'
+const BASE_URL = import.meta.env.BASE_URL
 
-const iconModules = import.meta.glob('@/assets/images/sites/*.{png,ico,svg}', {
-  eager: true,
-  import: 'default',
-})
-const iconMap = Object.fromEntries(
-  Object.entries(iconModules).map(([path, url]) => [path.split('/').pop(), url])
-)
+const DEFAULT_ICON = '/icons/default.png'
+const DEFAULT_NAV_ICON = '/icons/nav/link.svg'
 
-const navIconModules = import.meta.glob('@/assets/icons/*.svg', {
-  eager: true,
-  import: 'default',
-})
-const navIconMap = Object.fromEntries(
-  Object.entries(navIconModules).map(([path, url]) => [path.split('/').pop(), url])
-)
+const isAbsoluteUrl = (path) => /^(?:https?:)?\/\//.test(path)
+const withBase = (path) => `${BASE_URL}${path.replace(/^\//, '')}`
 
 export function resolveIcon(icon) {
-  if (!icon) return defaultIcon
-  if (/^(?:https?:)?\/\//.test(icon) || icon.startsWith('/')) return icon
-  return iconMap[icon.split('/').pop()] || defaultIcon
+  if (!icon) return withBase(DEFAULT_ICON)
+  return isAbsoluteUrl(icon) ? icon : withBase(icon)
 }
 
-// 侧边栏分类图标：JSON 里保存形如 ./xxx.svg，映射到 src/assets/icons 内的资源
 export function resolveNavIcon(icon) {
-  if (!icon) return linkIcon
-  return navIconMap[icon.split('/').pop()] || linkIcon
+  if (!icon) return withBase(DEFAULT_NAV_ICON)
+  return isAbsoluteUrl(icon) ? icon : withBase(icon)
 }
 
+// 图标加载失败时回退到默认图，站点图标与导航图标各用各的兜底
 export function handleIconError(event) {
   if (event.target) {
-    event.target.src = defaultIcon
+    event.target.src = withBase(DEFAULT_ICON)
+  }
+}
+
+export function handleNavIconError(event) {
+  if (event.target) {
+    event.target.src = withBase(DEFAULT_NAV_ICON)
   }
 }

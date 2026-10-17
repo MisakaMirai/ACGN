@@ -101,4 +101,10 @@ const toNodes = (item) => (Array.isArray(item) ? item : [item])
   margin: 0;
   color: var(--text-muted);
 }
+@media (max-width: 767px) {
+  .cp-title {
+    margin-bottom: 12px;
+    font-size: 1.25rem;
+  }
+}
 </style>

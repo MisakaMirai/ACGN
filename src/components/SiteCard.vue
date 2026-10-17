@@ -2,7 +2,7 @@
   <div class="url-card">
     <div class="url-body">
       <router-link
-        :to="{ name: 'SiteDetail', query: { id: site.id } }"
+        :to="{ name: 'SiteDetail', params: { id: site.id } }"
         class="url-card-link"
         :title="site.description"
         rel="noopener noreferrer"
@@ -56,13 +56,13 @@ const onImgError = handleIconError
 <style scoped>
 /* 卡片容器 —— 栅格列宽由父级 SiteRow 控制，这里只管卡片本体 */
 .url-card {
-  margin-bottom: 16px;
+  margin-bottom: 12px;
 }
 .url-body {
   position: relative;
   display: flex;
   flex-direction: column;
-  height: calc(100% - 16px);
+  height: calc(100% - 12px);
   transform: translateY(0);
   transition: transform 0.3s;
   border-radius: 16px;
@@ -85,9 +85,10 @@ const onImgError = handleIconError
   text-decoration: none;
   -webkit-tap-highlight-color: transparent;
   touch-action: manipulation;
+  min-height: 68px;
 }
 .url-card-body {
-  padding: 0.9375rem;
+  padding: 0.75rem 0.625rem;
 }
 .url-content {
   display: flex;
@@ -172,5 +173,30 @@ const onImgError = handleIconError
 .togo-arrow {
   width: 16px;
   height: 16px;
+}
+
+@media (max-width: 767px) {
+  .url-card {
+    margin-bottom: 10px;
+  }
+  .url-body {
+    height: calc(100% - 10px);
+  }
+  .url-card-body {
+    padding: 0.625rem 0.5rem;
+  }
+  .url-img {
+    width: 36px;
+    height: 36px;
+    margin-right: 6px;
+  }
+  .url-info {
+    padding-right: 6px;
+  }
+  .togo {
+    top: 16px;
+    width: 26px;
+    height: 26px;
+  }
 }
 </style>

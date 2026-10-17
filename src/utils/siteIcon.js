@@ -16,8 +16,15 @@ export function resolveNavIcon(icon) {
   return isAbsoluteUrl(icon) ? icon : withBase(icon)
 }
 
+// 图标加载失败时回退到默认图，站点图标与导航图标各用各的兜底
 export function handleIconError(event) {
   if (event.target) {
     event.target.src = withBase(DEFAULT_ICON)
+  }
+}
+
+export function handleNavIconError(event) {
+  if (event.target) {
+    event.target.src = withBase(DEFAULT_NAV_ICON)
   }
 }

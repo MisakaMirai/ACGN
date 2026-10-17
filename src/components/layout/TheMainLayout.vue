@@ -7,8 +7,10 @@
 
 <script setup>
 import TheFooter from './TheFooter.vue'
-import { registerScroller } from '@/composables/useMainScroll'
+import { useMainScrollStore } from '@/stores/mainScroll'
+
 // 右侧内容区滚动容器：顶栏/侧边栏在滚动容器之外，页面滚动全部发生在这里
+const { registerScroller } = useMainScrollStore()
 </script>
 
 <style scoped>

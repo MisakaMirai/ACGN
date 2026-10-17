@@ -83,7 +83,7 @@ ACGN/
 │   │   ├── icons/        # 内联 SVG 图标
 │   │   └── images/       # Logo、favicon
 │   ├── components/       # 可复用组件
-│   │   ├── layout/       # 布局组件（TheMainLayout / TheNavbar / TheSidebar / TheFooter）
+│   │   ├── layout/       # 布局组件（TheMainLayout / TheNavbar / TheSidebar / TheFooter / SidebarNavList 等）
 │   │   ├── LinkTag.vue         # 内/外链统一渲染
 │   │   ├── AppLink.vue         # 外链按钮
 │   │   ├── Button.vue          # 按钮
@@ -104,11 +104,9 @@ ACGN/
 │   │   ├── CategorySection.vue
 │   │   ├── AnnouncementItem.vue
 │   │   └── FriendLinks.vue
-│   ├── composables/       # Vue 组合式函数（跨组件共享响应式状态）
-│   │   └── useMainScroll.js    # 内容区滚动容器注册与滚动定位
 │   ├── utils/             # 无状态纯函数与常量
 │   │   ├── theme.js            # 主题常量与模式切换/类名解析
-│   │   ├── shuffle.js
+│   │   ├── shuffle.js          # 随机 / 种子洗牌
 │   │   └── siteIcon.js         # 站点/分类图标解析与错误兜底
 │   ├── data/              # JSON 数据
 │   │   ├── announcements.json
@@ -124,6 +122,7 @@ ACGN/
 │   │   ├── contentPages.js     # 法律页查询 + 协议汇总目录页
 │   │   ├── friends.js
 │   │   ├── hitokoto.js
+│   │   ├── mainScroll.js       # 内容区滚动容器注册与滚动定位
 │   │   ├── sidebar.js
 │   │   ├── sites.js
 │   │   └── theme.js
@@ -137,6 +136,7 @@ ACGN/
 │   │   ├── PostSiteView.vue
 │   │   └── NotFoundView.vue
 │   ├── App.vue            # 根组件（主题变量 + 全局样式）
+│   ├── config.js          # 站点名/联系邮箱/仓库地址等常量
 │   └── main.js            # 应用入口
 ├── eslint.config.js      # ESLint 扁平配置
 ├── .prettierrc

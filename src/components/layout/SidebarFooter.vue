@@ -23,20 +23,7 @@
         <img class="theme-icon" :src="themeIcons[themeStore.sourceMode]" alt="" />
       </button>
     </div>
-    <ul class="sidebar-nav-list">
-      <li class="sidebar-item">
-        <router-link to="/sitetrash" class="sidebar-menu-link">
-          <img class="sidebar-cat-icon" :src="trashIcon" alt="" />
-          <span class="sidebar-menu-text">失效归档</span>
-        </router-link>
-      </li>
-      <li class="sidebar-item">
-        <router-link to="/postsite" class="sidebar-menu-link">
-          <img class="sidebar-cat-icon" :src="linkIcon" alt="" />
-          <span class="sidebar-menu-text">投稿&反馈</span>
-        </router-link>
-      </li>
-    </ul>
+    <SidebarNavList :items="footerItems" />
   </div>
 </template>
 
@@ -44,6 +31,7 @@
 import { computed } from 'vue'
 import { useThemeStore } from '@/stores/theme'
 import { THEME_MODES, nextThemeMode, themeModeLabel } from '@/utils/theme'
+import SidebarNavList from './SidebarNavList.vue'
 import trashIcon from '@/assets/icons/trash.svg'
 import linkIcon from '@/assets/icons/link.svg'
 import sunIcon from '@/assets/icons/sun.svg'
@@ -57,6 +45,12 @@ const themeIcons = {
   dark: moonIcon,
   auto: autoIcon,
 }
+
+// 页脚固定入口：图标为已打包的静态资源地址
+const footerItems = [
+  { key: 'sitetrash', to: '/sitetrash', icon: trashIcon, label: '失效归档' },
+  { key: 'postsite', to: '/postsite', icon: linkIcon, label: '投稿&反馈' },
+]
 
 // 当前模式标签（供迷你单钮 tooltip / aria）
 const currentLabel = computed(() => themeModeLabel(themeStore.sourceMode))
@@ -112,54 +106,6 @@ const cycleTheme = () => {
 .theme-btn-mini {
   display: none;
 }
-.sidebar-nav-list {
-  margin: 0;
-  padding: 0;
-}
-.sidebar-cat-icon {
-  width: 18px;
-  height: 18px;
-  margin-right: 8px;
-  flex-shrink: 0;
-  vertical-align: middle;
-}
-.sidebar-menu-text {
-  opacity: 1;
-  transition: opacity 0.2s ease;
-  white-space: nowrap;
-}
-.sidebar-menu-link {
-  display: block;
-  overflow: hidden;
-  padding: 0 0 0 16px;
-  line-height: 50px;
-  max-height: 50px;
-  color: var(--sidebar-text);
-  text-decoration: none;
-  background: none;
-  border: none;
-  text-align: left;
-  cursor: pointer;
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: inherit;
-  outline: none;
-  transition:
-    color 0.3s,
-    background-color 0.3s;
-  -webkit-tap-highlight-color: transparent;
-  touch-action: manipulation;
-}
-.sidebar-menu-link:active {
-  color: var(--primary);
-}
-.sidebar-item {
-  position: relative;
-}
-.sidebar-item > .sidebar-menu-link:hover {
-  color: var(--primary);
-  background: var(--sidebar-hover);
-}
 
 /* 迷你态变体（.mini-sidebar 在主组件 #sidebar 上） */
 .mini-sidebar .sidebar-theme {
@@ -176,8 +122,5 @@ const cycleTheme = () => {
 .mini-sidebar .theme-btn {
   flex: none;
   width: 100%;
-}
-.mini-sidebar .sidebar-menu-text {
-  opacity: 0;
 }
 </style>

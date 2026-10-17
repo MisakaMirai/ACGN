@@ -59,7 +59,7 @@ import { computed } from 'vue'
 import { useRoute } from 'vue-router'
 import { useSitesStore } from '@/stores/sites'
 import { resolveIcon, handleIconError } from '@/utils/siteIcon'
-import { shuffle } from '@/utils/shuffle'
+import { seededShuffle } from '@/utils/shuffle'
 import SiteCard from '@/components/SiteCard.vue'
 import SectionTitle from '@/components/SectionTitle.vue'
 import SiteRow from '@/components/SiteRow.vue'
@@ -96,7 +96,7 @@ const siteUrl = computed(() => {
   }
 })
 
-// 同分类相关站点：随机抽取最多 6 个
+// 同分类相关站点：以站点 id 为种子稳定抽样最多 6 个（避免 computed 重复求值时跳动）
 const relatedSites = computed(() => {
   if (!site.value || !categoryName.value) return []
   const seen = new Set([site.value.id])
@@ -107,7 +107,7 @@ const relatedSites = computed(() => {
       pool.push(s)
     }
   }
-  return shuffle(pool).slice(0, 6)
+  return seededShuffle(pool, site.value.id).slice(0, 6)
 })
 </script>
 

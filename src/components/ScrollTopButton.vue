@@ -6,16 +6,19 @@
 
 <script setup>
 import { computed } from 'vue'
+import { storeToRefs } from 'pinia'
 import { useScroll } from '@vueuse/core'
 import arrowUpIcon from '@/assets/icons/arrow-up.svg'
-import { mainScroller, scrollMainTo } from '@/composables/useMainScroll'
+import { useMainScrollStore } from '@/stores/mainScroll'
 
 // 右侧内容区是独立滚动容器，显隐交给 useScroll
-const { y } = useScroll(mainScroller)
+const mainScrollStore = useMainScrollStore()
+const { scroller } = storeToRefs(mainScrollStore)
+const { y } = useScroll(scroller)
 const visible = computed(() => y.value >= 50)
 
 const scrollToTop = () => {
-  scrollMainTo(0)
+  mainScrollStore.scrollTo(0)
 }
 </script>
 

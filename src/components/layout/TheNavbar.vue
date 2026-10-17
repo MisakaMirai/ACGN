@@ -7,13 +7,11 @@
 
       <div class="navbar-left">
         <NavbarMenuToggle />
-        <router-link to="/announcements" class="navbar-announcement" rel="announcement">
-          公告
-        </router-link>
       </div>
 
       <div class="navbar-right">
         <NavbarHitokoto />
+        <NavbarNotifications />
         <NavbarMobile />
       </div>
     </div>
@@ -24,6 +22,7 @@
 import logoUrl from '@/assets/images/20210727002253-59085.jpeg'
 import NavbarMenuToggle from './NavbarMenuToggle.vue'
 import NavbarHitokoto from './NavbarHitokoto.vue'
+import NavbarNotifications from './NavbarNotifications.vue'
 import NavbarMobile from './NavbarMobile.vue'
 </script>
 
@@ -71,29 +70,6 @@ import NavbarMobile from './NavbarMobile.vue'
   align-items: center;
   gap: 12px;
   flex-shrink: 0;
-}
-
-.navbar-announcement {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  padding: 6px 12px;
-  border: 1px solid transparent;
-  border-radius: 6px;
-  color: var(--text);
-  text-decoration: none;
-  font-size: 0.75rem;
-  line-height: 1.5;
-  white-space: normal;
-  vertical-align: middle;
-  cursor: pointer;
-  user-select: none;
-  transition: color 0.2s ease-in-out;
-  -webkit-tap-highlight-color: transparent;
-  touch-action: manipulation;
-}
-.navbar-announcement:hover {
-  color: var(--primary);
 }
 
 @media (min-width: 768px) {

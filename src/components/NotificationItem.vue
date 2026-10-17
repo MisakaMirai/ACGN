@@ -1,11 +1,18 @@
 <template>
-  <router-link :to="{ name: 'AnnouncementDetail', params: { id: item.id } }" class="ann-item">
-    <div class="ann-item-head">
-      <h5 class="ann-item-title">{{ item.title }}</h5>
-      <img class="ann-item-arrow" aria-hidden="true" :src="angleRightIcon" alt="" />
+  <router-link
+    :to="{ name: 'NotificationDetail', params: { id: item.id } }"
+    class="noti-item"
+    :class="{ 'is-unread': unread }"
+  >
+    <span class="noti-dot" :class="{ 'is-unread': unread }" aria-hidden="true"></span>
+    <div class="noti-body">
+      <div class="noti-head">
+        <h5 class="noti-title">{{ item.title }}</h5>
+        <img class="noti-arrow" aria-hidden="true" :src="angleRightIcon" alt="" />
+      </div>
+      <p class="noti-meta">{{ item.date }} · {{ item.author }} · {{ item.views }} 浏览</p>
+      <p class="noti-excerpt">{{ item.excerpt }}</p>
     </div>
-    <p class="ann-item-meta">{{ item.date }} · {{ item.author }} · {{ item.views }} 浏览</p>
-    <p class="ann-item-excerpt">{{ item.excerpt }}</p>
   </router-link>
 </template>
 
@@ -14,12 +21,15 @@ import angleRightIcon from '@/assets/icons/angle-right.svg'
 
 defineProps({
   item: { type: Object, required: true },
+  unread: { type: Boolean, default: false },
 })
 </script>
 
 <style scoped>
-.ann-item {
-  display: block;
+.noti-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
   padding: var(--card-padding, 16px);
   background: var(--card-bg);
   border-radius: 16px;
@@ -29,21 +39,38 @@ defineProps({
   -webkit-tap-highlight-color: transparent;
   touch-action: manipulation;
 }
-.ann-item:hover .ann-item-title {
+.noti-item:hover .noti-title {
   color: var(--primary);
 }
-.ann-item:hover .ann-item-arrow {
+.noti-item:hover .noti-arrow {
   color: var(--primary);
   transform: translateX(2px);
 }
 
-.ann-item-head {
+.noti-dot {
+  flex-shrink: 0;
+  width: 8px;
+  height: 8px;
+  margin-top: 7px;
+  border-radius: 50%;
+  background: transparent;
+}
+.noti-dot.is-unread {
+  background: var(--primary);
+}
+
+.noti-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.noti-head {
   display: flex;
   align-items: center;
   gap: 8px;
 }
 
-.ann-item-title {
+.noti-title {
   margin: 0;
   flex: 1 1 auto;
   min-width: 0;
@@ -54,8 +81,11 @@ defineProps({
   color: var(--text-heading);
   transition: color 0.3s;
 }
+.is-unread .noti-title {
+  color: var(--text-heading);
+}
 
-.ann-item-arrow {
+.noti-arrow {
   flex-shrink: 0;
   color: var(--text-muted);
   transition:
@@ -63,12 +93,12 @@ defineProps({
     transform 0.3s;
 }
 
-.ann-item-meta {
+.noti-meta {
   margin: 4px 0 0;
   color: var(--text-muted);
 }
 
-.ann-item-excerpt {
+.noti-excerpt {
   margin: 8px 0 0;
   color: var(--text-muted);
   line-height: 1.8;

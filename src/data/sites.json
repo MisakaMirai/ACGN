@@ -200,6 +200,39 @@
       "icon": "/icons/nav/play.svg",
       "sites": [
         {
+          "id": 538,
+          "name": "MX动漫",
+          "url": "https://www.dcc3.com/",
+          "description": "国产/日本/欧美动漫在线观看",
+          "category": "term-3",
+          "detail": "MX动漫（dcc3.com）是在线动漫站，按国产动漫、日本动漫、欧美动漫与动漫电影分类，提供新番与剧场版在线播放，条目标注更新集数或完结状态。",
+          "icon": "/icons/sites/www.dcc3.com.ico",
+          "disabledAt": "",
+          "createdAt": "2026-10-21 00:00:00"
+        },
+        {
+          "id": 529,
+          "name": "OmoFun",
+          "url": "https://omo.fun/",
+          "description": "动漫在线观看平台与APP下载入口",
+          "category": "term-3",
+          "detail": "OmoFun 是面向动漫爱好者的观漫平台官网，提供手机版与电脑版客户端下载及在线观看入口，涵盖新番与经典作品，分纯净版与复活版，更新节奏紧跟日本播出。",
+          "icon": "/icons/sites/omo.fun.png",
+          "disabledAt": "",
+          "createdAt": "2026-10-21 00:00:00"
+        },
+        {
+          "id": 530,
+          "name": "番薯动漫发布页",
+          "url": "https://fsdm.top/",
+          "description": "番薯动漫域名发布页，防失联入口",
+          "category": "term-3",
+          "detail": "番薯动漫的官方域名发布页，提供主域名与备用域名（fsdm02.com 相关地址）入口，并附官方 QQ 交流群与安卓客户端下载，适合主站无法访问时找回入口。",
+          "icon": "/icons/sites/fsdm.top.png",
+          "disabledAt": "",
+          "createdAt": "2026-10-21 00:00:00"
+        },
+        {
           "id": 515,
           "name": "TVer",
           "url": "https://tver.jp/",
@@ -1212,6 +1245,17 @@
       "icon": "/icons/nav/university.svg",
       "sites": [
         {
+          "id": 535,
+          "name": "WIKIWIKI",
+          "url": "https://wikiwiki.jp/",
+          "description": "日本Wiki托管平台，游戏动画攻略资料",
+          "category": "term-9",
+          "detail": "WIKIWIKI.jp 是日本的免费 Wiki 托管平台，聚集大量游戏、动画、VTuber 与同人作品攻略资料（如原神、舰队Collection、彩虹社等），可按热度、评价与更新时间检索。",
+          "icon": "/icons/sites/wikiwiki.jp.ico",
+          "disabledAt": "",
+          "createdAt": "2026-10-21 00:00:00"
+        },
+        {
           "id": 496,
           "name": "柯南百科",
           "url": "https://www.conanpedia.com/",
@@ -1729,6 +1773,17 @@
       "name": "ACG购物",
       "icon": "/icons/nav/shopping-bag.svg",
       "sites": [
+        {
+          "id": 534,
+          "name": "爱发电",
+          "url": "https://afdian.com/",
+          "description": "国内创作者赞助与会员订阅平台",
+          "category": "term-14",
+          "detail": "爱发电是国内创作者赞助（订阅）平台，粉丝可按月或单次赞助支持的创作者并解锁会员限定内容；二次元画师、UP 主、Coser、音声创作者聚集，适合支持喜爱的创作者。",
+          "icon": "/icons/sites/afdian.com.ico",
+          "disabledAt": "",
+          "createdAt": "2026-10-21 00:00:00"
+        },
         {
           "id": 497,
           "name": "Fantia",
@@ -2286,6 +2341,39 @@
           "icon": "/icons/nav/tools.svg",
           "sites": [
             {
+              "id": 531,
+              "name": "Aplaybox",
+              "url": "https://www.aplaybox.com/",
+              "description": "3D/MMD模型与动作分享社区",
+              "category": "term-16",
+              "detail": "Aplaybox 是中文 3D 模型分享社区，模型师与动作师发布人物、场景、道具模型及动作数据，可按模型与动作分类浏览下载，常用于 MMD、游戏与动画创作。",
+              "icon": "/icons/sites/www.aplaybox.com.ico",
+              "disabledAt": "",
+              "createdAt": "2026-10-21 00:00:00"
+            },
+            {
+              "id": 533,
+              "name": "Sketchfab",
+              "url": "https://sketchfab.com/",
+              "description": "全球3D模型展示与下载平台",
+              "category": "term-16",
+              "detail": "Sketchfab 是全球大型 3D 模型展示与分享平台，可在浏览器中直接查看模型，部分模型支持免费下载或付费购买，覆盖角色、场景、道具等，是 3D 创作与参考的常用资源站。",
+              "icon": "/icons/sites/sketchfab.com.ico",
+              "disabledAt": "",
+              "createdAt": "2026-10-21 00:00:00"
+            },
+            {
+              "id": 536,
+              "name": "DRCOS",
+              "url": "https://dr-cos.info/",
+              "description": "免费Cosplay服装缝纫纸样下载",
+              "category": "term-16",
+              "detail": "DRCOS 是提供免费缝纫纸样的英文站点，可按帽子、手套、衬衫、裙装、连衣裙、外套、裤装、和服与 Cosplay 等分类下载 PDF 纸样，纸样含缝份、适合新手打印裁剪，常用于自制 Cosplay 服装。",
+              "icon": "/icons/sites/dr-cos.info.png",
+              "disabledAt": "",
+              "createdAt": "2026-10-21 00:00:00"
+            },
+            {
               "id": 521,
               "name": "BS日テレ",
               "url": "https://www.bs4.jp/",
@@ -2809,6 +2897,39 @@
           "name": "其它小工具",
           "icon": "/icons/nav/tools.svg",
           "sites": [
+            {
+              "id": 539,
+              "name": "WebSpeak",
+              "url": "https://webspeak.online/",
+              "description": "浏览器版TeamSpeak语音客户端",
+              "category": "term-21",
+              "detail": "WebSpeak 是 TeamSpeak 的网页版客户端，无需安装客户端即可在 Chrome／Edge 中加入语音服务器，支持低延迟 Opus 音频、邀请链接与频道在线状态；官方提示香港节点可能因托管商网络问题出现连接失败或延迟。",
+              "icon": "/icons/sites/webspeak.online.png",
+              "disabledAt": "",
+              "createdAt": "2026-10-21 00:00:00"
+            },
+            {
+              "id": 532,
+              "name": "唧唧Down",
+              "url": "https://www.jijidown.com/",
+              "description": "B站视频与弹幕下载工具",
+              "category": "term-21",
+              "detail": "唧唧Down（JJDown）是 Windows 平台的 B 站视频下载工具，支持普通视频、番剧与弹幕下载，可输出 MP4 视频与 ASS 弹幕文件，官网提供客户端下载与使用说明。",
+              "icon": "/icons/sites/www.jijidown.com.ico",
+              "disabledAt": "",
+              "createdAt": "2026-10-21 00:00:00"
+            },
+            {
+              "id": 537,
+              "name": "Yahoo! JAPAN",
+              "url": "https://www.yahoo.co.jp/",
+              "description": "日本综合门户与搜索引擎",
+              "category": "term-21",
+              "detail": "Yahoo! JAPAN 是日本最大的综合门户与搜索引擎，提供新闻、天气、购物、拍卖、地图等服务，可用来检索日本 ACG 资讯、作品与放送信息。",
+              "icon": "/icons/sites/www.yahoo.co.jp.ico",
+              "disabledAt": "",
+              "createdAt": "2026-10-21 00:00:00"
+            },
             {
               "id": 512,
               "name": "FontInAss",

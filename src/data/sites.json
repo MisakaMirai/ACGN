@@ -3119,6 +3119,90 @@
           ]
         }
       ]
+    },
+    {
+      "id": "term-23",
+      "name": "开源专区",
+      "icon": "/icons/nav/code.svg",
+      "sites": [
+        {
+          "id": 540,
+          "name": "lnovel",
+          "url": "https://github.com/yjl9903/lnovel",
+          "description": "抓取轻小说数据，提供开放接口与RSS订阅",
+          "category": "term-23",
+          "detail": "lnovel 是一个开源的轻小说数据抓取与聚合项目（AGPL-3.0），从哔哩轻小说、轻小说文库等站点抓取书籍信息，提供轻小说榜单、丛书与内容的 RSS 订阅链接及 JSON API，方便开发者与读者订阅和二次利用。",
+          "icon": "/icons/sites/github.com.ico",
+          "disabledAt": "",
+          "createdAt": "2026-10-24 00:00:00"
+        },
+        {
+          "id": 541,
+          "name": "bangumi-data",
+          "url": "https://github.com/bangumi-data/bangumi-data",
+          "description": "动画番组及放送、资讯站点数据集合",
+          "category": "term-23",
+          "detail": "bangumi-data 是动画番组及其放送、资讯站点的数据集合（CC BY 4.0），可通过 npm 包或 CDN 直接使用，包含各番剧的放送站点与资讯来源，被众多 ACG 项目采用，适合做番剧放送导航或数据参考。",
+          "icon": "/icons/sites/github.com.ico",
+          "disabledAt": "",
+          "createdAt": "2026-10-24 00:00:00"
+        },
+        {
+          "id": 542,
+          "name": "Bangumi Archive",
+          "url": "https://github.com/bangumi/Archive",
+          "description": "Bangumi条目、人物、角色等数据的定期导出",
+          "category": "term-23",
+          "detail": "Bangumi Archive 定期导出番组计划（bangumi.tv）的 wiki 数据，包括条目、人物、角色、章节及各类关联关系，每周三凌晨更新，数据以主键加原始 wiki 字符串为主，供不需要实时接口的场景离线使用，可减少爬虫负担。",
+          "icon": "/icons/sites/github.com.ico",
+          "disabledAt": "",
+          "createdAt": "2026-10-24 00:00:00"
+        },
+        {
+          "id": 543,
+          "name": "Bangumi剧集评论数据集",
+          "url": "https://github.com/bydbot/bangumi_eposides_comments",
+          "description": "按年份与季度组织的番剧剧集评论数据集",
+          "category": "term-23",
+          "detail": "番剧剧集评论数据集，按年份与季度组织，收录 1979–2025 年约 2883 部番剧、共约 192MB 的用户评论数据，每条按剧集分隔并保留回复结构；数据仅供学习研究使用，评论版权归原作者所有。",
+          "icon": "/icons/sites/github.com.ico",
+          "disabledAt": "",
+          "createdAt": "2026-10-24 00:00:00"
+        },
+        {
+          "id": 544,
+          "name": "Anubis",
+          "url": "https://github.com/TecharoHQ/anubis",
+          "description": "网站反AI爬虫工具，通过工作量证明拦截请求",
+          "category": "term-23",
+          "detail": "Anubis 是开源的反 AI 爬虫工具，对进来的 HTTP 请求执行工作量证明（PoW）挑战，以拦截大规模抓取数据的 AI 爬虫，保护网站资源不被过度采集，适合作为站点前置防护层使用。",
+          "icon": "/icons/sites/github.com.ico",
+          "disabledAt": "",
+          "createdAt": "2026-10-24 00:00:00"
+        },
+        {
+          "id": 545,
+          "name": "NANO",
+          "url": "https://github.com/Saltro/nano",
+          "description": "动漫圣地巡礼地点全收录（React制作）",
+          "category": "term-23",
+          "detail": "NANO 是动漫圣地巡礼地点全收录项目，收录各动画在现实世界中的取景地信息，方便巡礼爱好者查找与规划；项目使用 React 制作，代码与数据均在仓库中公开。",
+          "icon": "/icons/sites/github.com.ico",
+          "disabledAt": "",
+          "createdAt": "2026-10-24 00:00:00"
+        },
+        {
+          "id": 546,
+          "name": "anime-offline-database",
+          "url": "https://github.com/manami-project/anime-offline-database",
+          "description": "基于JSON的动画数据集，含多站交叉引用",
+          "category": "term-23",
+          "detail": "anime-offline-database 是一个基于 JSON 的动画离线数据集，收录动画的核心元数据，并提供到 MyAnimeList、AniDB、AniList、Kitsu 等多个动画站点的交叉引用，可离线用于番剧信息检索、匹配与数据整合。",
+          "icon": "/icons/sites/github.com.ico",
+          "disabledAt": "",
+          "createdAt": "2026-10-24 00:00:00"
+        }
+      ]
     }
   ]
 }

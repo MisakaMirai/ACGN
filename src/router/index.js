@@ -2,7 +2,7 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 import { useTitle } from '@vueuse/core'
 import { useMainScrollStore } from '@/stores/mainScroll'
 import { useContentPagesStore } from '@/stores/contentPages'
-import { useAnnouncementsStore } from '@/stores/announcements'
+import { useNotificationsStore } from '@/stores/notifications'
 import { useSitesStore } from '@/stores/sites'
 import { SITE_NAME } from '@/config'
 
@@ -48,15 +48,15 @@ const routes = [
     meta: { title: '投稿&反馈' },
   },
   {
-    path: '/announcements',
-    name: 'Announcements',
-    component: () => import('@/views/AnnouncementsListView.vue'),
-    meta: { title: '公告' },
+    path: '/notifications',
+    name: 'Notifications',
+    component: () => import('@/views/NotificationsListView.vue'),
+    meta: { title: '通知' },
   },
   {
-    path: '/announcements/:id',
-    name: 'AnnouncementDetail',
-    component: () => import('@/views/AnnouncementDetailView.vue'),
+    path: '/notifications/:id',
+    name: 'NotificationDetail',
+    component: () => import('@/views/NotificationDetailView.vue'),
   },
   {
     path: '/sites/:id',
@@ -90,7 +90,7 @@ const router = createRouter({
 
 // 统一页面标题：路由元信息 + store 查找，一处覆盖所有页面
 router.afterEach((to) => {
-  // 1. 静态 meta.title（投稿、公告列表、失效归档、404）
+  // 1. 静态 meta.title（投稿、通知列表、失效归档、404）
   if (to.meta.title) {
     title.value = to.meta.title + SUFFIX
     return
@@ -105,11 +105,11 @@ router.afterEach((to) => {
     }
   }
 
-  // 3. 公告详情（动态标题取公告名）
-  if (to.name === 'AnnouncementDetail' && to.params.id) {
-    const ann = useAnnouncementsStore().findById(to.params.id)
-    if (ann) {
-      title.value = ann.title + SUFFIX
+  // 3. 通知详情（动态标题取通知名）
+  if (to.name === 'NotificationDetail' && to.params.id) {
+    const notification = useNotificationsStore().findById(to.params.id)
+    if (notification) {
+      title.value = notification.title + SUFFIX
       return
     }
   }

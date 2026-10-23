@@ -102,14 +102,14 @@ ACGN/
 │   │   ├── SiteRow.vue
 │   │   ├── CategoryList.vue
 │   │   ├── CategorySection.vue
-│   │   ├── AnnouncementItem.vue
+│   │   ├── NotificationItem.vue
 │   │   └── FriendLinks.vue
 │   ├── utils/             # 无状态纯函数与常量
 │   │   ├── theme.js            # 主题常量与模式切换/类名解析
 │   │   ├── shuffle.js          # 随机 / 种子洗牌
 │   │   └── siteIcon.js         # 站点/分类图标解析与错误兜底
 │   ├── data/              # JSON 数据
-│   │   ├── announcements.json
+│   │   ├── notifications.json
 │   │   ├── contentPages.json   # 关于/声明/隐私 页内容
 │   │   ├── friends.json
 │   │   ├── sites.json
@@ -118,7 +118,7 @@ ACGN/
 │   │   └── index.js       # Vue Router 配置
 │   ├── stores/            # Pinia 状态管理
 │   │   ├── __tests__/     # store 单元测试
-│   │   ├── announcements.js
+│   │   ├── notifications.js
 │   │   ├── contentPages.js     # 法律页查询 + 协议汇总目录页
 │   │   ├── friends.js
 │   │   ├── hitokoto.js
@@ -130,8 +130,8 @@ ACGN/
 │   │   ├── HomeView.vue
 │   │   ├── SiteDetailView.vue
 │   │   ├── SiteTrashView.vue
-│   │   ├── AnnouncementsListView.vue
-│   │   ├── AnnouncementDetailView.vue
+│   │   ├── NotificationsListView.vue
+│   │   ├── NotificationDetailView.vue
 │   │   ├── ContentView.vue     # 关于/声明/隐私/协议汇总 共用
 │   │   ├── PostSiteView.vue
 │   │   └── NotFoundView.vue
@@ -155,7 +155,7 @@ ACGN/
 | 框架    | Vue 3              | 组合式 API                       |
 | 构建    | Vite               | 开发服务器与生产构建             |
 | 路由    | Vue Router 4       | Hash 模式                        |
-| 状态    | Pinia              | 集中管理站点、公告、友链数据     |
+| 状态    | Pinia              | 集中管理站点、通知、友链数据     |
 | 组合式  | VueUse             | 主题色 / 滚动位置等              |
 | 样式    | CSS3 + CSS 变量    | 主题令牌 + 组件 scoped 样式      |
 | 数据    | JSON               | 轻量级数据存储                   |
@@ -242,25 +242,27 @@ npm run test
 | `disabledAt`  | string  | 是   | 失效日期（空字符串表示正常运行） |
 | `createdAt`   | string  | 是   | 收录日期（`New` 徽章按此推算，30 天内算新站） |
 
-### 公告数据
+### 通知数据
 
-公告数据存储在 `src/data/announcements.json`，结构如下：
+通知数据存储在 `src/data/notifications.json`，结构如下：
 
 ```json
 {
-  "announcements": [
+  "notifications": [
     {
       "id": 1,
-      "title": "公告标题",
+      "title": "通知标题",
       "date": "2026-01-01",
       "author": "站长",
       "views": 0,
-      "excerpt": "公告摘要",
+      "excerpt": "通知摘要",
       "content": "<p>HTML 正文内容</p>"
     }
   ]
 }
 ```
+
+通知的已读状态记录在浏览器 `localStorage`（键名 `notifications-read-ids`），不上传服务器。打开详情页会自动标记已读，导航栏铃铛入口与列表页均支持「全部已读」。
 
 ### 失效归档
 

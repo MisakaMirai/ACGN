@@ -1298,17 +1298,7 @@
       "id": "term-9",
       "name": "ACG图书馆",
       "icon": "/icons/nav/university.svg",
-      "sites": [        {
-          "id": 554,
-          "name": "IdolPlaza",
-          "url": "https://idolplaza.com/",
-          "description": "地下偶像全球活动地图与信息汇总",
-          "category": "term-9",
-          "detail": "IdolPlaza 汇总地下偶像（地下アイドル）的全球活动信息，提供世界地图、RANK 排行、Music、MV、Videos、族谱 Tree 与论坛等板块，支持简体中文、日文、繁体中文、英文、韩文、泰文等多种语言界面。",
-          "icon": "/icons/sites/idolplaza.com.ico",
-          "disabledAt": "",
-          "createdAt": "2026-10-27 00:00:00"
-        },
+      "sites": [
         {
           "id": 535,
           "name": "WIKIWIKI",
@@ -2410,7 +2400,7 @@
               "name": "IdolPlaza",
               "url": "https://idolplaza.com/",
               "description": "地下偶像全球活动地图与信息汇总",
-              "category": "term-9",
+              "category": "term-16",
               "detail": "IdolPlaza 汇总地下偶像（地下アイドル）的全球活动信息，提供世界地图、RANK 排行、Music、MV、Videos、族谱 Tree 与论坛等板块，支持简体中文、日文、繁体中文、英文、韩文、泰文等多种语言界面。",
               "icon": "/icons/sites/idolplaza.com.ico",
               "disabledAt": "",

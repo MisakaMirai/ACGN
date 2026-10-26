@@ -460,6 +460,28 @@
       "icon": "/icons/nav/manga.svg",
       "sites": [
         {
+          "id": 556,
+          "name": "Kmoe",
+          "url": "https://kzz.moe/",
+          "description": "繁体中文漫画在线阅读站，kxx.moe为备用域名",
+          "category": "term-12",
+          "detail": "Kmoe 是在线漫画阅读站（主域名 kzz.moe，备用域名 kxx.moe），繁体中文界面，收录量大，可按题材、语言、地区、篇幅、状态与标签筛选，支持评价与热度排序浏览。",
+          "icon": "/icons/sites/kzz.moe.ico",
+          "disabledAt": "",
+          "createdAt": "2026-10-27 00:00:00"
+        },
+        {
+          "id": 557,
+          "name": "Comix",
+          "url": "https://comix.to/",
+          "description": "英文漫画与韩漫webtoon在线阅读站",
+          "category": "term-12",
+          "detail": "Comix 是英文漫画在线阅读站，主打韩漫（webtoon／manhwa），提供 Browse 分类浏览、热门与最新更新列表以及用户收藏夹功能，适合英语漫画读者使用。",
+          "icon": "/icons/sites/comix.to.png",
+          "disabledAt": "",
+          "createdAt": "2026-10-27 00:00:00"
+        },
+        {
           "id": 462,
           "name": "MangaCopy",
           "url": "https://mangacopy.com",
@@ -808,6 +830,17 @@
       "name": "ACG资源社区",
       "icon": "/icons/nav/users.svg",
       "sites": [
+        {
+          "id": 553,
+          "name": "次元狗",
+          "url": "https://www.ciyuangou.net/",
+          "description": "ACG资源聚合社区，动画漫画游戏网盘资源",
+          "category": "term-6",
+          "detail": "次元狗（ciyuangou）是 ACG 资源聚合社区，提供动画、漫画、轻小说、Galgame 与游戏等资源的阿里云盘、夸克、百度、迅雷网盘下载，支持分类浏览、热门标签与最新投稿查看，国内网盘下载较为方便。",
+          "icon": "/icons/sites/www.ciyuangou.net.ico",
+          "disabledAt": "",
+          "createdAt": "2026-10-27 00:00:00"
+        },
         {
           "id": 549,
           "name": "V次元",
@@ -1265,7 +1298,17 @@
       "id": "term-9",
       "name": "ACG图书馆",
       "icon": "/icons/nav/university.svg",
-      "sites": [
+      "sites": [        {
+          "id": 554,
+          "name": "IdolPlaza",
+          "url": "https://idolplaza.com/",
+          "description": "地下偶像全球活动地图与信息汇总",
+          "category": "term-9",
+          "detail": "IdolPlaza 汇总地下偶像（地下アイドル）的全球活动信息，提供世界地图、RANK 排行、Music、MV、Videos、族谱 Tree 与论坛等板块，支持简体中文、日文、繁体中文、英文、韩文、泰文等多种语言界面。",
+          "icon": "/icons/sites/idolplaza.com.ico",
+          "disabledAt": "",
+          "createdAt": "2026-10-27 00:00:00"
+        },
         {
           "id": 535,
           "name": "WIKIWIKI",
@@ -2363,6 +2406,28 @@
           "icon": "/icons/nav/tools.svg",
           "sites": [
             {
+              "id": 554,
+              "name": "IdolPlaza",
+              "url": "https://idolplaza.com/",
+              "description": "地下偶像全球活动地图与信息汇总",
+              "category": "term-9",
+              "detail": "IdolPlaza 汇总地下偶像（地下アイドル）的全球活动信息，提供世界地图、RANK 排行、Music、MV、Videos、族谱 Tree 与论坛等板块，支持简体中文、日文、繁体中文、英文、韩文、泰文等多种语言界面。",
+              "icon": "/icons/sites/idolplaza.com.ico",
+              "disabledAt": "",
+              "createdAt": "2026-10-27 00:00:00"
+            },
+            {
+              "id": 551,
+              "name": "Settei Dreams",
+              "url": "https://setteidreams.net/",
+              "description": "日本动画设定资料与model sheets高清扫描库",
+              "category": "term-16",
+              "detail": "Settei Dreams 收录日本动画制作设定资料（设定画集／model sheets）的高质量扫描，按作品列出年份、类型、角色设计、制作公司与张数等信息，是研究动画制作与寻找官方设定图的重要资料库；部分内容需 Patreon 支持。",
+              "icon": "/icons/sites/setteidreams.net.png",
+              "disabledAt": "",
+              "createdAt": "2026-10-27 00:00:00"
+            },
+            {
               "id": 550,
               "name": "JIZURA",
               "url": "https://852wa.github.io/JIZURA/",
@@ -2942,6 +3007,28 @@
           "icon": "/icons/nav/tools.svg",
           "sites": [
             {
+              "id": 552,
+              "name": "TechMC",
+              "url": "https://www.techmc.wiki/",
+              "description": "技术红石中文教材《GraduateTextsInTechnicalMC》",
+              "category": "term-21",
+              "detail": "TechMC 是《GraduateTextsInTechnicalMC》技术红石（Minecraft 技术向）中文教材站，分基础与进阶篇系统讲解红石电路原理与代码解读，并配有习题；内容采用 CC BY-NC-SA 4.0 协议共享。",
+              "icon": "/icons/sites/www.techmc.wiki.ico",
+              "disabledAt": "",
+              "createdAt": "2026-10-27 00:00:00"
+            },
+            {
+              "id": 555,
+              "name": "月读空间",
+              "url": "https://yachiyo.hk/",
+              "description": "八千代主题AI互动社区，聊天读故事看创作",
+              "category": "term-21",
+              "detail": "月读空间（TSUKUYOMI SPACE）是八千代相关站点，主打「与八千代聊天、读故事、看创作、遇见同频的人」，提供AI互动聊天、故事阅读与创作分享等功能，是面向同好的社区与创作空间。",
+              "icon": "/icons/sites/yachiyo.hk.ico",
+              "disabledAt": "",
+              "createdAt": "2026-10-27 00:00:00"
+            },
+            {
               "id": 539,
               "name": "WebSpeak",
               "url": "https://webspeak.online/",
@@ -3245,6 +3332,28 @@
           "icon": "/icons/sites/github.com.ico",
           "disabledAt": "",
           "createdAt": "2026-10-24 00:00:00"
+        },
+        {
+          "id": 558,
+          "name": "marchen-player",
+          "url": "https://github.com/marchen-dev/marchen-player",
+          "description": "动漫弹幕播放器，支持Jellyfin/Emby/WebDAV",
+          "category": "term-23",
+          "detail": "marchen-player 是开源动漫弹幕播放器（AGPLv3），可自动匹配弹幕，支持本地视频、直链、Jellyfin、Emby 与 WebDAV 播放，基于 Electron + React + TypeScript 开发，提供桌面客户端与网页版。",
+          "icon": "/icons/sites/github.com.ico",
+          "disabledAt": "",
+          "createdAt": "2026-10-27 00:00:00"
+        },
+        {
+          "id": 559,
+          "name": "JIZURA",
+          "url": "https://github.com/852wa/JIZURA",
+          "description": "歌词动画生成器JIZURA的开源仓库",
+          "category": "term-23",
+          "detail": "JIZURA 的 GitHub 源码仓库。JIZURA 是浏览器端歌词动画（文字 PV）生成器，粘贴歌词即可自动生成带风格、配色与演出的歌词动画，支持和風、ホラー、ポップ、バラード等主题，可导出 MP4、LRC 与 PNG 序列；在线使用见网页版条目。",
+          "icon": "/icons/sites/github.com.ico",
+          "disabledAt": "",
+          "createdAt": "2026-10-27 00:00:00"
         }
       ]
     }

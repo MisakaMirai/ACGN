@@ -809,6 +809,28 @@
       "icon": "/icons/nav/users.svg",
       "sites": [
         {
+          "id": 549,
+          "name": "V次元",
+          "url": "https://bbs.lty.fan/",
+          "description": "专注VOCALOID虚拟歌手与V家文化的中文社区",
+          "category": "term-6",
+          "detail": "V次元（bbs.lty.fan）是一个专注于 VOCALOID 虚拟歌手与 V 家文化的中文社区，汇聚初音未来、洛天依等虚拟歌手的原创音乐、同人创作与讨论交流；站点启用了阿里云 WAF 人机验证，访问时会自动完成校验。",
+          "icon": "/icons/sites/bbs.lty.fan.png",
+          "disabledAt": "",
+          "createdAt": "2026-10-26 00:00:00"
+        },
+        {
+          "id": 548,
+          "name": "御爱同萌",
+          "url": "https://www.ai2.moe/",
+          "description": "围绕Galgame与ACG作品的资料与同好交流社区",
+          "category": "term-6",
+          "detail": "御爱同萌（ai2.moe）是围绕 Galgame 与 ACG 作品的资料站点与同好交流社区，提供 Galgame 相关资料、讨论与资源分享；站点启用了 Anubis 工作量证明反爬机制，访问时浏览器会自动完成验证。",
+          "icon": "/icons/sites/ai2.moe.png",
+          "disabledAt": "",
+          "createdAt": "2026-10-24 00:00:00"
+        },
+        {
           "id": 516,
           "name": "VOCAKEY",
           "url": "https://vocakey.wiki",
@@ -2340,6 +2362,28 @@
           "name": "进阶ACG必备",
           "icon": "/icons/nav/tools.svg",
           "sites": [
+            {
+              "id": 550,
+              "name": "JIZURA",
+              "url": "https://852wa.github.io/JIZURA/",
+              "description": "浏览器端歌词动画（文字PV）生成器",
+              "category": "term-16",
+              "detail": "JIZURA 是一个在浏览器中运行的歌词动画（文字 PV／Kinetic Typography）生成器，只需粘贴歌词即可自动生成带风格、配色与演出的歌词动画视频，支持和風、ホラー、ポップ、バラード等多种主题，可导出 MP4、LRC 及 PNG 序列；纯前端运行，无需注册。",
+              "icon": "/icons/sites/852wa.github.io.svg",
+              "disabledAt": "",
+              "createdAt": "2026-10-26 00:00:00"
+            },
+            {
+              "id": 547,
+              "name": "御休游戏开发部 自制工具",
+              "url": "https://oyasumi-gamedev.com/tools/",
+              "description": "漫画·插画·3DCG·游戏制作用自制工具集",
+              "category": "term-16",
+              "detail": "御休游戏开发部（MIYADAIKU）公开的自制工具集，面向漫画、插画、3DCG 与游戏制作，全部在浏览器中运行、免费免注册、数据不上传服务器；包含漫画分镜生成器、拟音生成器、背景生成器、气泡生成器、Pose Gacha 等工具。",
+              "icon": "/icons/sites/oyasumi-gamedev.com.png",
+              "disabledAt": "",
+              "createdAt": "2026-10-24 00:00:00"
+            },
             {
               "id": 531,
               "name": "Aplaybox",

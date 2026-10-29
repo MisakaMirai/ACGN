@@ -831,6 +831,17 @@
       "icon": "/icons/nav/users.svg",
       "sites": [
         {
+          "id": 562,
+          "name": "Circle.ms",
+          "url": "https://portal.circle.ms/",
+          "description": "日本同人活动Web目录与社团参加管理系统",
+          "category": "term-6",
+          "detail": "Circle.ms 是日本同人活动（Comiket、Comic1、東方紅楼夢、COMITIA 等）的在线事务平台，提供活动 Web 目录（可查参展社团与摊位）、活动日历与社团报名申请，使用需免费注册会员，官方推荐在电脑端操作。",
+          "icon": "/icons/sites/portal.circle.ms.png",
+          "disabledAt": "",
+          "createdAt": "2026-10-29 00:00:00"
+        },
+        {
           "id": 553,
           "name": "次元狗",
           "url": "https://www.ciyuangou.net/",
@@ -1299,6 +1310,17 @@
       "name": "ACG图书馆",
       "icon": "/icons/nav/university.svg",
       "sites": [
+        {
+          "id": 563,
+          "name": "Fandom",
+          "url": "https://www.fandom.com/",
+          "description": "全球最大粉丝共建Wiki平台，动画游戏角色资料",
+          "category": "term-9",
+          "detail": "Fandom 是全球最大的粉丝共建 Wiki 平台，收录大量动画、漫画、游戏与角色向维基（如原神、Fate、宝可梦等），可按作品检索设定、角色、剧情与配音等资料，支持多语言社区协作编辑。",
+          "icon": "/icons/sites/www.fandom.com.png",
+          "disabledAt": "",
+          "createdAt": "2026-10-29 00:00:00"
+        },
         {
           "id": 535,
           "name": "WIKIWIKI",
@@ -1829,6 +1851,17 @@
       "icon": "/icons/nav/shopping-bag.svg",
       "sites": [
         {
+          "id": 561,
+          "name": "Fansky",
+          "url": "https://www.fansky.net/",
+          "description": "面向全球粉丝的同人创作者店铺与售卖平台",
+          "category": "term-14",
+          "detail": "Fansky 是面向同人／二次元创作者的售卖与粉丝经营平台，可开设店铺销售数字与实体作品，支持支付宝、微信、PayPal、Google Pay、加密币与银行卡收款，并提供优惠码、赞助会员、动态触达与流量数据等功能，基础服务费低至 5%，界面支持中英日三语。",
+          "icon": "/icons/sites/www.fansky.net.png",
+          "disabledAt": "",
+          "createdAt": "2026-10-29 00:00:00"
+        },
+        {
           "id": 534,
           "name": "爱发电",
           "url": "https://afdian.com/",
@@ -2016,6 +2049,17 @@
           "name": "BT下载站",
           "icon": "/icons/nav/download.svg",
           "sites": [
+            {
+              "id": 560,
+              "name": "ACGTracker",
+              "url": "https://acgtracker.com/",
+              "description": "面向ACGN的公开BT tracker，供字幕组与资源站使用",
+              "category": "term-11",
+              "detail": "ACGTracker 是公开的 BitTorrent tracker 服务器（announce 地址 http://open.acgtracker.com:1096/announce），本身不提供内容与种子文件，只为字幕组、资源站发布的种子提供连接与做种服务；常用于给已有 .torrent 补充 tracker 以提升连接数。",
+              "icon": "/icons/sites/acgtracker.com.png",
+              "disabledAt": "",
+              "createdAt": "2026-10-29 00:00:00"
+            },
             {
               "id": 176,
               "name": "東京図書館",

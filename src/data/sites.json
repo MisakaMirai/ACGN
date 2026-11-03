@@ -460,6 +460,17 @@
       "icon": "/icons/nav/manga.svg",
       "sites": [
         {
+          "id": 566,
+          "name": "萌恋",
+          "url": "https://moelian.neo.longlian.online/",
+          "description": "百合向漫画在线阅读站",
+          "category": "term-12",
+          "detail": "萌恋（moelian）是主打百合题材的在线漫画阅读站，收录病娇青梅、恶役大小姐、共依存、青梅竹马等各类百合向作品，按作品分页在线阅读。",
+          "icon": "/icons/sites/moelian.neo.longlian.online.png",
+          "disabledAt": "",
+          "createdAt": "2026-11-03 00:00:00"
+        },
+        {
           "id": 556,
           "name": "Kmoe",
           "url": "https://kzz.moe/",
@@ -830,6 +841,28 @@
       "name": "ACG资源社区",
       "icon": "/icons/nav/users.svg",
       "sites": [
+        {
+          "id": 567,
+          "name": "ACG寻喔",
+          "url": "https://www.acgxunuo.one/",
+          "description": "ACG资源站，附带免费AI生图工作台",
+          "category": "term-6",
+          "detail": "ACG寻喔（acgxunuo）是 ACG 资源分享站，提供游戏等资源的下载，站内资源解压密码通常为 666、XDGAME 或 WWW.XDGAME.COM；同时提供 AI 生图工作台，1K 生图永久免费且不限次数。",
+          "icon": "/icons/sites/www.acgxunuo.one.png",
+          "disabledAt": "",
+          "createdAt": "2026-11-03 00:00:00"
+        },
+        {
+          "id": 570,
+          "name": "尤萌",
+          "url": "https://www.acgu.net/",
+          "description": "二次元社区，动漫资讯/舞蹈/Cosplay/绘画交流",
+          "category": "term-6",
+          "detail": "尤萌（acgu.net）是二次元综合社区，设有动漫资讯、魔性鬼畜、舞蹈专区、Cosplay、绘画创作、闲聊交流等板块，支持投稿图文与视频、关注 UP 主，并提供「心事海漂流瓶」等互动玩法与 APP 客户端。",
+          "icon": "/icons/sites/www.acgu.net.jpg",
+          "disabledAt": "",
+          "createdAt": "2026-11-03 00:00:00"
+        },
         {
           "id": 562,
           "name": "Circle.ms",
@@ -1621,6 +1654,17 @@
       "name": "轻小说",
       "icon": "/icons/nav/ai.svg",
       "sites": [
+        {
+          "id": 569,
+          "name": "QBTR",
+          "url": "https://www.qbtr.org/",
+          "description": "同人小说在线阅读站，含动漫二次创作长篇",
+          "category": "term-18",
+          "detail": "QBTR 是同人小说在线阅读站，收录以火影忍者、型月（Fate）、哈利波特等作品为背景的二次创作长篇同人，按更新时间排列，附作者与简介，可直接在线阅读。",
+          "icon": "/icons/sites/www.qbtr.org.png",
+          "disabledAt": "",
+          "createdAt": "2026-11-03 00:00:00"
+        },
         {
           "id": 502,
           "name": "哔哩轻小说",
@@ -2440,6 +2484,28 @@
           "icon": "/icons/nav/tools.svg",
           "sites": [
             {
+              "id": 564,
+              "name": "お題箱",
+              "url": "https://odaibako.net/",
+              "description": "匿名点题与提问箱，创作者接收粉丝请求",
+              "category": "term-16",
+              "detail": "お題箱（Odaibako）是支持创作与表达活动的匿名请求箱服务，创作者可开设自己的「お題箱」接收粉丝或朋友匿名提交的点题与提问，支持「仅登录可见」「NG 词」等防护设置，并用随机点题的「お題ガチャ」为创作提供灵感，大部分功能免费。",
+              "icon": "/icons/sites/odaibako.net.png",
+              "disabledAt": "",
+              "createdAt": "2026-11-03 00:00:00"
+            },
+            {
+              "id": 565,
+              "name": "Aniplex",
+              "url": "https://www.aniplex.co.jp/",
+              "description": "日本动画制作发行公司Aniplex官方站",
+              "category": "term-16",
+              "detail": "Aniplex（アニプレックス）是日本动画制作与发行公司（Sony Music 旗下）的官方网站，可查看旗下 TV 动画与剧场版作品一览、放送与上映日期、最新情报、活动及周边商品信息。",
+              "icon": "/icons/sites/www.aniplex.co.jp.png",
+              "disabledAt": "",
+              "createdAt": "2026-11-03 00:00:00"
+            },
+            {
               "id": 554,
               "name": "IdolPlaza",
               "url": "https://idolplaza.com/",
@@ -3040,6 +3106,17 @@
           "name": "其它小工具",
           "icon": "/icons/nav/tools.svg",
           "sites": [
+            {
+              "id": 568,
+              "name": "SLUM",
+              "url": "https://open-slum.org/",
+              "description": "影子图书馆可用性监控面板",
+              "category": "term-21",
+              "detail": "SLUM（The Shadow Library Uptime Monitor）是影子图书馆可用性监控面板，实时检测 Anna's Archive、Library Genesis+、Z-Library 与 Liber3 等镜像站点的可用率与证书到期时间，便于在站点频繁失效时快速找到可用镜像；访问量过大时官方建议改用镜像 open-slum.pages.dev。",
+              "icon": "/icons/sites/open-slum.org.png",
+              "disabledAt": "",
+              "createdAt": "2026-11-03 00:00:00"
+            },
             {
               "id": 552,
               "name": "TechMC",

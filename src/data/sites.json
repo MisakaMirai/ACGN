@@ -623,6 +623,39 @@
           "icon": "/icons/sites/www.webtoons.com.ico",
           "disabledAt": "",
           "createdAt": "2026-05-17 00:00:00"
+        },
+        {
+          "id": 632,
+          "name": "少年Jump+",
+          "url": "https://youngjump.jp/",
+          "description": "集英社旗下线上漫画平台「少年ジャンプ+」",
+          "category": "term-12",
+          "detail": "集英社的少年Jump+ 官方平台，提供原创连载、每日更新与作品试读，可按作品与标签浏览，部分内容可在网页免费阅读。",
+          "icon": "/icons/sites/youngjump.jp.ico",
+          "disabledAt": "",
+          "createdAt": "2026-11-05 00:00:00"
+        },
+        {
+          "id": 633,
+          "name": "周刊少年Jump",
+          "url": "https://www.shonenjump.com/j/",
+          "description": "《周刊少年Jump》官方网站",
+          "category": "term-12",
+          "detail": "集英社《周刊少年Jump》官方站点，提供连载作品介绍、最新号情报、人气排名与部分作品试读。",
+          "icon": "/icons/sites/www.shonenjump.com.ico",
+          "disabledAt": "",
+          "createdAt": "2026-11-05 00:00:00"
+        },
+        {
+          "id": 634,
+          "name": "集英社",
+          "url": "https://www.shueisha.co.jp/",
+          "description": "集英社官方网站，Jump 系漫画出版方",
+          "category": "term-12",
+          "detail": "日本大型出版社集英社官网，旗下拥有《周刊少年Jump》《V Jump》等杂志与大量漫画、轻小说作品，提供新刊情报与作品检索。",
+          "icon": "/icons/sites/www.shueisha.co.jp.ico",
+          "disabledAt": "",
+          "createdAt": "2026-11-05 00:00:00"
         }
       ]
     },
@@ -3047,6 +3080,17 @@
               "detail": "COM3D2／CM3D 定制服装与发型 MOD 的检索汇总服务，可按角色、发型、衣装、预设等分类查找并跳转至各配布处（含 Twitter、GitHub、Mega、getuploader 等常见网盘）；页面为前端应用，需开启 JavaScript。",
               "disabledAt": "",
               "createdAt": "2026-05-16 00:00:00"
+            },
+            {
+              "id": 631,
+              "name": "YOASOBI",
+              "url": "https://www.yoasobi-music.jp/",
+              "description": "YOASOBI 官网，Ayase 与 ikura 的音乐组合",
+              "category": "term-16",
+              "detail": "YOASOBI 是由作曲家 Ayase 与主唱 ikura 组成的日本双人音乐组合，代表作有《夜に駆ける》《群青》《アイドル》等，官网提供歌曲、演唱会与最新消息。",
+              "icon": "/icons/sites/www.yoasobi-music.jp.png",
+              "disabledAt": "",
+              "createdAt": "2026-11-05 00:00:00"
             }
           ]
         },
@@ -3357,6 +3401,28 @@
               "icon": "/icons/sites/pcrdfans.com.png",
               "disabledAt": "",
               "createdAt": "2025-01-01 00:00:00"
+            },
+            {
+              "id": 635,
+              "name": "gh-proxy",
+              "url": "https://gh-proxy.com/",
+              "description": "GitHub 文件加速代理",
+              "category": "term-21",
+              "detail": "GitHub 加速代理服务，可给 release、raw、archive 等文件地址加前缀以提升下载速度，适合下载 GitHub 上的工具与资源。",
+              "icon": "/icons/sites/gh-proxy.com.ico",
+              "disabledAt": "",
+              "createdAt": "2026-11-05 00:00:00"
+            },
+            {
+              "id": 636,
+              "name": "盘搜",
+              "url": "https://www.pansou1.com/",
+              "description": "网盘资源搜索工具",
+              "category": "term-21",
+              "detail": "网盘资源聚合搜索工具，可检索阿里云盘、夸克网盘等平台的分享资源链接，用于查找影视、动漫与软件等文件。",
+              "icon": "/icons/sites/pansou1.com.svg",
+              "disabledAt": "",
+              "createdAt": "2026-11-05 00:00:00"
             }
           ]
         },
